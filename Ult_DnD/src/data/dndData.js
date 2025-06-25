@@ -1,26 +1,42 @@
 export const dndData = {
-  Fighter: {
-    Champion: {
-      /* level features */
+  Barbarian: {
+    classFeatures: {
+      1: ["Rage"],
     },
-    Battlemaster: {
-      /* ... */
+    Berserker: {
+      subclassFeatures: {
+        3: ["..."],
+      },
     },
   },
-  Wizard: {
-    Evocation: {
-      /* ... */
+  Fighter: {
+    classFeatures: {
+      1: ["Second Wind"],
     },
-    Illusion: {
-      /* ... */
+    Champion: {
+      subclassFeatures: {
+        3: ["Improved Critical"],
+      },
     },
   },
   Rogue: {
-    Thief: {
-      /* ... */
+    classFeatures: {
+      1: ["Sneak Attack"],
     },
     Assassin: {
-      /* ... */
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Wizard: {
+    classFeatures: {
+      1: ["Arcane Recovery"],
+    },
+    Evoker: {
+      subclassFeatures: {
+        3: ["..."],
+      },
     },
   },
 };
