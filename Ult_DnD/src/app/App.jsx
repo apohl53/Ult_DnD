@@ -3,24 +3,23 @@ import "./App.css";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
 import CharacterDisplay from "../components/CharacterDisplay";
+import { dndData } from "./data/dndData";
 
 function App() {
+  const [characterInfo, setCharacterInfo] = useState(null);
+
+  const handleFormSubmit = ({ charclass, level, subclass }) => {
+    const features = dndData[charclass]?.[subclass]?.[level];
+    setCharacterInfo({ charClass, level, subclass, features });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <h1> D&D Character Features</h1>
+        <InputForm onSubmit={handleFormSubmit} />
+        {characterInfo && <CharacterDisplay {...characterInfo} />}
+      </>
     </div>
   );
 }
