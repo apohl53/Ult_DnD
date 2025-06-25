@@ -1,14 +1,26 @@
 export const dndData = {
-  fighter: {
-    champion: {
-      3: "Improved Critical",
-      7: "Remarkable Athlete",
+  Fighter: {
+    Champion: {
+      /* level features */
+    },
+    Battlemaster: {
+      /* ... */
     },
   },
-  wizard: {
-    evoker: {
-      2: "Evocation Savant",
-      6: "Potent Cantrip",
+  Wizard: {
+    Evocation: {
+      /* ... */
+    },
+    Illusion: {
+      /* ... */
+    },
+  },
+  Rogue: {
+    Thief: {
+      /* ... */
+    },
+    Assassin: {
+      /* ... */
     },
   },
 };

@@ -1,15 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import InputForm from "../components/InputForm";
 import CharacterDisplay from "../components/CharacterDisplay";
-import { dndData } from "./data/dndData";
+import { dndData } from "../data/dndData";
 
 function App() {
   const [characterInfo, setCharacterInfo] = useState(null);
 
-  const handleFormSubmit = ({ charclass, level, subclass }) => {
-    const features = dndData[charclass]?.[subclass]?.[level];
+  const handleFormSubmit = ({ charClass, level, subclass }) => {
+    const features = dndData[charClass]?.[subclass]?.[level];
     setCharacterInfo({ charClass, level, subclass, features });
   };
 
