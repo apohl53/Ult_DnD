@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useState } from "react";
+import InputForm from "../components/InputForm";
+import CharacterDisplay from "../components/CharacterDisplay";
 
 function App() {
   return (
