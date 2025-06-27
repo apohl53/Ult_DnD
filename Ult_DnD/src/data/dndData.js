@@ -2,6 +2,8 @@ export const dndData = {
   Barbarian: {
     classFeatures: {
       1: ["Rage"],
+      1: ["Unarmored Defense"],
+      1: ["Weapon Mastery"],
     },
     Berserker: {
       subclassFeatures: {
