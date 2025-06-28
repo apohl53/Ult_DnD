@@ -17,13 +17,33 @@ export const dndData = {
     },
     Berserker: {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Frenzy"],
+        6: ["Mindless Rage"],
+        10: ["Retaliation"],
+        14: ["Intimidating Presence"],
+      },
+    },
+    fill: {
+      subclassFeatures: {
+        3: ["Divine Fury", "Warrior of the Gods"],
+
+        6: ["Fanatical Focus"],
+        10: ["Zealous Presence"],
+        14: ["Rage of the Gods"],
+      },
+    },
+    fill: {
+      subclassFeatures: {
+        3: ["Divine Fury"],
+        3: ["Warrior of the Gods"],
+        6: ["Fanatical Focus"],
+        10: ["Zealous Presence"],
+        14: ["Rage of the Gods"],
       },
     },
     Zealot: {
       subclassFeatures: {
-        3: ["Divine Fury"],
-        3: ["Warrior of the Gods"],
+        3: ["Divine Fury", "Warrior of the Gods"],
         6: ["Fanatical Focus"],
         10: ["Zealous Presence"],
         14: ["Rage of the Gods"],
@@ -43,7 +63,7 @@ export const dndData = {
   Monk: {
     classFeatures: {
       1: ["Martial Arts", "Unarmored Defense(m)"],
-      2: ["Monk’s Focus", "Unarmored Movement(m)", "Uncanny Metabolism"],
+      2: ["Monk's Focus", "Unarmored Movement(m)", "Uncanny Metabolism"],
       3: ["Deflect Attacks"],
       4: ["Slow Fall"],
       5: ["Extra Attack", "Stunning Strike"],
