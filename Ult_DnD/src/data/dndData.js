@@ -1,16 +1,11 @@
 export const dndData = {
   Barbarian: {
     classFeatures: {
-      1: ["Rage"],
-      1: ["Unarmored Defense"],
-      1: ["Weapon Mastery"],
-      2: ["Danger Sense"],
-      2: ["Reckless Attack"],
+      1: ["Rage", "Unarmored Defense", "Weapon Mastery"],
+      2: ["Danger Sense", "Reckless Attack"],
       3: ["Primal Knowledge"],
-      5: ["Extra Attack"],
-      5: ["Fast Movement"],
-      7: ["Feral Instinct"],
-      7: ["Instinctive Pounce"],
+      5: ["Extra Attack", "Fast Movement"],
+      7: ["Feral Instinct", "Instinctive Pounce"],
       9: ["Brutal Strike"],
       11: ["Relentless Rage"],
       13: ["Improved Brutal Strike"],

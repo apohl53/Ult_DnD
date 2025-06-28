@@ -20,11 +20,20 @@ function App() {
   const handleFormSubmit = ({ charClass, level, subclass }) => {
     const numericLevel = parseInt(level, 10);
 
-    const classFeatureNames =
-      dndData[charClass]?.classFeatures?.[numericLevel] || [];
+    let classFeatureNames = [];
+    let subclassFeatureNames = [];
 
-    const subclassFeatureNames =
-      dndData[charClass]?.[subclass]?.subclassFeatures?.[numericLevel] || [];
+    // Gather all class features up to the selected level
+    for (let i = 1; i <= numericLevel; i++) {
+      const featuresAtLevel = dndData[charClass]?.classFeatures?.[i] || [];
+      classFeatureNames = classFeatureNames.concat(featuresAtLevel);
+
+      const subclassFeaturesAtLevel =
+        dndData[charClass]?.[subclass]?.subclassFeatures?.[i] || [];
+      subclassFeatureNames = subclassFeatureNames.concat(
+        subclassFeaturesAtLevel
+      );
+    }
 
     const features = {
       classLevelFeatures: resolveFeatures(classFeatureNames),
