@@ -81,8 +81,8 @@ export const featureDetails = {
     description:
       "When you roll Initiative, you can regain all expended uses of Rage. After you regain uses of Rage in this way, you can't do so again until you finish a Long Rest. In addition, your Rage is so fierce that it now lasts for 10 minutes without you needing to do anything to extend it from round to round. Your Rage ends early if you have the Unconscious condition (not just the Incapacitated condition) or don Heavy armor.",
   },
-  "Improved Brutal Strike 2": {
-    name: "Improved Brutal Strike 2",
+  "Improved Brutal Strike (2)": {
+    name: "Improved Brutal Strike (2)",
     description:
       "The extra damage of your Brutal Strike increases to 2d10. In addition, you can use two different Brutal Strike effects whenever you use your Brutal Strike feature.",
   },
