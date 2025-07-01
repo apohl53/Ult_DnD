@@ -1,42 +1,50 @@
-export default function CharacterDisplay({
-  charClass,
-  level,
-  subclass,
-  features,
-}) {
+import React, { useState } from "react";
+
+function CharacterDisplay({ charClass, level, subclass, features }) {
+  const [expanded, setExpanded] = useState({});
+
+  const toggleFeature = (name) => {
+    setExpanded((prev) => ({
+      ...prev,
+      [name]: !prev[name],
+    }));
+  };
+
+  const renderFeatureList = (featureList, title) => (
+    <div>
+      <h2>{title}</h2>
+      {featureList.map((feature) => (
+        <div key={feature.name} style={{ marginBottom: "10px" }}>
+          <button
+            onClick={() => toggleFeature(feature.name)}
+            style={{
+              cursor: "pointer",
+              background: "none",
+              border: "none",
+              fontWeight: "bold",
+              color: "#007bff",
+              padding: "0",
+            }}
+          >
+            {feature.name}
+          </button>
+          {expanded[feature.name] && (
+            <p style={{ marginTop: "5px" }}>{feature.description}</p>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <div>
       <h2>
-        {charClass} - {subclass} (Level {level})
+        {charClass} - Level {level} ({subclass})
       </h2>
-
-      <h3>Class Features</h3>
-      <ul>
-        {features.classLevelFeatures.length > 0 ? (
-          features.classLevelFeatures.map((feat, index) => (
-            <li key={index}>
-              <strong>{feat.name}</strong>
-              <p>{feat.description}</p>
-            </li>
-          ))
-        ) : (
-          <li>No class features at this level.</li>
-        )}
-      </ul>
-
-      <h3>Subclass Features</h3>
-      <ul>
-        {features.subclassLevelFeatures.length > 0 ? (
-          features.subclassLevelFeatures.map((feat, index) => (
-            <li key={index}>
-              <strong>{feat.name}</strong>
-              <p>{feat.description}</p>
-            </li>
-          ))
-        ) : (
-          <li>No subclass features at this level.</li>
-        )}
-      </ul>
+      {renderFeatureList(features.classLevelFeatures, "Class Features")}
+      {renderFeatureList(features.subclassLevelFeatures, "Subclass Features")}
     </div>
   );
 }
+
+export default CharacterDisplay;

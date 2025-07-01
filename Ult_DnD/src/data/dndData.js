@@ -1,4 +1,14 @@
 export const dndData = {
+  Artificer: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
   Barbarian: {
     classFeatures: {
       1: ["Rage", "Unarmored Defense", "Weapon Mastery"],
@@ -50,6 +60,36 @@ export const dndData = {
       },
     },
   },
+  Beastheart: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Cleric: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Druid: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
   Fighter: {
     classFeatures: {
       1: ["Second Wind"],
@@ -57,6 +97,26 @@ export const dndData = {
     Champion: {
       subclassFeatures: {
         3: ["Improved Critical"],
+      },
+    },
+  },
+  Gunslinger: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Illrigger: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
       },
     },
   },
@@ -87,11 +147,71 @@ export const dndData = {
       },
     },
   },
+  Paladin: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Ranger: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
   Rogue: {
     classFeatures: {
       1: ["Sneak Attack"],
     },
     Assassin: {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Shaman: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Sorcerer: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Talent: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
+    },
+  },
+  Warlock: {
+    classFeatures: {
+      1: ["..."],
+    },
+    "...": {
       subclassFeatures: {
         3: ["..."],
       },
