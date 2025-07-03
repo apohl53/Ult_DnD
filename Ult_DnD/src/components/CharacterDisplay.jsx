@@ -1,48 +1,48 @@
 import React, { useState } from "react";
+import "./CharacterDisplay.css";
+import ReactMarkdown from "react-markdown";
 
 function CharacterDisplay({ charClass, level, subclass, features }) {
-  const [expanded, setExpanded] = useState({});
+  const [selectedFeature, setSelectedFeature] = useState(null);
 
-  const toggleFeature = (name) => {
-    setExpanded((prev) => ({
-      ...prev,
-      [name]: !prev[name],
-    }));
+  const handleClick = (feature) => {
+    setSelectedFeature(feature);
   };
 
   const renderFeatureList = (featureList, title) => (
-    <div>
-      <h2>{title}</h2>
+    <div className="feature-section">
+      <h3>{title}</h3>
       {featureList.map((feature) => (
-        <div key={feature.name} style={{ marginBottom: "10px" }}>
-          <button
-            onClick={() => toggleFeature(feature.name)}
-            style={{
-              cursor: "pointer",
-              background: "none",
-              border: "none",
-              fontWeight: "bold",
-              color: "#007bff",
-              padding: "0",
-            }}
-          >
-            {feature.name}
-          </button>
-          {expanded[feature.name] && (
-            <p style={{ marginTop: "5px" }}>{feature.description}</p>
-          )}
-        </div>
+        <button
+          key={feature.name}
+          className="feature-button"
+          onClick={() => handleClick(feature)}
+        >
+          {feature.name}
+        </button>
       ))}
     </div>
   );
 
   return (
-    <div>
-      <h2>
-        {charClass} - Level {level} ({subclass})
-      </h2>
-      {renderFeatureList(features.classLevelFeatures, "Class Features")}
-      {renderFeatureList(features.subclassLevelFeatures, "Subclass Features")}
+    <div className="character-display">
+      <div className="feature-list">
+        <h2>
+          {charClass} - Level {level} ({subclass})
+        </h2>
+        {renderFeatureList(features.classLevelFeatures, "Class Features")}
+        {renderFeatureList(features.subclassLevelFeatures, "Subclass Features")}
+      </div>
+      <div className="feature-detail">
+        {selectedFeature ? (
+          <>
+            <h3>{selectedFeature.name}</h3>
+            <p className="feature-text">{selectedFeature.description}</p>
+          </>
+        ) : (
+          <p>Select a feature to see details</p>
+        )}
+      </div>
     </div>
   );
 }

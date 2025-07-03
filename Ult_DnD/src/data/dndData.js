@@ -189,17 +189,38 @@ export const dndData = {
   },
   Sorcerer: {
     classFeatures: {
-      1: ["..."],
+      1: ["Spellcasting(sorc)", "Innate Sorcerery"],
+      2: ["Font of Magic", "Metamagic"],
+      5: ["Sorcerous Restoration"],
+      7: ["Sorcery Incarnate"],
+      19: ["Epic Boon"],
+      20: ["Arcane Apotheosis"],
     },
-    "...": {
+    "Divine Soul": {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Divine Magic", "Favored by the Gods"],
+        6: ["Empowered Healing"],
+        14: ["Otherworldly Wings"],
+        18: ["Unearthly Recovery"],
       },
     },
   },
   Talent: {
     classFeatures: {
-      1: ["..."],
+      1: ["Psionic Powers", "Strain to Maintain"],
+      3: ["Psionic Exertion"],
+      7: ["Psychic Boost"],
+      11: ["Psionic Bastion"],
+      18: ["Shielded Mind"],
+      20: ["Ignore Strain"],
+    },
+    Resopath: {
+      subclassFeatures: {
+        2: ["Manipulate Terrain", "Resopathy Adept"],
+        6: ["Manifest Ally"],
+        10: ["Imagination Creation"],
+        14: ["Nightmare Terrain"],
+      },
     },
     "...": {
       subclassFeatures: {
@@ -209,7 +230,33 @@ export const dndData = {
   },
   Warlock: {
     classFeatures: {
-      1: ["..."],
+      1: ["Eldritch Invocations", "Pact Magic"],
+      2: ["Magical Cunning"],
+      9: ["Contact Patron"],
+      11: ["Mystic Arcanum"],
+      19: ["Epic Boon"],
+      20: ["Eldritch Master"],
+    },
+    "Archfey Patron": {
+      subclassFeatures: {
+        3: ["Archfey Spells", "Steps of the Fey"],
+        6: ["Misty Escape"],
+        10: ["Beguiling Defense"],
+        14: ["Bewitching Ability"],
+      },
+    },
+    "Swindled Patron": {
+      subclassFeatures: {
+        3: ["Swindled Spells", "Eldritch Thief", "Spell Heist"],
+        6: ["Magical Larceny"],
+        10: ["Eldritch Gambit"],
+        14: ["Plunder Spirit"],
+      },
+    },
+    "...": {
+      subclassFeatures: {
+        3: ["..."],
+      },
     },
     "...": {
       subclassFeatures: {
