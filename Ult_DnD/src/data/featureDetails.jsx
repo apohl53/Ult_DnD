@@ -1,19 +1,19 @@
-import { artificerFeatures } from "./Features/artificerFeatures";
-import { barbarianFeatures } from "./Features/barbarianFeatures";
-import { bardFeatures } from "./Features/bardFeatures";
-import { beastheartFeatures } from "./Features/beastheartFeatures";
-import { clericFeatures } from "./Features/clericFeatures";
-import { druidFeatures } from "./Features/druidFeatures";
+import { artificerFeatures } from "./features/artificerFeatures";
+import { barbarianFeatures } from "./features/barbarianFeatures";
+import { bardFeatures } from "./features/bardFeatures";
+import { beastheartFeatures } from "./features/beastheartFeatures";
+import { clericFeatures } from "./features/clericFeatures";
+import { druidFeatures } from "./features/druidFeatures";
 import { fighterFeatures } from "./features/fighterFeatures";
-import { gunslingerFeatures } from "./Features/gunslingerFeatures";
-import { monkFeatures } from "./Features/monkFeatures";
-import { rangerFeatures } from "./Features/rangerFeatures";
-import { rogueFeatures } from "./Features/rogueFeatures";
-import { shamanFeatures } from "./Features/shamanFeatures";
-import { sorcererFeatures } from "./Features/sorcererFeatures";
-import { talentFeatures } from "./Features/talentFeatures";
-import { warlockFeatures } from "./Features/warlockFeatures";
-import { wizardFeatures } from "./Features/wizardFeatures";
+import { gunslingerFeatures } from "./features/gunslingerFeatures";
+import { monkFeatures } from "./features/monkFeatures";
+import { rangerFeatures } from "./features/rangerFeatures";
+import { rogueFeatures } from "./features/rogueFeatures";
+import { shamanFeatures } from "./features/shamanFeatures";
+import { sorcererFeatures } from "./features/sorcererFeatures";
+import { talentFeatures } from "./features/talentFeatures";
+import { warlockFeatures } from "./features/warlockFeatures";
+import { wizardFeatures } from "./features/wizardFeatures";
 
 export const featureDetails = {
   ...artificerFeatures,

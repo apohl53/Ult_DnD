@@ -73,11 +73,19 @@ export const dndData = {
   Cleric: {
     classFeatures: {
       1: ["Spellcasting(Cleric)", "Divine Order"],
-      2: ["Channel Divnity"],
+      2: ["Channel Divinity"],
       5: ["Sear Undead"],
+      7: ["Blessed Strikes"],
+      10: ["Divine Intervention"],
+      14: ["Improved Blessed Strikes"],
+      19: ["Epic Boon"],
+      20: ["Greater Divine Intervention"],
     },
-    "...": {
+    "Life Domain": {
       subclassFeatures: {
+        3: ["Disciple of Life"],
+        3: ["..."],
+        3: ["..."],
         3: ["..."],
       },
     },
