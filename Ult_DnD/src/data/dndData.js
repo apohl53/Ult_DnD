@@ -72,7 +72,9 @@ export const dndData = {
   },
   Cleric: {
     classFeatures: {
-      1: ["..."],
+      1: ["Spellcasting(Cleric)", "Divine Order"],
+      2: ["Channel Divnity"],
+      5: ["Sear Undead"],
     },
     "...": {
       subclassFeatures: {
