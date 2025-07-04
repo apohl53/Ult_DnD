@@ -157,11 +157,63 @@ export const dndData = {
   },
   Gunslinger: {
     classFeatures: {
-      1: ["..."],
+      1: ["Fighting Style (Gunslinger)", "Quick Draw", "Weapon Mastery"],
+      2: ["Critical Shot", "Risk"],
+      5: ["Extra Attack", "Gut Shot"],
+      7: ["Evasion"],
+      11: ["Overkill"],
+      13: ["Cheat Death"],
+      15: ["Dire Gambit"],
+      18: ["Deft Maneuver"],
+      19: ["Epic Boon"],
+      20: ["Headshot"],
     },
-    "...": {
+    Deadeye: {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Eagle Eye Maneuver", "Sharpshooter's Stance"],
+        6: ["Concealed Position"],
+        10: ["Reposition"],
+        14: ["Focused Shot"],
+      },
+    },
+    "High Roller": {
+      subclassFeatures: {
+        3: ["Poker Face", "Liar's Dice Maneuver"],
+        6: ["Risky Business"],
+        10: ["Risk Taker"],
+        14: ["Double or Nothing"],
+      },
+    },
+    "Secret Agent": {
+      subclassFeatures: {
+        3: ["Operative Training", "Parting Shot Maneuver"],
+        6: ["Fieldcraft"],
+        10: ["Exit Strategy"],
+        14: ["License to Kill"],
+      },
+    },
+    Spellslinger: {
+      subclassFeatures: {
+        3: ["Spellcasting (Spellslinger)", "Bang, You're Dead"],
+        6: ["Spellshot"],
+        10: ["Counter-Mage"],
+        14: ["Magic Bullet Maneuver"],
+      },
+    },
+    "Trick Shot": {
+      subclassFeatures: {
+        3: ["Creative Trajectory", "Ricochet Maneuver"],
+        6: ["Fancy Gunplay"],
+        10: ["Deft Deflection Maneuver"],
+        14: ["Pinball Shot"],
+      },
+    },
+    "White Hat": {
+      subclassFeatures: {
+        3: ["Lay Down the Law Maneuver", "Steely-Eyed Aura"],
+        6: ["Reach for the Skies"],
+        10: ["Long Arm of the Law"],
+        14: ["Gold Star Hero"],
       },
     },
   },
