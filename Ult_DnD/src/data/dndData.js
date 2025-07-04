@@ -72,7 +72,7 @@ export const dndData = {
   },
   Cleric: {
     classFeatures: {
-      1: ["Spellcasting(Cleric)", "Divine Order"],
+      1: ["Spellcasting(Cleric)", "Divine Order", "Disciple of Life"],
       2: ["Channel Divinity"],
       5: ["Sear Undead"],
       7: ["Blessed Strikes"],
@@ -83,10 +83,55 @@ export const dndData = {
     },
     "Life Domain": {
       subclassFeatures: {
-        3: ["Disciple of Life"],
-        3: ["..."],
-        3: ["..."],
-        3: ["..."],
+        3: ["Disciple of Life", "Life Domain Spells", "Preserve Life"],
+        6: ["Blessed Healer"],
+        17: ["Supreme Healing"],
+      },
+    },
+    "Light Domain": {
+      subclassFeatures: {
+        3: ["Radiance of the Dawn", "Light Domain Spells", "Warding Flare"],
+        6: ["Improved Warding Flare"],
+        17: ["Corona of Light"],
+      },
+    },
+    "Trickery Domain": {
+      subclassFeatures: {
+        3: [
+          "Blessing of the Trickster",
+          "Invoke Duplicity",
+          "Trickery Domain Spells",
+        ],
+        6: ["Trickster's Transposition"],
+        17: ["Improved Duplicity"],
+      },
+    },
+    "War Domain": {
+      subclassFeatures: {
+        3: ["Guided Strike", "War Priest", "War Domain Spells"],
+        6: ["War God's Blessing"],
+        17: ["Avatar of Battle"],
+      },
+    },
+    Domain: {
+      subclassFeatures: {
+        3: ["", "Domain Spells"],
+        6: [""],
+        17: ["Supreme Healing"],
+      },
+    },
+    Domain: {
+      subclassFeatures: {
+        3: ["", "Domain Spells"],
+        6: [""],
+        17: [""],
+      },
+    },
+    Domain: {
+      subclassFeatures: {
+        3: ["", "Domain Spells"],
+        6: [""],
+        17: [""],
       },
     },
   },
