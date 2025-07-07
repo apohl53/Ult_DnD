@@ -25,6 +25,22 @@ export const dndData = {
       19: ["Epic Boon"],
       20: ["Primal Champion"],
     },
+    "Ancestral Guardian": {
+      subclassFeatures: {
+        3: ["Ancestral Protectors"],
+        6: ["Spirit Shield"],
+        10: ["Consult the Spirits"],
+        14: ["Vengeful Ancestors"],
+      },
+    },
+    Beast: {
+      subclassFeatures: {
+        3: ["Form of the Beast"],
+        6: ["Bestial Soul"],
+        10: ["Infectious Fury"],
+        14: ["Call the Hunt"],
+      },
+    },
     Berserker: {
       subclassFeatures: {
         3: ["Frenzy"],
@@ -33,22 +49,46 @@ export const dndData = {
         14: ["Intimidating Presence"],
       },
     },
-    fill: {
+    Giant: {
       subclassFeatures: {
-        3: ["Divine Fury", "Warrior of the Gods"],
-
-        6: ["Fanatical Focus"],
-        10: ["Zealous Presence"],
-        14: ["Rage of the Gods"],
+        3: ["Giant's Power", "Giant's Havoc"],
+        6: ["Elemental Cleaver"],
+        10: ["Mighty Impel"],
+        14: ["Demiurgic Colossus"],
       },
     },
-    fill: {
+    // Griffon Saddlebag
+    Infernal: {
       subclassFeatures: {
-        3: ["Divine Fury"],
-        3: ["Warrior of the Gods"],
-        6: ["Fanatical Focus"],
-        10: ["Zealous Presence"],
-        14: ["Rage of the Gods"],
+        3: [""],
+        6: [""],
+        10: [""],
+        14: [""],
+      },
+    },
+
+    "Wild Heart": {
+      subclassFeatures: {
+        3: ["Animal Speaker", "Rage of the Wilds"],
+        6: ["Aspect of the Wilds"],
+        10: ["Nature Speaker"],
+        14: ["Power of the Wilds"],
+      },
+    },
+    "Wild Magic": {
+      subclassFeatures: {
+        3: ["Magic Awareness", "Wild Surge"],
+        6: ["Bolstering Magic"],
+        10: ["Unstable Backlash"],
+        14: ["Controlled Surge"],
+      },
+    },
+    "World Tree": {
+      subclassFeatures: {
+        3: ["Vitality of the Tree"],
+        6: [" Branches of the Tree"],
+        10: ["Battering Roots"],
+        14: ["Travel along the Tree"],
       },
     },
     Zealot: {
@@ -57,6 +97,81 @@ export const dndData = {
         6: ["Fanatical Focus"],
         10: ["Zealous Presence"],
         14: ["Rage of the Gods"],
+      },
+    },
+  },
+  Bard: {
+    classFeatures: {
+      1: ["Bardic Inspiration", "Spellcasting (Bard)"],
+      2: ["Expertise", "Jack of All Trades"],
+      5: ["Font of Inspiration"],
+      7: ["Countercharm"],
+      10: ["Magical Secrets"],
+      18: ["Superior Inspiration"],
+      19: ["Epic Boon"],
+      20: ["Words of Creation"],
+    },
+    Creation: {
+      subclassFeatures: {
+        3: ["Mote of Potential", "Performance of Creation"],
+        6: ["Animating Performance"],
+        14: ["Creative Crescendo"],
+      },
+    },
+    Dance: {
+      subclassFeatures: {
+        3: ["Dazzling Footwork"],
+        6: ["Inspiring Movement", "Tandem Footwork"],
+        14: ["Leading Evasion"],
+      },
+    },
+    Eloquence: {
+      subclassFeatures: {
+        3: ["Silver Tongue", "Unsettling Words"],
+        6: ["Unfailing Inspiration", "Universal Speech"],
+        14: ["Infectious Inspiration"],
+      },
+    },
+    Glamour: {
+      subclassFeatures: {
+        3: ["Beguiling Magic", "Mantle of Inspiration"],
+        6: ["Mantle of Majesty"],
+        14: ["Unbreakable Majesty"],
+      },
+    },
+    Lore: {
+      subclassFeatures: {
+        3: ["Bonus Proficiencies(Lore)", "Cutting Words"],
+        6: ["Magical Discoveries"],
+        14: ["Peerless Skill"],
+      },
+    },
+    Spirits: {
+      subclassFeatures: {
+        3: ["Guiding Whispers", "Spiritual Focus", "Tales from Beyond"],
+        6: ["Spirit Session"],
+        14: ["Mystical Connection"],
+      },
+    },
+    Swords: {
+      subclassFeatures: {
+        3: ["Bonus Proficiencies (Swords)", "Fighting Style", "Blade Flourish"],
+        6: ["Extra Attack"],
+        14: ["Master's Flourish"],
+      },
+    },
+    Valor: {
+      subclassFeatures: {
+        3: ["Combat Inspiration", "Martial Training"],
+        6: ["Extra Attack (Gish)"],
+        14: ["Battle Magic"],
+      },
+    },
+    Whispers: {
+      subclassFeatures: {
+        3: ["Psychic Blades", "Words of Terror"],
+        6: ["Mantle of Whispers"],
+        14: ["Shadow Lore"],
       },
     },
   },

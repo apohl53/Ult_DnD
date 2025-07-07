@@ -17,4 +17,6 @@ function General() {
   );
 }
 
+// Each header should be open a list of all the options, then you click on the name of that option to see full detail
+
 export default General;

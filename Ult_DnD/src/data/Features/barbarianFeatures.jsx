@@ -109,6 +109,39 @@ export const barbarianFeatures = {
       "You embody primal power. Your Strength and Constitution scores increase by 4, and their maximum is now 25.",
   },
   // Barbarian Subclass Features
+
+  // Ancestral Guardian
+
+  "Ancestral Protectors": {
+    name: "Ancestral Protectors",
+    description: `Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you're raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn't against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends.`,
+  },
+  "Spirit Shield": {
+    name: "Spirit Shield",
+    description: `Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6.
+
+    When you reach certain levels in this class, you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level.`,
+  },
+  "Consult the Spirits": {
+    name: "Consult the Spirits",
+    description: `At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the augury or clairvoyance spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells.
+
+    After you cast either spell in this way, you can't use this feature again until you finish a short or long rest.`,
+  },
+  "Vengeful Ancestors": {
+    name: "Vengeful Ancestors",
+    description: `At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.`,
+  },
+
+  "": {
+    name: "",
+    description: ``,
+  },
+  "": {
+    name: "",
+    description: ``,
+  },
+
   // Berserker
   Frenzy: {
     name: "Frenzy",
@@ -130,6 +163,79 @@ export const barbarianFeatures = {
     description:
       "As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.",
   },
+  // Wild Heart
+  "Animal Speaker": {
+    name: "Animal Speaker",
+    description: `You can cast the Beast Sense and Speak with Animals spells but only as Rituals. Wisdom is your spellcasting ability for them.`,
+  },
+  "Rage of the Wilds": {
+    name: "Rage of the Wilds",
+    description: `Your Rage taps into the primal power of animals. Whenever you activate your Rage, you gain one of the following options of your choice.
+
+    Bear. While your Rage is active, you have Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.
+
+    Eagle. When you activate your Rage, you can take the Disengage and Dash actions as part of that Bonus Action. While your Rage is active, you can take a Bonus Action to take both of those actions.
+
+    Wolf. While your Rage is active, your allies have Advantage on attack rolls against any enemy of yours within 5 feet of you.`,
+  },
+  "Aspect of the Wilds": {
+    name: "Aspect of the Wilds",
+    description: `You gain one of the following options of your choice. Whenever you finish a Long Rest, you can change your choice.
+
+    Owl. You have Darkvision with a range of 60 feet. If you already have Darkvision, its range increases by 60 feet.
+
+    Panther. You have a Climb Speed equal to your Speed.
+
+    Salmon. You have a Swim Speed equal to your Speed.`,
+  },
+  "Nature Speaker": {
+    name: "Nature Speaker",
+    description: `You can cast the Commune with Nature spell but only as a Ritual. Wisdom is your spellcasting ability for it.`,
+  },
+  "Power of the Wilds": {
+    name: "Power of the Wilds",
+    description: `Whenever you activate your Rage, you gain one of the following options of your choice.
+
+    Falcon. While your Rage is active, you have a Fly Speed equal to your Speed if you aren't wearing any armor.
+
+    Lion. While your Rage is active, any of your enemies within 5 feet of you have Disadvantage on attack rolls against targets other than you or another Barbarian who has this option active.
+
+    Ram. While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.`,
+  },
+
+  // Path of the World Tree
+
+  "Vitality of the Tree": {
+    name: "Vitality of the Tree",
+    description: `Your Rage taps into the life force of the World Tree. You gain the following benefits.
+
+    Vitality Surge. When you activate your Rage, you gain a number of Temporary Hit Points equal to your Barbarian level.
+
+    Life-Giving Force. At the start of each of your turns while your Rage is active, you can choose another creature within 10 feet of yourself to gain Temporary Hit Points. To determine the number of Temporary Hit Points, roll a number of d6s equal to your Rage Damage bonus, and add them together. If any of these Temporary Hit Points remain when your Rage ends, they vanish.`,
+  },
+  "Branches of the Tree": {
+    name: "Branches of the Tree",
+    description: `Whenever a creature you can see starts its turn within 30 feet of you while your Rage is active, you can take a Reaction to summon spectral branches of the World Tree around it. The target must succeed on a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus) or be teleported to an unoccupied space you can see within 5 feet of yourself or in the nearest unoccupied space you can see. After the target teleports, you can reduce its Speed to 0 until the end of the current turn.`,
+  },
+
+  "Battering Roots": {
+    name: "Battering Roots",
+    description: `During your turn, your reach is 10 feet greater with any Melee weapon that has the Heavy or Versatile property, as tendrils of the World Tree extend from you. When you hit with such a weapon on your turn, you can activate the Push or Topple mastery property in addition to a different mastery property you're using with that weapon.`,
+  },
+
+  "Travel along the Tree": {
+    name: "Travel along the Tree",
+    description: `When you activate your Rage and as a Bonus Action while your Rage is active, you can teleport up to 60 feet to an unoccupied space you can see.
+
+    In addition, once per Rage, you can increase the range of that teleport to 150 feet. When you do so, you can also bring up to six willing creatures who are within 10 feet of you. Each creature teleports to an unoccupied space of your choice within 10 feet of your destination space.`,
+  },
+
+  //
+  "": {
+    name: "",
+    description: ``,
+  },
+
   // Zealot
   "Divine Fury": {
     name: "Divine Fury",
