@@ -133,13 +133,45 @@ export const barbarianFeatures = {
     description: `At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.`,
   },
 
-  "": {
-    name: "",
-    description: ``,
+  // Beast
+
+  "Form of the Beast": {
+    name: "Form of the Beast",
+    description: `When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.
+
+    You choose the weapon's form each time you rage:
+
+    Bite. Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.
+
+    Claws. Each of your hands transforms into a claw, which you can use as a weapon if it's empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.
+
+    Tail. You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.
+
+`,
   },
-  "": {
-    name: "",
-    description: ``,
+  "Bestial Soul": {
+    name: "Bestial Soul",
+    description: `The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+
+    You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish your next short or long rest:
+
+    You gain a swimming speed equal to your walking speed, and you can breathe underwater.
+    You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
+    When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.`,
+  },
+  "Infectious Fury": {
+    name: "Infectious Fury",
+    description: `When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):
+
+    The target must use its reaction to make a melee attack against another creature of your choice that you can see.
+    The target takes 2d12 psychic damage.
+    You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  "Call the Hunt": {
+    name: "Call the Hunt",
+    description: `The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature). You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can each use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.
+
+    You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
   },
 
   // Berserker
@@ -163,6 +195,42 @@ export const barbarianFeatures = {
     description:
       "As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.",
   },
+
+  // Giant
+
+  "Giant's Power": {
+    name: "Giant's Power",
+    description: `When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either druidcraft or thaumaturgy. Wisdom is your spellcasting ability for this spell.`,
+  },
+  "Giant's Havoc": {
+    name: "Giant's Havoc",
+    description: `Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:
+
+    Crushing Throw. When you make a successful ranged attack with a thrown weapon using Strength, you can add your Rage Damage bonus to the attack's damage roll.
+
+    Giant Stature. Your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change.`,
+  },
+  "Elemental Cleaver": {
+    name: "Elemental Cleaver",
+    description: `Your bond with the elemental might of giants grows, and you learn to infuse weapons with primordial energy.
+
+    When you enter your rage, you can choose one weapon that you are holding and infuse it with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon's damage type changes to the chosen type, it deals an extra 1d6 damage of the chosen type when it hits, and it gains the thrown property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon's benefits are suppressed while a creature other than you wields it.
+
+    While raging and holding the infused weapon, you can use a bonus action to change the infused weapon's current damage type to another one from the damage type options above.`,
+  },
+  "Mighty Impel": {
+    name: "Mighty Impel",
+    description: `Your connection to giant strength allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) to avoid the effect.
+
+    If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone.`,
+  },
+  "Demiurgic Colossus": {
+    name: "Demiurgic Colossus",
+    description: `The primordial power of your rage intensifies. When you rage, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you can use your Mighty Impel to move creatures that are Large or smaller.
+
+    In addition, the extra damage dealt by your Elemental Cleaver feature increases to 2d6.`,
+  },
+
   // Wild Heart
   "Animal Speaker": {
     name: "Animal Speaker",
@@ -203,6 +271,36 @@ export const barbarianFeatures = {
     Ram. While your Rage is active, you can cause a Large or smaller creature to have the Prone condition when you hit it with a melee attack.`,
   },
 
+  // Wild Magic
+
+  "Magic Awareness": {
+    name: "Magic Awareness",
+    description: `As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn't behind total cover. When you sense a spell, you learn which school of magic it belongs to.
+
+    You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  "Wild Surge": {
+    name: "Wild Surge",
+    description: `The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.
+
+    If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. See General Page for Table`,
+  },
+  "Bolstering Magic": {
+    name: "Bolstering Magic",
+    description: `You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:
+
+    For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.
+    Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature's choice). Once a creature receives this benefit, that creature can't receive it again until after a long rest.
+    You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  "Unstable Backlash": {
+    name: "Unstable Backlash",
+    description: `When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.`,
+  },
+  "Controlled Surge": {
+    name: "Controlled Surge",
+    description: `Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.`,
+  },
   // Path of the World Tree
 
   "Vitality of the Tree": {

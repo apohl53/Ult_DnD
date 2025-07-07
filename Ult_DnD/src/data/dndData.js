@@ -103,7 +103,7 @@ export const dndData = {
   Bard: {
     classFeatures: {
       1: ["Bardic Inspiration", "Spellcasting (Bard)"],
-      2: ["Expertise", "Jack of All Trades"],
+      2: ["Expertise (Bard)", "Jack of All Trades"],
       5: ["Font of Inspiration"],
       7: ["Countercharm"],
       10: ["Magical Secrets"],
@@ -111,6 +111,8 @@ export const dndData = {
       19: ["Epic Boon"],
       20: ["Words of Creation"],
     },
+
+    // Bard Subclasses
     Creation: {
       subclassFeatures: {
         3: ["Mote of Potential", "Performance of Creation"],
