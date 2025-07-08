@@ -264,11 +264,98 @@ export const dndData = {
   },
   Fighter: {
     classFeatures: {
-      1: ["Second Wind"],
+      1: ["Second Wind", "Weapon Mastery"],
+      2: ["Action Surge", "Tactical Mind"],
+      5: ["Extra Attack", "Tactical Shift"],
+      9: ["Indomitable", "Tactical Master"],
+      11: ["Two Extra Attacks"],
+      13: ["Studied Attacks"],
+      19: ["Epic Boon"],
+      20: ["Three Extra Attacks"],
+    },
+    "Arcane Archer": {
+      subclassFeatures: {
+        3: ["fill"],
+        7: ["fill"],
+        10: ["fill"],
+        15: ["fill"],
+        18: ["fill"],
+      },
+    },
+    Battlemaster: {
+      subclassFeatures: {
+        3: ["Combat Superiority", "Student of War"],
+        7: ["Know Your Enemy"],
+        10: ["Improved Combat Superiority"],
+        15: ["Relentless"],
+        18: ["Ultimate Combat Superiority"],
+      },
+    },
+    Cavelier: {
+      subclassFeatures: {
+        3: [
+          "Bonus Proficiency (Cavelier)",
+          "Born to the Saddle",
+          "Unwavering Mark",
+        ],
+        7: ["Warding Maneuver"],
+        10: ["Holding the Line"],
+        15: ["Ferocious Charger"],
+        18: ["Vigilant Defender"],
+      },
     },
     Champion: {
       subclassFeatures: {
-        3: ["Improved Critical"],
+        3: ["Improved Critical", "Remarkable Athlete"],
+        7: ["Additional Fighting Style"],
+        10: ["Heroic Warrior"],
+        15: ["Superior Critical"],
+        18: ["Survivor"],
+      },
+    },
+    "Eldritch Knight": {
+      subclassFeatures: {
+        3: ["Spellcasting (Eldritch Knight)", "War Bond"],
+        7: ["War Magic"],
+        10: ["Eldritch Strike"],
+        15: ["Arcane Charge"],
+        18: ["Improved War Magic"],
+      },
+    },
+    "Psi Warrior": {
+      subclassFeatures: {
+        3: ["Psionic Power"],
+        7: ["Telekinetic Adept"],
+        10: ["Guarded Mind"],
+        15: ["Bulwork of Force"],
+        18: ["Telekinetic Master"],
+      },
+    },
+    "Rune Knight": {
+      subclassFeatures: {
+        3: ["Bonus Proficiencies (Rune Knight)", "Rune Carver"],
+        7: ["Giant's Might"],
+        10: ["Runic Shield"],
+        15: ["Great Stature"],
+        18: ["Runic Juggernaut"],
+      },
+    },
+    Samurai: {
+      subclassFeatures: {
+        3: ["Bonus Proficiency (Samurai)", "Fighting Spirit"],
+        7: ["Elegant Courtier"],
+        10: ["Tireless Spirit"],
+        15: ["Rapid Strike"],
+        18: ["Strength Before Death"],
+      },
+    },
+    "Steel Hawk": {
+      subclassFeatures: {
+        3: ["Launch", "Nimble Lancer", "Bird Caller"],
+        7: ["Steel Grace"],
+        10: ["Eagle Eye"],
+        15: ["Predatory Instincts"],
+        18: ["Improved Launch"],
       },
     },
   },
