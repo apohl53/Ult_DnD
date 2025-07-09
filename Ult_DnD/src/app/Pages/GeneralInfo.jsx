@@ -12,19 +12,27 @@ const data = {
 function General() {
   const [openSection, setOpenSection] = useState(null);
   const [openDetail, setOpenDetail] = useState(null);
-  const [weaponType, setWeaponType] = useState(null); // 'melee' or 'ranged'
+  const [weaponType, setWeaponType] = useState(null);
+  const [openOptionCategory, setOpenOptionCategory] = useState(null);
 
   const toggleSection = (header) => {
     setOpenSection(openSection === header ? null : header);
     setOpenDetail(null);
-    setWeaponType(null); // reset weapon type when switching sections
+    setWeaponType(null);
+    setOpenOptionCategory(null);
   };
 
   const toggleDetail = (item) => {
     setOpenDetail(openDetail === item ? null : item);
   };
 
+  const toggleOptionCategory = (category) => {
+    setOpenOptionCategory(openOptionCategory === category ? null : category);
+    setOpenDetail(null);
+  };
+
   const isWeaponsSection = (header) => header === "Weapons";
+  const isOptionsSection = (header) => header === "Options";
 
   const filteredWeapons =
     weaponType === null
@@ -84,18 +92,53 @@ function General() {
                     </table>
                   )}
                 </div>
+              ) : isOptionsSection(header) ? (
+                <div>
+                  {Object.entries(items).map(([category, list]) => (
+                    <div key={category} style={{ marginBottom: "1em" }}>
+                      <h3
+                        onClick={() => toggleOptionCategory(category)}
+                        style={{ cursor: "pointer", color: "purple" }}
+                      >
+                        {category}
+                      </h3>
+
+                      {openOptionCategory === category && (
+                        <ul>
+                          {list.map((item) => (
+                            <li key={item.name}>
+                              <span
+                                onClick={() => toggleDetail(item)}
+                                style={{
+                                  cursor: "pointer",
+                                  color: "darkgreen",
+                                }}
+                              >
+                                {item.name}
+                              </span>
+                              {openDetail === item && (
+                                <p style={{ marginLeft: "20px" }}>
+                                  {item.type && <strong>Type:</strong>}{" "}
+                                  {item.type} <br />
+                                  {item.description || "Details coming soon..."}
+                                </p>
+                              )}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  ))}
+                </div>
               ) : (
                 <ul>
                   {items.map((item) => (
-                    <li
-                      key={typeof item === "string" ? item : item.name}
-                      style={{ marginBottom: "4px" }}
-                    >
+                    <li key={item.name}>
                       <span
                         onClick={() => toggleDetail(item)}
                         style={{ cursor: "pointer", color: "darkgreen" }}
                       >
-                        {typeof item === "string" ? item : item.name}
+                        {item.name}
                       </span>
                       {openDetail === item && (
                         <p style={{ marginLeft: "20px" }}>

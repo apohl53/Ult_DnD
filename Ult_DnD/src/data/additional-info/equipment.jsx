@@ -293,7 +293,139 @@ const weapons = [
     weight: "-",
     cost: "1 GP",
   },
+
   // Martial Ranged Weapons
+  {
+    name: "Blowgun",
+    damage: "1 Piercing",
+    properties: "Ammunition (Range 25/100), Loading",
+    mastery: "Vex",
+    type: "ranged",
+    weight: "1 lb.",
+    cost: "10 GP",
+  },
+  {
+    name: "Hand Crossbow",
+    damage: "1d6 Piercing",
+    properties: "Ammunition (Range 30/120), Light, Loading",
+    mastery: "Vex",
+    type: "ranged",
+    weight: "3 lb.",
+    cost: "75 GP",
+  },
+  {
+    name: "Heavy Crossbow",
+    damage: "1d10 Piercing",
+    properties: "Ammunition (Range 100/400), Heavy, Loading, Two-Handed",
+    mastery: "Push",
+    type: "ranged",
+    weight: "18 lb.",
+    cost: "50 GP",
+  },
+  {
+    name: "Longbow",
+    damage: "1d10 Piercing",
+    properties: "Ammunition (Range 150/600), Heavy, Two-Handed",
+    mastery: "Slow",
+    type: "ranged",
+    weight: "2 lb.",
+    cost: "50 GP",
+  },
+
+  {
+    name: "Blunderbuss",
+    damage: "1d12 Piercing",
+    properties: "Ammunition (Range 20/60), Heavy, Loading, Two-Handed",
+    mastery: "Scatter",
+    type: "ranged",
+    weight: "15 lb.",
+    cost: "750 GP",
+  },
+  {
+    name: "Musket",
+    damage: "1d12 Piercing",
+    properties: "Ammunition (Range 40/120), Loading, Two-Handed",
+    mastery: "Slow",
+    type: "ranged",
+    weight: "10 lb.",
+    cost: "500 GP",
+  },
+  {
+    name: "Pistol",
+    damage: "1d10 Piercing",
+    properties: "Ammunition (Range 30/90), Loading",
+    mastery: "Vex",
+    type: "ranged",
+    weight: "3 lb.",
+    cost: "250 GP",
+  },
+  {
+    name: "Double-Barrel Shotgun",
+    damage: "2d6 Piercing",
+    properties:
+      "Ammunition (Range 20/60), Firearm, Recoil, Reload (2), Two-Handed",
+    mastery: "Scatter",
+    type: "ranged",
+    weight: "8 lb.",
+    cost: "175 GP",
+  },
+  {
+    name: "Hunting Rifle",
+    damage: "2d6 Piercing",
+    properties: "Ammunition (Range 80/320), Firearm, Reload (4), Two-Handed",
+    mastery: "Sighted",
+    type: "ranged",
+    weight: "8 lb.",
+    cost: "150 GP",
+  },
+  {
+    name: "Parlor Gun",
+    damage: "2d4 Piercing",
+    properties: "Ammunition (Range 30/120), Firearm, Light, Reload (2)",
+    mastery: "Vex",
+    type: "ranged",
+    weight: "1 lb.",
+    cost: "75 GP",
+  },
+  {
+    name: "Revolver",
+    damage: "2d6 Piercing",
+    properties: "Ammunition (Range 30/120), Firearm, Recoil, Reload (6)",
+    mastery: "Slow",
+    type: "ranged",
+    weight: "3 lb.",
+    cost: "125 GP",
+  },
+  {
+    name: "Cannon",
+    damage: "2d8 Fire",
+    properties:
+      "Ammunition (Range 100/400), Firearm, Heavy, Loading, Two-Handed",
+    mastery: "Explode",
+    type: "ranged",
+    weight: "225 lb.",
+    cost: "1500+ GP",
+  },
+  {
+    name: "Gatling Gun",
+    damage: "2d6 Piercing",
+    properties:
+      "Ammunition (Range 60/240; Bullet), Firearm, Heavy, Reload (40), Two-Handed",
+    mastery: "Automatic",
+    type: "ranged",
+    weight: "125 lb.",
+    cost: "750+ GP",
+  },
+  {
+    name: "Magnum",
+    damage: "2d8 Piercing",
+    properties:
+      "Ammunition (Range 30/120, Bullet), Firearm, Heavy, Recoil, Reload (6)",
+    mastery: "Slow",
+    type: "ranged",
+    weight: "6 lb.",
+    cost: "600+ GP",
+  },
 ];
 
 export default weapons;
@@ -311,17 +443,3 @@ const armor = [
 // Weapon Mastery
 // Armor
 // Equipment Properties (Cold Iron, Silver, Adamantine, Mithril)
-
-// Simple Ranged Weapons
-// Dart	1d4 Piercing	Finesse, Thrown (Range 20/60)	Vex	1/4 lb.	5 CP
-// Light Crossbow	1d8 Piercing	Ammunition (Range 80/320; Bolt), Loading, Two-Handed	Slow	5 lb.	25 GP
-// Shortbow	1d6 Piercing	Ammunition (Range 80/320; Arrow), Two-Handed	Vex	2 lb.	25 GP
-// Sling	1d4 Bludgeoning	Ammunition (Range 30/120; Bullet)	Slow	—	1 SP
-
-// Martial Ranged Weapons
-// Blowgun	1 Piercing	Ammunition (Range 25/100; Needle), Loading	Vex	1 lb.	10 GP
-// Hand Crossbow	1d6 Piercing	Ammunition (Range 30/120; Bolt), Light, Loading	Vex	3 lb.	75 GP
-// Heavy Crossbow	1d10 Piercing	Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed	Push	18 lb.	50 GP
-// Longbow	1d8 Piercing	Ammunition (Range 150/600; Arrow), Heavy, Two-Handed	Slow	2 lb.	50 GP
-// Musket	1d12 Piercing	Ammunition (Range 40/120; Bullet), Loading, Two-Handed	Slow	10 lb.	500 GP
-// Pistol	1d10 Piercing	Ammunition (Range 30/90; Bullet), Loading	Vex	3 lb.	250 GP
