@@ -1,40 +1,35 @@
 import React, { useState } from "react";
+import weapons from "../../data/additional-info/equipment";
+import feats from "../../data/additional-info/feats";
+import options from "../../data/additional-info/additional-options";
 
 const data = {
-  Weapons: ["Sword", "Axe", "Bow"],
-  "Weapon Mastery": ["Precision", "Power", "Cleave"],
-  Armor: ["Leather", "Chainmail", "Plate"],
-  Feats: ["Sharpshooter", "Lucky", "Alert"],
-  "Sorcerer Metamagic": ["Quickened Spell", "Twinned Spell"],
-  "Battlemaster Maneuvers": ["Disarming Attack", "Trip Attack"],
-  "Gunslinger Maneuvers": ["Deadeye Shot", "Dazing Shot"],
-  "Fighting Styles": ["Defense", "Dueling"],
-  "Warlock Invocations": ["Agonizing Blast", "Devil's Sight"],
-  "Talent Psionic Exertions": ["Mind Thrust", "Telekinetic Grip"],
-  "Epic Boons": ["Boon of Immortality", "Boon of Spell Mastery"],
-  "Beastheart Exploitations": ["Ferocious Strike", "Pack Tactics"],
-};
-
-// Dummy detail for each option
-const details = {
-  Sword: "A sword is a basic melee weapon...",
-  Axe: "An axe is a heavy cleaving weapon...",
-  Bow: "A bow is used for ranged attacks...",
-  // Add the rest of your details here...
+  Weapons: weapons,
+  Feats: feats,
+  Options: options,
 };
 
 function General() {
   const [openSection, setOpenSection] = useState(null);
   const [openDetail, setOpenDetail] = useState(null);
+  const [weaponType, setWeaponType] = useState(null); // 'melee' or 'ranged'
 
   const toggleSection = (header) => {
     setOpenSection(openSection === header ? null : header);
-    setOpenDetail(null); // Close detail view when section changes
+    setOpenDetail(null);
+    setWeaponType(null); // reset weapon type when switching sections
   };
 
   const toggleDetail = (item) => {
     setOpenDetail(openDetail === item ? null : item);
   };
+
+  const isWeaponsSection = (header) => header === "Weapons";
+
+  const filteredWeapons =
+    weaponType === null
+      ? []
+      : data.Weapons.filter((w) => w.type === weaponType);
 
   return (
     <div>
@@ -48,23 +43,70 @@ function General() {
           </h2>
 
           {openSection === header && (
-            <ul>
-              {items.map((item) => (
-                <li key={item}>
-                  <span
-                    onClick={() => toggleDetail(item)}
-                    style={{ cursor: "pointer", color: "darkgreen" }}
-                  >
-                    {item}
-                  </span>
-                  {openDetail === item && (
-                    <p style={{ marginLeft: "20px" }}>
-                      {details[item] || "Details coming soon..."}
-                    </p>
+            <div style={{ marginLeft: "20px" }}>
+              {isWeaponsSection(header) ? (
+                <div>
+                  <button onClick={() => setWeaponType("melee")}>
+                    Melee Weapons
+                  </button>
+                  <button onClick={() => setWeaponType("ranged")}>
+                    Ranged Weapons
+                  </button>
+
+                  {weaponType && (
+                    <table
+                      border="1"
+                      cellPadding="8"
+                      style={{ borderCollapse: "collapse", marginTop: "10px" }}
+                    >
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Damage</th>
+                          <th>Properties</th>
+                          <th>Weight</th>
+                          <th>Cost</th>
+                          <th>Mastery</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {filteredWeapons.map((weapon) => (
+                          <tr key={weapon.name}>
+                            <td>{weapon.name}</td>
+                            <td>{weapon.damage}</td>
+                            <td>{weapon.properties}</td>
+                            <td>{weapon.weight}</td>
+                            <td>{weapon.cost}</td>
+                            <td>{weapon.mastery || "—"}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
                   )}
-                </li>
-              ))}
-            </ul>
+                </div>
+              ) : (
+                <ul>
+                  {items.map((item) => (
+                    <li
+                      key={typeof item === "string" ? item : item.name}
+                      style={{ marginBottom: "4px" }}
+                    >
+                      <span
+                        onClick={() => toggleDetail(item)}
+                        style={{ cursor: "pointer", color: "darkgreen" }}
+                      >
+                        {typeof item === "string" ? item : item.name}
+                      </span>
+                      {openDetail === item && (
+                        <p style={{ marginLeft: "20px" }}>
+                          {item.description || "Details coming soon..."}
+                        </p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
           )}
         </div>
       ))}
@@ -73,5 +115,3 @@ function General() {
 }
 
 export default General;
-
-// Each header should be open a list of all the options, then you click on the name of that option to see full detail
