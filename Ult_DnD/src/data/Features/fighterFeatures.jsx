@@ -126,7 +126,7 @@ export const fighterFeatures = {
     name: "Born to the Saddle",
     description: `Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not incapacitated.
 
-  Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.`,
+    Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.`,
   },
   "Unwavering Mark": {
     name: "Unwavering Mark",
@@ -388,6 +388,50 @@ export const fighterFeatures = {
     description: `Starting at 18th level, your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn't kill you outright, you can use your reaction to delay falling unconscious, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall unconscious if you still have 0 hit points.
 
     Once you use this feature, you can't use it again until you finish a long rest.`,
+  },
+
+  // Shieldbearer
+  Shieldbash: {
+    name: "Shieldbash",
+    description: `You strike your enemies with your shield as easily as any blade. You can use your shield as a simple melee weapon that deals bludgeoning damage equal to 1d8 + your Strength modifier on a hit. You can don or doff your shield on your turn without taking an action to do so.
+    Your shield's damage die increases to 1d10 at 7th level, and 1d12 at 15th level.
+
+    If a feature requires a saving throw, your Shieldbearer save DC equals 8 + your proficiency bonus + your Strength modifier.
+`,
+  },
+  Counterstrike: {
+    name: "Counterstrike",
+    description: `While a foe is distracted by their own attack, you can deal a mighty blow. When a creature within 5 feet of
+    you attacks you or one of your allies, you can use your reaction to make a melee attack against them with your shield. On a hit, the attack deals one extra die of damage and the target has disadvantage on the next attack roll they make before the end of their next turn.
+    
+    You can use this feature a number of times equal to your proficiency bonus, and you regain all uses when you finish a long rest.`,
+  },
+  "Shield Toss": {
+    name: "Shield Toss",
+    description: `You learn to hurl a shield with exceptional might and precision. For you, a shield is a weapon with the thrown property with a normal range of 30 feet and a long range of 60 feet. On a hit, it deals the same damage as a melee attack using your Shieldbash feature. If you roll a 20 on this ranged attack roll, the target is stunned until the end of their next turn. If the attack hits and you can make another attack this turn, you can use your next attack to bounce the shield off the first target and target another foe you can see within 10 feet of the original target, making another ranged attack roll to determine if it hits. You can bounce the shield more than once if each attack hits and you have attacks remaining on this turn.
+    
+    At the end of the turn, your shield returns to you. You can catch it if you have a free hand; otherwise, it lands at your feet.`,
+  },
+  Safeguard: {
+    name: "Safeguard",
+    description: `Following the rhythm of combat, you elegantly inter- weave offense and defense. When you take the Dodge action while wielding a shield, you can make a melee attack (no action required), then choose one creature within 5 feet of you to protect. Until the start of your next turn, any attack roll made by a creature you can see against the protected creature has disadvantage. The benefit ends early if you are incapacitated or if you are more than 5 feet away from the protected creature.`,
+  },
+  "Improved Counterstrike": {
+    name: "Improved Counterstrike",
+    description: `The extra damage from your Counterstrike feature increases to two extra damage dice, instead of one. Additionally, when you hit a creature with your Counterstrike feature, they have disadvantage on all attack rolls (not just one) until the end of their next turn.`,
+  },
+  "Aegis of the Brave": {
+    name: "Aegis of the Brave",
+    description: `Your mighty attacks control the battlefield and smash aside your foes' defenses. Once on each of your turns when you hit a creature with your shield, you can force them to make a Strength saving throw. On a failed save, you choose one of the following effects:
+    •  If the target is Large or smaller, they are shoved up to 10 feet away from you.
+    • The target drops one item of your choice that they're holding, which lands at their feet.
+    • The next attack against the target before the start of your next turn has advantage.
+    In addition, thanks to your practiced reflexes, ranged weapon attacks against you have disadvantage while you are wielding a shield.`,
+  },
+
+  "Stalwart Guardian": {
+    name: "Stalwart Guardian",
+    description: `You've tempered your skills in the heat of battle and emerged victorious. When you use your Safeguard feature to take the Dodge action, you can make up to two melee attacks as part of that action (instead of one). Moreover, when you hit a creature with your Counterstrike feature, they must succeed on a Constitution saving throw or be stunned until the start of their next turn.`,
   },
 
   // Steel Hawk

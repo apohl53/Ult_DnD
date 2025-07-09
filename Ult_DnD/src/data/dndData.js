@@ -327,7 +327,7 @@ export const dndData = {
         3: ["Psionic Power"],
         7: ["Telekinetic Adept"],
         10: ["Guarded Mind"],
-        15: ["Bulwork of Force"],
+        15: ["Bulwark of Force"],
         18: ["Telekinetic Master"],
       },
     },
@@ -347,6 +347,15 @@ export const dndData = {
         10: ["Tireless Spirit"],
         15: ["Rapid Strike"],
         18: ["Strength Before Death"],
+      },
+    },
+    Shieldbearer: {
+      subclassFeatures: {
+        3: ["Shieldbash", "Counterstrike"],
+        7: ["Shield Toss"],
+        10: ["Safeguard", "Improved Counterstrike"],
+        15: ["Aegis of the Brave"],
+        18: ["Stalwart Guardian"],
       },
     },
     "Steel Hawk": {
