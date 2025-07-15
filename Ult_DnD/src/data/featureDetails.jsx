@@ -14,6 +14,7 @@ import { sorcererFeatures } from "./features/sorcererFeatures";
 import { talentFeatures } from "./features/talentFeatures";
 import { warlockFeatures } from "./features/warlockFeatures";
 import { wizardFeatures } from "./features/wizardFeatures";
+import { paladinFeatures } from "./features/paladinFeatures";
 
 export const featureDetails = {
   ...artificerFeatures,
@@ -25,6 +26,7 @@ export const featureDetails = {
   ...fighterFeatures,
   ...gunslingerFeatures,
   ...monkFeatures,
+  ...paladinFeatures,
   ...rangerFeatures,
   ...rogueFeatures,
   ...shamanFeatures,

@@ -254,11 +254,45 @@ export const dndData = {
   },
   Druid: {
     classFeatures: {
-      1: ["..."],
+      1: ["Spellcasting (Druid)", "Druidic", "Primal Order"],
+      2: ["Wild Shape", "Wild Companion"],
+      5: ["Wild Resurgence"],
+      7: ["Elemental Fury"],
+      15: ["Improved Elemental Fury"],
+      18: ["Beast Spells"],
+      19: ["Epic Boon"],
+      20: ["Archdruid"],
     },
-    "...": {
+    "Circle of the Land": {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Circle of the Land Spells", "Land's Aid"],
+        6: ["Natural Recovery"],
+        10: ["Nature's Ward"],
+        14: ["Nature's Sanctuary"],
+      },
+    },
+    "Circle of the Moon": {
+      subclassFeatures: {
+        3: ["Circle Forms", "Circle of the Moon Spells"],
+        6: ["Improved Circle Forms"],
+        10: ["Moonlight Step"],
+        14: ["Lunar Form"],
+      },
+    },
+    "Circle of the Seas": {
+      subclassFeatures: {
+        3: ["Circle of the Seas Spells", "Wrath of the Sea"],
+        6: ["Aquatic Affinity"],
+        10: ["Stormborn"],
+        14: ["Oceanic Gift"],
+      },
+    },
+    "Circle of the Stars": {
+      subclassFeatures: {
+        3: ["Star Map", "Starry Form"],
+        6: ["Cosmic Omen"],
+        10: ["Twinkling Constellations"],
+        14: ["Full of Stars"],
       },
     },
   },
@@ -542,7 +576,7 @@ export const dndData = {
         3: ["Fast Hands", "Second-Story Work"],
         9: ["Supreme Sneak"],
         13: ["Use Magic Device"],
-        17: ["Thief’s Reflexes"],
+        17: ["Thief's Reflexes"],
       },
     },
     Inquisitive: {
