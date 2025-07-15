@@ -56,10 +56,7 @@ const options = {
       name: "Mind Thrust",
       description: "Deal psychic damage and potentially reduce actions.",
     },
-    {
-      name: "Telekinetic Grip",
-      description: "Hold a creature in place with mental force.",
-    },
+
     // etc...
   ],
 };

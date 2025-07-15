@@ -313,6 +313,15 @@ export const dndData = {
         18: ["Survivor"],
       },
     },
+    "Echo Knight": {
+      subclassFeatures: {
+        3: ["Manifest Echo", "Unleash Incarnation"],
+        7: ["Echo Avatar"],
+        10: ["Shadow Martyr"],
+        15: ["Reclaim Potential"],
+        18: ["Legion of One"],
+      },
+    },
     "Eldritch Knight": {
       subclassFeatures: {
         3: ["Spellcasting (Eldritch Knight)", "War Bond"],
@@ -489,14 +498,103 @@ export const dndData = {
   },
   Rogue: {
     classFeatures: {
-      1: ["Sneak Attack"],
+      1: ["Sneak Attack", "Expertise", "Thieves' Cant", "Weapon Mastery"],
+      2: ["Cunning Action"],
+      3: ["Steady Aim"],
+      5: ["Cunning Strike", "Uncanny Dodge"],
+      6: ["Expertise"],
+      7: ["Reliable Talent", "Evasion"],
+      11: ["Improved Cunning Strike"],
+      14: ["Devious Strikes"],
+      15: ["Slippery Mind"],
+      18: ["Elusive"],
+      19: ["Epic Boon"],
+      20: ["Stroke of Luck"],
     },
+    "Arcane Trickster": {
+      subclassFeatures: {
+        3: ["Spellcasting (Arcane Trickster)", "Mage Hand Legerdemain"],
+        9: ["Magical Ambush"],
+        13: ["Versatile Trickster"],
+        17: ["Spell Thief"],
+      },
+    },
+
     Assassin: {
       subclassFeatures: {
+        3: ["Assassinate", "Assassin's Tools"],
+        9: ["Infiltration Expertise"],
+        13: ["Envenom Weapons"],
+        17: ["Death Strike"],
+      },
+    },
+
+    Soulknife: {
+      subclassFeatures: {
+        3: ["Psionic Power (Soulknife)", "Psychic Blades"],
+        9: ["Soul Blades"],
+        13: ["Psychic Veil"],
+        17: ["Rend Mind"],
+      },
+    },
+    Thief: {
+      subclassFeatures: {
+        3: ["Fast Hands", "Second-Story Work"],
+        9: ["Supreme Sneak"],
+        13: ["Use Magic Device"],
+        17: ["Thief’s Reflexes"],
+      },
+    },
+    Inquisitive: {
+      subclassFeatures: {
         3: ["..."],
+        9: [""],
+        13: [""],
+        17: [""],
       },
     },
   },
+  Swashbuckler: {
+    subclassFeatures: {
+      3: ["..."],
+      9: [""],
+      13: [""],
+      17: [""],
+    },
+  },
+  Scout: {
+    subclassFeatures: {
+      3: ["..."],
+      9: [""],
+      13: [""],
+      17: [""],
+    },
+  },
+  Phantom: {
+    subclassFeatures: {
+      3: ["..."],
+      9: [""],
+      13: [""],
+      17: [""],
+    },
+  },
+  "Grim Surgeon": {
+    subclassFeatures: {
+      3: ["Medic", "Transfusion"],
+      9: ["Field Surgeon"],
+      13: ["Toxic Shock"],
+      17: ["Bloodbound"],
+    },
+  },
+  Mastermind: {
+    subclassFeatures: {
+      3: ["..."],
+      9: [""],
+      13: [""],
+      17: [""],
+    },
+  },
+
   Shaman: {
     classFeatures: {
       1: ["..."],
@@ -586,11 +684,69 @@ export const dndData = {
   },
   Wizard: {
     classFeatures: {
-      1: ["Arcane Recovery"],
+      1: ["Spellcasting (Wizard)", "Arcane Recovery", "Ritual Adept"],
+      2: ["Scholar"],
+      5: ["Memorize Spell"],
+      9: ["Modify Spell"],
+      13: ["Create Spell"],
+      18: ["Spell Mastery"],
+      19: ["Epic Boon"],
+      20: ["Signature Spells"],
+    },
+    Abjurer: {
+      subclassFeatures: {
+        3: ["Abjuration Savant", "Arcane Ward"],
+        6: ["Projected Ward"],
+        10: ["Spell Breaker"],
+        14: ["Spell Resistance"],
+      },
+    },
+    Bladesinger: {
+      subclassFeatures: {
+        3: ["..."],
+        6: [""],
+        10: [""],
+        14: [""],
+      },
+    },
+    Diviner: {
+      subclassFeatures: {
+        3: ["Divination Savant", "Portent"],
+        6: ["Expert Divination"],
+        10: ["Third Eye"],
+        14: ["Greater Portent"],
+      },
     },
     Evoker: {
       subclassFeatures: {
+        3: ["Evocation Savant", "Potent Cantrip"],
+        6: ["Sculpt Spells"],
+        10: ["Empowered Evocation"],
+        14: ["Overchannel"],
+      },
+    },
+    Illusionist: {
+      subclassFeatures: {
+        3: ["Illusion Savant", "Improved Illusions"],
+        6: ["Phantasmal Creatures"],
+        10: ["Illusory Self"],
+        14: ["Illusory Reality"],
+      },
+    },
+    Graviturgist: {
+      subclassFeatures: {
         3: ["..."],
+        6: [""],
+        10: [""],
+        14: [""],
+      },
+    },
+    Chronomancer: {
+      subclassFeatures: {
+        3: ["..."],
+        6: [""],
+        10: [""],
+        14: [""],
       },
     },
   },
