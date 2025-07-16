@@ -512,11 +512,61 @@ export const dndData = {
   },
   Paladin: {
     classFeatures: {
-      1: ["..."],
+      1: ["Lay on Hands", "Spellcasting (Paladin)", "Weapon Mastery"],
+      2: ["Fighting Style", "Paladin's Smite"],
+      3: ["Channel Divinity (Paladin)"],
+      5: ["Extra Attack", "Faithful Steed"],
+      6: ["Aura of Protection"],
+      9: ["Abjure Foes"],
+      10: ["Aura of Courage"],
+      11: ["Radiant Strikes"],
+      14: ["Restoring Touch"],
+      18: ["Aura Expansion"],
+      19: ["Epic Boon"],
+    },
+    "Oath of Devotion": {
+      subclassFeatures: {
+        3: ["Devoted Oath", "Oath of Devotion Spells", "Sacred Weapon"],
+        7: ["Aura of Devotion"],
+        15: ["Smite of Protection"],
+        20: ["Holy Nimbus"],
+      },
+    },
+    "Oath of Glory": {
+      subclassFeatures: {
+        3: [
+          "Glorious Oath",
+          "Oath of Glory Spells",
+          "Inspiring Smite",
+          "Peerless Athlete",
+        ],
+        7: ["Aura of Alacrity"],
+        15: ["Glorious Defense"],
+        20: ["Living Legend"],
+      },
+    },
+    "Oath of the Ancients": {
+      subclassFeatures: {
+        3: ["Ancient Oath", "Nature's Wrath", "Oath of Ancients Spells"],
+        7: ["Aura of Warding"],
+        15: ["Undying Sentinel"],
+        20: ["Elder Champion"],
+      },
+    },
+    "Oath of Vengeance": {
+      subclassFeatures: {
+        3: ["..."],
+        7: [".."],
+        15: [""],
+        20: [""],
+      },
     },
     "...": {
       subclassFeatures: {
         3: ["..."],
+        7: [".."],
+        15: [""],
+        20: [""],
       },
     },
   },
