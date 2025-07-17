@@ -572,7 +572,50 @@ export const dndData = {
   },
   Ranger: {
     classFeatures: {
-      1: ["..."],
+      1: ["Spellcasting (Ranger)", "Favored Enemy", "Weapon Mastery"],
+      2: ["Deft Explorer", "Fighting Style"],
+      5: ["Extra Attack"],
+      6: ["Roving"],
+      9: ["Expertise"],
+      10: ["Tireless"],
+      13: ["Relentless Hunter"],
+      14: ["Nature's Veil"],
+      17: ["Precise Hunter"],
+      18: ["Feral Senses"],
+      19: ["Epic Boon"],
+      20: ["Foe Slayer"],
+    },
+    "Beast Master": {
+      subclassFeatures: {
+        3: ["Primal Companion"],
+        7: ["Exceptional Training"],
+        11: ["Bestial Fury"],
+        15: ["Share Spells"],
+      },
+    },
+    "Fey Wanderer": {
+      subclassFeatures: {
+        3: ["Dreadful Strikes", "Otherwordly Glamour", "Fey Wanderer Spells"],
+        7: ["Beguiling Twist"],
+        11: ["Fey Reinforcements"],
+        15: ["Misty Wanderer"],
+      },
+    },
+    "Gloom Stalker": {
+      subclassFeatures: {
+        3: ["Dread Ambusher", "Gloom Stalker Spells", "Umbral Sight"],
+        7: ["Iron Mind"],
+        11: ["Stalker's Flurry"],
+        15: ["Shadowy Dodge"],
+      },
+    },
+    Hunter: {
+      subclassFeatures: {
+        3: ["Hunter's Lore", "Hunter's Prey"],
+        7: ["Defensive Tactics"],
+        11: ["Superior Hunter's Prey"],
+        15: ["Superior Hunter's Defense"],
+      },
     },
     "...": {
       subclassFeatures: {
