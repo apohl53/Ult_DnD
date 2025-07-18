@@ -14,7 +14,7 @@ function App() {
         <Link to="/general">General Info</Link>
       </nav>
 
-      {/* Routing for pages */}
+      {/* Routes for different pages */}
       <Routes>
         <Route path="/" element={<CharacterPage />} />
         <Route path="/general" element={<General />} />
