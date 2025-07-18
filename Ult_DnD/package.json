@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "hhttps://apohl53.github.io/Ult_DnD/",
+  "homepage": "https://apohl53.github.io/Ult_DnD/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
