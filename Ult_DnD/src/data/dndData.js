@@ -672,54 +672,54 @@ export const dndData = {
         17: ["Thief's Reflexes"],
       },
     },
-    Inquisitive: {
+    // Inquisitive: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     9: [""],
+    //     13: [""],
+    //     17: [""],
+    //   },
+    // },
+    // Phantom: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     9: [""],
+    //     13: [""],
+    //     17: [""],
+    //   },
+    // },
+    "Grim Surgeon": {
       subclassFeatures: {
-        3: ["..."],
-        9: [""],
-        13: [""],
-        17: [""],
+        3: ["Medic", "Transfusion"],
+        9: ["Field Surgeon"],
+        13: ["Toxic Shock"],
+        17: ["Bloodbound"],
       },
     },
-  },
-  Swashbuckler: {
-    subclassFeatures: {
-      3: ["..."],
-      9: [""],
-      13: [""],
-      17: [""],
-    },
-  },
-  Scout: {
-    subclassFeatures: {
-      3: ["..."],
-      9: [""],
-      13: [""],
-      17: [""],
-    },
-  },
-  Phantom: {
-    subclassFeatures: {
-      3: ["..."],
-      9: [""],
-      13: [""],
-      17: [""],
-    },
-  },
-  "Grim Surgeon": {
-    subclassFeatures: {
-      3: ["Medic", "Transfusion"],
-      9: ["Field Surgeon"],
-      13: ["Toxic Shock"],
-      17: ["Bloodbound"],
-    },
-  },
-  Mastermind: {
-    subclassFeatures: {
-      3: ["..."],
-      9: [""],
-      13: [""],
-      17: [""],
-    },
+    // Mastermind: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     9: [""],
+    //     13: [""],
+    //     17: [""],
+    //   },
+    // },
+    // Scout: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     9: [""],
+    //     13: [""],
+    //     17: [""],
+    //   },
+    // },
+    // Swashbuckler: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     9: [""],
+    //     13: [""],
+    //     17: [""],
+    //   },
+    // },
   },
 
   Shaman: {
