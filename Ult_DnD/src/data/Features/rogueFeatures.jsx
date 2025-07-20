@@ -1,7 +1,7 @@
 export const rogueFeatures = {
   "Sneak Attack": {
     name: "Sneak Attack",
-    descriptions: `You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.
+    description: `You know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack roll if you have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type is the same as the weapon's type.
 
     You don't need Advantage on the attack roll if at least one of your allies is within 5 feet of the target, the ally doesn't have the Incapacitated condition, and you don't have Disadvantage on the attack roll.
 
@@ -10,19 +10,19 @@ export const rogueFeatures = {
   },
   "Thieves' Cant": {
     name: "Thieves' Cant",
-    descriptions: `You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice.`,
+    description: `You picked up various languages in the communities where you plied your roguish talents. You know Thieves' Cant and one other language of your choice.`,
   },
   "Cunning Action": {
     name: "Cunning Action",
-    descriptions: `Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.`,
+    description: `Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.`,
   },
   "Steady Action": {
     name: "Steady Action",
-    descriptions: `As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.`,
+    description: `As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.`,
   },
   "Cunning Action": {
     name: "Cunning Action",
-    descriptions: `You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.
+    description: `You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.
 
     If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.
 
@@ -36,23 +36,23 @@ export const rogueFeatures = {
   },
   "Uncanny Dodge": {
     name: "Uncanny Dodge",
-    descriptions: `When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down).`,
+    description: `When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down).`,
   },
   Evasion: {
     name: "Evasion",
-    descriptions: `You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.,`,
+    description: `You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.,`,
   },
   "Reliable Talent": {
     name: "Reliable Talent",
-    descriptions: `Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.`,
+    description: `Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.`,
   },
   "Improved Cunning Strike": {
     name: "Improved Cunning Strike",
-    descriptions: `You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.`,
+    description: `You can use up to two Cunning Strike effects when you deal Sneak Attack damage, paying the die cost for each effect.`,
   },
   "Devious Strikes": {
     name: "Devious Strikes",
-    descriptions: `You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
+    description: `You've practiced new ways to use your Sneak Attack deviously. The following effects are now among your Cunning Strike options.
 
     Daze (Cost: 2d6). The target must succeed on a Constitution saving throw, or on its next turn, it can do only one of the following: move or take an action or a Bonus Action.
 
@@ -62,15 +62,15 @@ export const rogueFeatures = {
   },
   "Slippery Mind": {
     name: "Slippery Mind",
-    descriptions: `Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.`,
+    description: `Your cunning mind is exceptionally difficult to control. You gain proficiency in Wisdom and Charisma saving throws.`,
   },
   Elusive: {
     name: "Elusive",
-    descriptions: `You're so evasive that attackers rarely gain the upper hand against you. No attack roll can have Advantage against you unless you have the Incapacitated condition.`,
+    description: `You're so evasive that attackers rarely gain the upper hand against you. No attack roll can have Advantage against you unless you have the Incapacitated condition.`,
   },
   "Stroke of Luck": {
     name: "Stroke of Luck",
-    descriptions: `You have a marvelous knack for succeeding when you need to. If you fail a d20 Test, you can turn the roll into a 20.
+    description: `You have a marvelous knack for succeeding when you need to. If you fail a d20 Test, you can turn the roll into a 20.
 
     Once you use this feature, you can't use it again until you finish a Short or Long Rest.`,
   },
@@ -80,7 +80,7 @@ export const rogueFeatures = {
   // Arcane Trickster
   "Spellcasting (Arcane Trickster)": {
     name: "Spellcasting (Arcane Trickster)",
-    descriptions: `
+    description: `
     You have learned to cast spells.
 
     Cantrips. You know three cantrips: Mage Hand and two other cantrips of your choice from the Wizard spell list.
@@ -102,19 +102,19 @@ export const rogueFeatures = {
   },
   "Mage Hand Legerdemain": {
     name: "Mage Hand Legerdemain",
-    descriptions: `When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.`,
+    description: `When you cast Mage Hand, you can cast it as a Bonus Action, and you can make the spectral hand Invisible. You can control the hand as a Bonus Action, and through it, you can make Dexterity (Sleight of Hand) checks.`,
   },
   "Magical Ambush": {
     name: "Magical Ambush",
-    descriptions: `If you have the Invisible condition when you cast a spell on a creature, it has Disadvantage on any saving throw it makes against the spell on the same turn.`,
+    description: `If you have the Invisible condition when you cast a spell on a creature, it has Disadvantage on any saving throw it makes against the spell on the same turn.`,
   },
   "Versatile Trickster": {
     name: "Versatile Trickster",
-    descriptions: `You gain the ability to distract targets with your Mage Hand. When you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.`,
+    description: `You gain the ability to distract targets with your Mage Hand. When you use the Trip option of your Cunning Strike on a creature, you can also use that option on another creature within 5 feet of the spectral hand.`,
   },
   "Spell Thief": {
     name: "Spell Thief",
-    descriptions: `You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.
+    description: `You gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.
 
     Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can take a Reaction to force the creature to make an Intelligence saving throw. The DC equals your spell save DC. On a failed save, you negate the spell's effect against you, and you steal the knowledge of the spell if it is at least level 1 and of a level you can cast (it doesn't need to be a Wizard spell). For the next 8 hours, you have the spell prepared. The creature can't cast it until the 8 hours have passed.
 
@@ -125,7 +125,7 @@ export const rogueFeatures = {
 
   Assassinate: {
     name: "Assassinate",
-    descriptions: `You're adept at ambushing a target, granting you the following benefits.
+    description: `You're adept at ambushing a target, granting you the following benefits.
 
     Initiative. You have Advantage on Initiative rolls.
 
@@ -133,11 +133,11 @@ export const rogueFeatures = {
   },
   "Assassin's Tools": {
     name: "Assassin's Tool",
-    descriptions: `You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.`,
+    description: `You gain a Disguise Kit and a Poisoner's Kit, and you have proficiency with them.`,
   },
   "Infiltration Expertise": {
     name: "Infiltration Expertise",
-    descriptions: `You are expert at the following techniques that aid your infiltrations.
+    description: `You are expert at the following techniques that aid your infiltrations.
 
     Masterful Mimicry. You can unerringly mimic another person's speech, handwriting, or both if you have spent at least 1 hour studying them.
 
@@ -145,11 +145,11 @@ export const rogueFeatures = {
   },
   "Envenom Weapons": {
     name: "Envenom Weapons",
-    descriptions: `When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.`,
+    description: `When you use the Poison option of your Cunning Strike, the target also takes 2d6 Poison damage whenever it fails the saving throw. This damage ignores Resistance to Poison damage.`,
   },
   "Death Strike": {
     name: "Death Strike",
-    descriptions: `When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.`,
+    description: `When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.`,
   },
 
   // Grim Surgeon
@@ -274,7 +274,7 @@ export const rogueFeatures = {
   },
   "Supreme Sneak": {
     name: "Supreme Sneak",
-    descriptions: `You gain the following Cunning Strike option.
+    description: `You gain the following Cunning Strike option.
 
     Stealth Attack (Cost: 1d6). If you have the Hide action's Invisible condition, this attack doesn't end that condition on you if you end the turn behind Three-Quarters Cover or Total Cover.`,
   },
