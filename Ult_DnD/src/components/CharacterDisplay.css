@@ -20,7 +20,7 @@
   display: block;
   background: none;
   border: none;
-  color: #007bff;
+  color: #757b04;
   text-align: left;
   padding: 6px 0;
   font-size: 16px;
@@ -34,7 +34,7 @@
   max-width: 600px;
   margin-left: 20px;
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #a8c9fb;
   border-radius: 8px;
   overflow-wrap: break-word;
 }
@@ -66,7 +66,7 @@
 .feature-detail h3 {
   font-size: 1.2rem;
   margin-top: 1rem;
-  color: #444;
+  color: #131313;
 }
 
 .feature-detail {

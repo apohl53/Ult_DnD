@@ -90,10 +90,10 @@ export const clericFeatures = {
   "Life Domain Spells": {
     name: "Life Domain Spells",
     description: `
-    3	Aid, Bless, Cure Wounds, Lesser Restoration
-    5	Mass Healing Word, Revivify
-    7	Aura of Life, Death Ward
-    9	Greater Restoration, Mass Cure Wounds`,
+    3:	Aid, Bless, Cure Wounds, Lesser Restoration
+    5:	Mass Healing Word, Revivify
+    7:	Aura of Life, Death Ward
+    9:	Greater Restoration, Mass Cure Wounds`,
   },
   "Preserve Life": {
     name: "Preserve Life",
@@ -111,10 +111,10 @@ export const clericFeatures = {
   "Light Domain Spells": {
     name: "Light Domain Spells",
     description: `
-    3	Burning Hands, Faerie Fire, Scorching Ray, See Invisibility
-    5	Daylight, Fireball
-    7	Arcane Eye, Wall of Fire
-    9	Flame Strike, Scrying`,
+    3:	Burning Hands, Faerie Fire, Scorching Ray, See Invisibility
+    5:	Daylight, Fireball
+    7:	Arcane Eye, Wall of Fire
+    9:	Flame Strike, Scrying`,
   },
   "Radiance of the Dawn": {
     name: "Radiance of the Dawn",
@@ -142,10 +142,10 @@ export const clericFeatures = {
   "Trickery Domain Spells": {
     name: "Trickery Domain Spells",
     description: `
-    3	Charm Person, Disguise Self, Invisibility, Pass without Trace
-    5	Hypnotic Pattern, Nondetection
-    7	Confusion, Dimension Door
-    9	Dominate Person, Modify Memory`,
+    3:	Charm Person, Disguise Self, Invisibility, Pass without Trace
+    5:	Hypnotic Pattern, Nondetection
+    7:	Confusion, Dimension Door
+    9:	Dominate Person, Modify Memory`,
   },
   "Blessing of the Trickster": {
     name: "Blessing of the Trickster",
@@ -177,10 +177,10 @@ export const clericFeatures = {
   "War Domain Spells": {
     name: "War Domain Spells",
     description: `
-    3	Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon
-    5	Crusader's Mantle, Spirit Guardians
-    7	Fire Shield, Freedom of Movement
-    9	Hold Monster, Steel Wind Strike`,
+    3:	Guiding Bolt, Magic Weapon, Shield of Faith, Spiritual Weapon
+    5:	Crusader's Mantle, Spirit Guardians
+    7:	Fire Shield, Freedom of Movement
+    9:	Hold Monster, Steel Wind Strike`,
   },
   "Guided Strike": {
     name: "Guided Strike",
