@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { dndData } from "../data/dndData";
+import { speciesData } from "../data/speciesData";
 
 export default function InputForm({ onSubmit }) {
   const [charClass, setCharClass] = useState("");
   const [level, setLevel] = useState("");
   const [subclass, setSubclass] = useState("");
+  const [species, setSpecies] = useState("");
+  const [subspecies, setSubspecies] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,6 +19,25 @@ export default function InputForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
+      {/* <label>
+          Species:
+          <select
+            value={species}
+            onChange={(e) => {
+              setSpecies(e.target.value);
+              setSubspecies(""); // reset subspecies when species changes
+            }}
+          >
+            <option value="">Select a species</option>
+            {Object.keys(speciesData).map((sp) => (
+              <option key={sp} value={sp}>
+                {sp}
+              </option>
+            ))}
+          </select>
+        </label>
+      */}
+
       <label>
         Class:
         <select

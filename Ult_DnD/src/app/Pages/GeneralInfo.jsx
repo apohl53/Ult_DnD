@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import weapons from "../../data/additional-info/equipment";
 import feats from "../../data/additional-info/feats";
 import options from "../../data/additional-info/additional-options";
+import weaponProperties from "../../data/additional-info/equipmentProperties";
 
 const data = {
   Weapons: weapons,
   Feats: feats,
   Options: options,
+  Properties: weaponProperties, // ✅ Added properly
 };
 
 function General() {
+  console.log("weaponProperties:", weaponProperties);
+
   const [openSection, setOpenSection] = useState(null);
   const [openDetail, setOpenDetail] = useState(null);
   const [weaponType, setWeaponType] = useState(null);
@@ -33,6 +37,7 @@ function General() {
 
   const isWeaponsSection = (header) => header === "Weapons";
   const isOptionsSection = (header) => header === "Options";
+  const isPropertiesSection = (header) => header === "Properties";
 
   const filteredWeapons =
     weaponType === null
@@ -130,6 +135,25 @@ function General() {
                     </div>
                   ))}
                 </div>
+              ) : isPropertiesSection(header) ? (
+                <ul>
+                  {Object.values(items).map((property) => (
+                    <li key={property.name}>
+                      <span
+                        onClick={() => toggleDetail(property)}
+                        style={{ cursor: "pointer", color: "darkred" }}
+                      >
+                        {property.name}
+                      </span>
+                      {openDetail === property && (
+                        <p style={{ marginLeft: "20px" }}>
+                          <strong>Description:</strong>{" "}
+                          {property.description || "No description available."}
+                        </p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               ) : (
                 <ul>
                   {items.map((item) => (
