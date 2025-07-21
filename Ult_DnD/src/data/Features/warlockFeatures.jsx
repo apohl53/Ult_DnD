@@ -108,4 +108,126 @@ export const warlockFeatures = {
     ing trait, you learn a spell that the creature knew or had prepared, provided the spell is of a level you can cast. You retain the knowledge of this spell until you finish a long rest, and it counts as a warlock spell for you during this time.
     Once you use this feature, you can't use it again until you finish a long rest.`,
   },
+
+  // Celestial Patron
+  "Celestial Spells": {
+    name: "Celestial Spells",
+    description: `The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Celestial Spells table, you thereafter always have the listed spells prepared.
+
+              Celestial Spells
+
+        3:	Aid, Cure Wounds, Guiding Bolt, Lesser Restoration, Light, Sacred Flame
+        5:	Daylight, Revivify
+        7:	Guardian of Faith, Wall of Fire
+        9:	Greater Restoration, Summon Celestial`,
+  },
+
+  "Healing Light": {
+    name: "Healing Light",
+    description: `You gain the ability to channel celestial energy to heal wounds. You have a pool of d6s to fuel this healing. The number of dice in the pool equals 1 plus your Warlock level.
+
+    As a Bonus Action, you can heal yourself or one creature you can see within 60 feet of yourself, expending dice from the pool. The maximum number of dice you can expend at once equals your Charisma modifier (minimum of one die). Roll the dice you expend, and restore a number of Hit Points equal to the roll's total. Your pool regains all expended dice when you finish a Long Rest.`,
+  },
+  "Radiant Soul": {
+    name: "Radiant Soul",
+    description: `Your link to your patron allows you to serve as a conduit for radiant energy. You have Resistance to Radiant damage. Once per turn, when a spell you cast deals Radiant or Fire damage, you can add your Charisma modifier to that spell's damage against one of the spell's targets.`,
+  },
+  "Celestial Radiance": {
+    name: "Celestial Radiance",
+    description: `You gain Temporary Hit Points whenever you use your Magical Cunning feature or finish a Short or Long Rest. These Temporary Hit Points equal your Warlock level plus your Charisma modifier. Additionally, choose up to five creatures you can see when you gain the points. Those creatures each gain Temporary Hit Points equal to half your Warlock level plus your Charisma modifier.`,
+  },
+  "Searing Vengeance": {
+    name: "Searing Vengeance",
+    description: `When you or an ally within 60 feet of you is about to make a Death Saving Throw, you can unleash radiant energy to save the creature. The creature regains Hit Points equal to half its Hit Point maximum and can end the Prone condition on itself. Each creature of your choice that is within 30 feet of the creature takes Radiant damage equal to 2d8 plus your Charisma modifier, and each has the Blinded condition until the end of the current turn.
+
+    Once you use this feature, you can't use it again until you finish a Long Rest.`,
+  },
+
+  // Fiend Patron
+  "Fiend Spells": {
+    name: "Fiend Spells",
+    description: `The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.
+
+                Fiend Spells
+
+          3	Burning Hands, Command, Scorching Ray, Suggestion
+          5	Fireball, Stinking Cloud
+          7	Fire Shield, Wall of Fire
+          9	Geas, Insect Plague`,
+  },
+  "Dark One's Blessing": {
+    name: "Dark One's Blessing",
+    description: `When you reduce an enemy to 0 Hit Points, you gain Temporary Hit Points equal to your Charisma modifier plus your Warlock level (minimum of 1 Temporary Hit Point). You also gain this benefit if someone else reduces an enemy within 10 feet of you to 0 Hit Points.`,
+  },
+  "Dark One's Own Luck": {
+    name: "Dark One's Own Luck",
+    description: `You can call on your fiendish patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add 1d10 to your roll. You can do so after seeing the roll but before any of the roll's effects occur.
+
+    You can use this feature a number of times equal to your Charisma modifier (minimum of once), but you can use it no more than once per roll. You regain all expended uses when you finish a Long Rest.`,
+  },
+  "Fiendish Resilience": {
+    name: "Fiendish Resilience",
+    description: `Choose one damage type, other than Force, whenever you finish a Short or Long Rest. You have Resistance to that damage type until you choose a different one with this feature.`,
+  },
+  "Hurl Through Hell": {
+    name: "Hurl Through Hell",
+    description: `Once per turn when you hit a creature with an attack roll, you can try to instantly transport the target through the Lower Planes. The target must succeed on a Charisma saving throw against your spell save DC, or the target disappears and hurtles through a nightmare landscape. The target takes 8d10 Psychic damage if it isn't a Fiend, and it has the Incapacitated condition until the end of your next turn, when it returns to the space it previously occupied or the nearest unoccupied space.
+
+    Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.`,
+  },
+
+  // Great Old One Patron
+
+  "Great Old One Spells": {
+    name: "Great Old One Spells",
+    description: `The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Great Old One Spells table, you thereafter always have the listed spells prepared.
+
+                  Great Old One Spells
+
+          3:	Detect Thoughts, Dissonant Whispers, Phantasmal Force, Tasha's Hideous Laughter
+          5:	Clairvoyance, Hunger of Hadar
+          7:	Confusion, Summon Aberration
+          9:	Modify Memory, Telekinesis`,
+  },
+  "Awakened Mind": {
+    name: "Awakened Mind",
+    description: `You can form a telepathic connection between your mind and the mind of another. As a Bonus Action, choose one creature you can see within 30 feet of yourself. You and the chosen creature can communicate telepathically with each other while the two of you are within a number of miles of each other equal to your Charisma modifier (minimum of 1 mile). To understand each other, you each must mentally use a language the other knows.
+
+    The telepathic connection lasts for a number of minutes equal to your Warlock level. It ends early if you use this feature to connect with a different creature.`,
+  },
+  "Psychic Spells": {
+    name: "Psychic Spells",
+    description: `When you cast a Warlock spell that deals damage, you can change its damage type to Psychic. In addition, when you cast a Warlock spell that is an Enchantment or Illusion, you can do so without Verbal or Somatic components.`,
+  },
+  "Clairvoyant Combatant": {
+    name: "Clairvoyant Combatant",
+    description: `When you form a telepathic bond with a creature using your Awakened Mind, you can force that creature to make a Wisdom saving throw against your spell save DC. On a failed save, the creature has Disadvantage on attack rolls against you, and you have Advantage on attack rolls against that creature for the duration of the bond.
+
+    Once you use this feature, you can't use it again until you finish a Short or Long Rest unless you expend a Pact Magic spell slot (no action required) to restore your use of it.`,
+  },
+  "Eldritch Hex": {
+    name: "Eldritch Hex",
+    description: `Your alien patron grants you a powerful curse. You always have the Hex spell prepared. When you cast Hex and choose an ability, the target also has Disadvantage on saving throws of the chosen ability for the duration of the spell.`,
+  },
+  "Thought Shield": {
+    name: "Thought Shield",
+    description: `Your thoughts can't be read by telepathy or other means unless you allow it. You also have Resistance to Psychic damage, and whenever a creature deals Psychic damage to you, that creature takes the same amount of damage that you take.`,
+  },
+  "Create Thrall": {
+    name: "Create Thrall",
+    description: `When you cast Summon Aberration, you can modify it so that it doesn't require Concentration. If you do so, the spell's duration becomes 1 minute for that casting, and when summoned, the Aberration has a number of Temporary Hit Points equal to your Warlock level plus your Charisma modifier.
+
+    In addition, the first time each turn the Aberration hits a creature under the effect of your Hex, the Aberration deals extra Psychic damage to the target equal to the bonus damage of that spell.
+`,
+  },
+
+  //
+  "fill fill": {
+    name: "fill fill",
+    description: ``,
+  },
+  "fill fill": {
+    name: "fill fill",
+    description: ``,
+  },
 };

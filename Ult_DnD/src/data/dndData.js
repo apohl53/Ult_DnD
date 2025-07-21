@@ -798,14 +798,36 @@ export const dndData = {
         14: ["Plunder Spirit"],
       },
     },
-    "...": {
+    "Celestial Patron": {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Celestial Spells", "Healing Light"],
+        6: ["Radiant Soul"],
+        10: ["Celestial Radiance"],
+        14: ["Searing Vengeance"],
       },
     },
-    "...": {
+    // "placeholder fill": {
+    //   subclassFeatures: {
+    //     3: ["", ""],
+    //     6: [""],
+    //     10: [""],
+    //     14: [""],
+    //   },
+    // },
+    "Fiend Patron": {
       subclassFeatures: {
-        3: ["..."],
+        3: ["Fiend Spells", "Dark One's Blessing"],
+        6: ["Dark One's Own Luck"],
+        10: ["Fiendish Resilience"],
+        14: ["Hurl Through Hell"],
+      },
+    },
+    "Great Old One Patron": {
+      subclassFeatures: {
+        3: ["Great Old One Spells", "Awakened Mind", "Psychic Spells"],
+        6: ["Clairvoyant Combatant"],
+        10: ["Eldritch Hex", "Thought Shield"],
+        14: ["Create Thrall"],
       },
     },
   },
@@ -874,6 +896,14 @@ export const dndData = {
         6: [""],
         10: [""],
         14: [""],
+      },
+    },
+    "Order of Scribes": {
+      subclassFeatures: {
+        3: ["Wizardly Quill", "Awakened Spellbook"],
+        6: ["Manifest Mind"],
+        10: ["Master Scrivener"],
+        14: ["One with the Word"],
       },
     },
   },
