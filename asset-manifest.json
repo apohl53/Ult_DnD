@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Ult_DnD/static/css/main.17d70a08.css",
-    "main.js": "/Ult_DnD/static/js/main.3f07f197.js",
+    "main.js": "/Ult_DnD/static/js/main.ae54d7fa.js",
     "static/js/453.96453769.chunk.js": "/Ult_DnD/static/js/453.96453769.chunk.js",
     "index.html": "/Ult_DnD/index.html",
     "main.17d70a08.css.map": "/Ult_DnD/static/css/main.17d70a08.css.map",
-    "main.3f07f197.js.map": "/Ult_DnD/static/js/main.3f07f197.js.map",
+    "main.ae54d7fa.js.map": "/Ult_DnD/static/js/main.ae54d7fa.js.map",
     "453.96453769.chunk.js.map": "/Ult_DnD/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17d70a08.css",
-    "static/js/main.3f07f197.js"
+    "static/js/main.ae54d7fa.js"
   ]
 }
