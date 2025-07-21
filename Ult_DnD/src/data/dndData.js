@@ -850,12 +850,28 @@ export const dndData = {
         14: ["Spell Resistance"],
       },
     },
+    Biomancer: {
+      subclassFeatures: {
+        3: ["Biomancy Savant", "Biostimulation"],
+        6: ["Self Improvement"],
+        10: ["Spell Splitter"],
+        14: ["Endocrine Overload"],
+      },
+    },
     Bladesinger: {
       subclassFeatures: {
-        3: ["..."],
-        6: [""],
-        10: [""],
-        14: [""],
+        3: ["Training in War and Song", "Bladesong"],
+        6: ["Extra Attack (Gish)"],
+        10: ["Song of Defense"],
+        14: ["Song of Victory"],
+      },
+    },
+    Chronomancer: {
+      subclassFeatures: {
+        3: ["Chronal Shift", "Temporal Awareness"],
+        6: ["Momentary Stasis"],
+        10: ["Arcane Abeyance"],
+        14: ["Convergent Future"],
       },
     },
     Diviner: {
@@ -884,20 +900,13 @@ export const dndData = {
     },
     Graviturgist: {
       subclassFeatures: {
-        3: ["..."],
-        6: [""],
-        10: [""],
-        14: [""],
+        3: ["Adjust Density"],
+        6: ["Gravity Well"],
+        10: ["Violent Attraction"],
+        14: ["Event Horizon"],
       },
     },
-    Chronomancer: {
-      subclassFeatures: {
-        3: ["..."],
-        6: [""],
-        10: [""],
-        14: [""],
-      },
-    },
+
     "Order of Scribes": {
       subclassFeatures: {
         3: ["Wizardly Quill", "Awakened Spellbook"],

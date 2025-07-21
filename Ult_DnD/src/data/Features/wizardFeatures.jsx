@@ -125,52 +125,145 @@ export const wizardFeatures = {
       "You have Advantage on saving throws against spells, and you have Resistance to the damage of spells.",
   },
 
+  // Biomancer
+
+  "Biomancy Savant": {
+    name: "Biomancy Savant",
+    description: `Beginning when you select this school at 2nd level, the gold and time you must spend to copy a biomancy spell into your spellbook is halved. In addition, you gain proficiency with surgeon's tools, and the following spells are considered biomancy spells for you instead of their normal school.
+
+                  Biomancy Spells
+           
+            1:	false life, longstrider
+            2:	alter self, darkvision, spider climb
+            3:	haste, water breathing
+            4:	stoneskin
+            6:	flesh to stone
+            7:	simulacrum
+            9:	shapechange`,
+  },
+  Biostimulation: {
+    name: "Biostimulation",
+    description: `You learn to channel biomantic magic into your cells, restoring your vitality. When you use a spell slot to cast a biomancy spell of 1st level or higher, you can simultaneously redirect a strand of the spell's magic to energise and repair you or your target's body. You or your target (your choice) regains a number of hit points equal to twice the spell's level.`,
+  },
+  "Self Improvement": {
+    name: "Self Improvement",
+    description: `You can perform minor surgery on your body, improving yourself in a very literal sense. Over the course of 1 hour (which can be done during a rest), you can enhance yourself with one bio-magical improvement, choosing from the following options:
+
+    Amphibisprings. With enhanced quads and a ratcheting mechanism in your achilles, your jumping distance is tripled.
+
+    Extra Appendage. You gain a prehensile tail or an extra arm, allowing you to hold one more thing and conferring advantage on any ability checks you make to climb.
+
+    Detachable Hand. As an action, you can detach your hand and imbue it with biomantic magic. The hand follows the rules of the unseen servant spell, except it is not invisible and waits patiently if ever more than 60 feet away from you. If your hand is ever reduced to 0 hit points, it is destroyed, and you grow a new one over the course of a short or long rest.
+
+    Firefly Skin. You can cast the light cantrip at will with yourself as the target. As a bonus action, you can flash brightly for a moment; each creature within 5 feet of you that can see you must succeed on a Constitution saving throw against your wizard spell save DC or be blinded until the end of your next turn. After you use this bonus action, you can't do so again until you finish a short or long rest.
+
+    Owl Eyes. You gain darkvision out to a range of 120 feet.
+    Slime. You exude slime; checks made to grapple you have disadvantage.
+
+    Scales. Your skin is covered in overlapping scales. You gain a +1 bonus to AC when you aren't wearing armour.
+    Spidersense. You gain a 1d4 bonus to your initiative rolls.
+
+    Talon. One of your hands is replaced with a wicked giant hawk's talon, a natural weapon that you can use to make unarmed strikes. If you hit with it, you deal slashing damage equal to 1d8 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. If you are grappling a creature with this talon, you can automatically deal this damage to the grappled creature once on each of your turns as a bonus action.
+
+    Third Leg. Your speed increases by 10 feet and you have advantage on ability checks and saving throws made against effects that would knock you prone.
+
+    Trimorphism. You can cast the enlarge/reduce spell on yourself at will (no material components or concentration required).
+
+    Your body has enough latent biomantic magic to sustain one improvement at a time. When you reach 10th and 14th level, you can sustain up to two and three improvements at a time, respectively. If you gain a new improvement while you have your maximum number of sustainable improvements active, you must choose one improvement to lose; this improvement withers away and ceases to function the moment you finish the surgery on your new improvement.`,
+  },
+  "Spell Splitter": {
+    name: "Spell Splitter",
+    description: `Your fiddling self-improvement has led to the ability to benefit from the magic you create. When you cast a wizard spell that targets only one creature and doesn't have a range of self, you can choose to simultaneously target yourself with the same spell. You can use this feature a number of times equal to your Intelligence modifier (minimum once), regaining all expended uses when you finish a long rest.`,
+  },
+  "Endocrine Overload": {
+    name: "Endocrine Overload",
+    description: `Over the course of 1 hour (which can be done during a rest), you can craft a capsule of potent stimulants, choosing from either the Brutish or Swift archetypes, and embed it within your adrenal gland. With a slight tensing of your brain muscles, you can crack this capsule as a bonus action, stimulating your body. For the next minute, you gain the following benefits based on the archetype you chose:
+
+    Brutish
+    If you are smaller than Large, you become Large, and your weight increases proportionately. If you lack the room to become Large, your size doesn't change.
+    Your Strength score increases to match your Intelligence score if it isn't already higher.
+    You have advantage on Strength and Constitution checks and Strength and Constitution saving throws.
+    You grow an appendage with which you can make melee weapon attacks. When you grow the weapon, you decide whether it deals bludgeoning, piercing, or slashing damage. You are proficient with this weapon and use your Strength modifier for attack and damage rolls. The weapon deals 2d10 damage.
+    You can attack twice, instead of once, when you take the Attack action on your turn. You ignore this benefit if you already have a feature, like Extra Attack, that lets you attack more than once when you take the Attack action on your turn.
+    You gain temporary hit points equal to twice your Intelligence modifier (minimum of 2) at the start of each of your turns.
+
+    Swift
+    Your Dexterity score increases to match your Intelligence score if it isn't already higher.
+    You have advantage on Dexterity checks and saving throws.
+    Your cantrips with a casting time of 1 action have a casting time of 1 action or 1 bonus action.
+    You gain the benefits of the haste spell, which can't be dispelled:
+    Your speed is doubled.
+    You gain a +2 bonus to AC.
+    You can take one additional action on each of your turns, which can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.
+    
+    Relapse. When the minute elapses, you gain one level of exhaustion, and you can't move or take actions until the end of your next turn, as a wave of lethargy sweeps over you. You must craft another capsule before you can use this feature again.`,
+  },
+
   // Bladesinger
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Training in War and Song": {
+    name: "Training in War and Song",
+    description: `You gain proficiency with light armor, and you gain proficiency with one type of one-handed melee weapon of your choice.
+
+    You also gain proficiency in the Performance skill if you don't already have it.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  Bladesong: {
+    name: "Bladesong",
+    description: `You can invoke an elven magic called the Bladesong, provided that you aren't wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.
+
+    You can use a bonus action to start the Bladesong, which lasts for 1 minute. It ends early if you are incapacitated, if you don medium or heavy armor or a shield, or if you use two hands to make an attack with a weapon. You can also dismiss the Bladesong at any time (no action required).
+
+    While your Bladesong is active, you gain the following benefits:
+
+    You gain a bonus to your AC equal to your Intelligence modifier (minimum of +1).
+    Your walking speed increases by 10 feet.
+    You have advantage on Dexterity (Acrobatics) checks.
+    You gain a bonus to any Constitution saving throw you make to maintain your concentration on a spell. The bonus equals your Intelligence modifier (minimum of +1).
+    You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Extra Attack (Gish)": {
+    name: "Extra Attack (Gish)",
+    description: `You can attack twice, instead of once, whenever you take the Attack action on your turn. Moreover, you can cast one of your cantrips in place of one of those attacks.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Song of Defense": {
+    name: "Song of Defense",
+    description: `You can direct your magic to absorb damage while your Bladesong is active. When you take damage, you can use your reaction to expend one spell slot and reduce that damage to you by an amount equal to five times the spell slot's level.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Song of Victory": {
+    name: "Song of Victory",
+    description: `You can add your Intelligence modifier (minimum of +1) to the damage of your melee weapon attacks while your Bladesong is active.`,
   },
 
   // Chronomancer
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Chronal Shift": {
+    name: "Chronal Shift",
+    description: `You can magically exert limited control over the flow of time around a creature. As a reaction, after you or a creature you can see within 30 feet of you makes an attack roll, an ability check, or a saving throw, you can force the creature to reroll. You make this decision after you see whether the roll succeeds or fails. The target must use the result of the second roll.
+
+  You can use this ability twice, and you regain any expended uses when you finish a long rest.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Temporal Awareness": {
+    name: "Temporal Awareness",
+    description:
+      "You can add your Intelligence modifier to your initiative rolls.",
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Momentary Stasis": {
+    name: "Momentary Stasis",
+    description: `As an action, you can magically force a Large or smaller creature you can see within 60 feet of you to make a Constitution saving throw against your spell save DC. Unless the saving throw is a success, the creature is encased in a field of magical energy until the end of your next turn or until the creature takes any damage. While encased in this way, the creature is incapacitated and has a speed of 0.
+
+    You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Arcane Abeyance": {
+    name: "Arcane Abeyance",
+    description: `When you cast a spell using a spell slot of 4th level or lower, you can condense the spell's magic into a mote. The spell is frozen in time at the moment of casting and held within a gray bead for 1 hour. This bead is a Tiny object with AC 15 and 1 hit point, and it is immune to poison and psychic damage. When the duration ends, or if the bead is destroyed, it vanishes in a flash of light, and the spell is lost.
+
+    A creature holding the bead can use its action to release the spell within, whereupon the bead disappears. The spell uses your spell attack bonus and save DC, and the spell treats the creature who released it as the caster for all other purposes.
+
+    Once you create a bead with this feature, you can't do so again until you finish a short or long rest.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
-  },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Convergent Future": {
+    name: "Convergent Future",
+    description: `You can peer through possible futures and magically pull one of them into events around you, ensuring a particular outcome. When you or a creature you can see within 60 feet of you makes an attack roll, an ability check, or a saving throw, you can use your reaction to ignore the die roll and decide whether the number rolled is the minimum needed to succeed or one less than that number (your choice).
+
+    When you use this feature, you gain one level of exhaustion. Only by finishing a long rest can you remove a level of exhaustion gained in this way.`,
   },
 
   // Diviner
@@ -240,52 +333,78 @@ export const wizardFeatures = {
 
   // Graviturgist
 
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Adjust Density": {
+    name: "Adjust Density",
+    description: `As an action, you can magically alter the weight of one object or creature you can see within 30 feet of you. The object or creature must be Large or smaller. The target's weight is halved or doubled for up to 1 minute or until your concentration ends (as if you were concentrating on a spell).
+
+    While the weight of a creature is halved by this effect, the creature's speed increases by 10 feet, it can jump twice as far as normal, and it has disadvantage on Strength checks and Strength saving throws. While the weight of a creature is doubled by this effect, the creature's speed is reduced by 10 feet, and it has advantage on Strength checks and Strength saving throws.
+
+    Upon reaching 10th level in this class, you can target an object or a creature that is Huge or smaller.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Gravity Well": {
+    name: "Gravity Well",
+    description:
+      "You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target 5 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a saving throw against the spell.",
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Violent Attraction": {
+    name: "Violent Attraction",
+    description: `When another creature that you can see within 60 feet of you hits with a weapon attack, you can use your reaction to increase the attack's velocity, causing the attack's target to take an extra 1d10 damage of the weapon's type.
+
+    Alternatively, if a creature within 60 feet of you takes damage from a fall, you can use your reaction to increase the fall's damage by 2d10.
+
+    You can use this feature a number of times equal to your Intelligence modifier (a minimum of once). You regain all expended uses when you finish a long rest.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Event Horizon": {
+    name: "Event Horizon",
+    description: `As an action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your concentration ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 30 feet of you, it must make a Strength saving throw against your spell save DC. On a failed save, it takes 2d10 force damage, and its speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.
+
+    Once you use this feature, you can't do so again until you finish a long rest or until you expend a spell slot of 3rd level or higher on it.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
-  },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
-  },
+
+  //
+  // "fill fill": {
+  //   name: "fill fill",
+  //   description: "",
+  // },
+  // "fill fill": {
+  //   name: "fill fill",
+  //   description: "",
+  // },
+  //  "fill fill": {
+  //   name: "fill fill",
+  //   description: "",
+  // },
 
   // Illusionist
 
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Illusion Savant": {
+    name: "Illusion Savant",
+    description: `Choose two Wizard spells from the Illusion school, each of which must be no higher than level 2, and add them to your spellbook for free.
+
+    In addition, whenever you gain access to a new level of spell slots in this class, you can add one Wizard spell from the Illusion school to your spellbook for free. The chosen spell must be of a level for which you have spell slots.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Improved Illusions": {
+    name: "Improved Illusions",
+    description: `You can cast Illusion spells without providing Verbal components, and if an Illusion spell you cast has a range of 10+ feet, the range increases by 60 feet.
+
+    You also know the Minor Illusion cantrip. If you already know it, you learn a different Wizard cantrip of your choice. The cantrip doesn't count against your number of cantrips known. You can create both a sound and an image with a single casting of Minor Illusion, and you can cast it as a Bonus Action.`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+
+  "Phantasmal Creatures": {
+    name: "Phantasmal Creatures",
+    description:
+      "You always have the Summon Beast and Summon Fey spells prepared. Whenever you cast either spell, you can change its school to Illusion, which causes the summoned creature to appear spectral. You can cast the Illusion version of each spell without expending a spell slot, but casting it without a slot halves the creature's Hit Points. Once you cast either spell without a spell slot, you must finish a Long Rest before you can cast the spell in that way again.",
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Illusory Self": {
+    name: "Illusory Self",
+    description: `When a creature hits you with an attack roll, you can take a Reaction to interpose an illusory duplicate of yourself between the attacker and yourself. The attack automatically misses you, then the illusion dissipates.
+
+    Once you use this feature, you can't use it again until you finish a Short or Long Rest. You can also restore your use of it by expending a level 2+ spell slot (no action required).`,
   },
-  "fill fill": {
-    name: "fill fill",
-    description: "",
+  "Illusory Reality": {
+    name: "Illusory Reality",
+    description:
+      "You have learned to weave shadow magic into your illusions to give them a semi-reality. When you cast an Illusion spell with a spell slot, you can choose one inanimate, nonmagical object that is part of the illusion and make that object real. You can do this on your turn as a Bonus Action while the spell is ongoing. The object remains real for 1 minute, during which it can't deal damage or give any conditions. For example, you can create an illusion of a bridge over a chasm and then make it real and cross it.",
   },
 
   // Order of Scribes
