@@ -16,12 +16,12 @@ export const rogueFeatures = {
     name: "Cunning Action",
     description: `Your quick thinking and agility allow you to move and act quickly. On your turn, you can take one of the following actions as a Bonus Action: Dash, Disengage, or Hide.`,
   },
-  "Steady Action": {
-    name: "Steady Action",
+  "Steady Aim": {
+    name: "Steady Aim",
     description: `As a Bonus Action, you give yourself Advantage on your next attack roll on the current turn. You can use this feature only if you haven't moved during this turn, and after you use it, your Speed is 0 until the end of the current turn.`,
   },
-  "Cunning Action": {
-    name: "Cunning Action",
+  "Cunning Strike": {
+    name: "Cunning Strike",
     description: `You've developed cunning ways to use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forgo to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Poison effect, remove 1d6 from the Sneak Attack's damage before rolling.
 
     If a Cunning Strike effect requires a saving throw, the DC equals 8 plus your Dexterity modifier and Proficiency Bonus.
@@ -38,13 +38,20 @@ export const rogueFeatures = {
     name: "Uncanny Dodge",
     description: `When an attacker that you can see hits you with an attack roll, you can take a Reaction to halve the attack's damage against you (round down).`,
   },
-  Evasion: {
-    name: "Evasion",
-    description: `You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.,`,
+  Expertise: {
+    name: "Expertise",
+    description: `You gain Expertise in two of your skill proficiencies of your choice.
+
+    At Rogue level 6, you gain Expertise in two more of your skill proficiencies of your choice.`,
   },
   "Reliable Talent": {
     name: "Reliable Talent",
     description: `Whenever you make an ability check that uses one of your skill or tool proficiencies, you can treat a d20 roll of 9 or lower as a 10.`,
+  },
+  Evasion: {
+    name: "Evasion",
+    description:
+      "You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.",
   },
   "Improved Cunning Strike": {
     name: "Improved Cunning Strike",
