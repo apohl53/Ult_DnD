@@ -1,14 +1,14 @@
 export const dndData = {
-  Artificer: {
-    classFeatures: {
-      1: ["..."],
-    },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-      },
-    },
-  },
+  // Artificer: {
+  //   classFeatures: {
+  //     1: ["..."],
+  //   },
+  //   "...": {
+  //     subclassFeatures: {
+  //       3: ["..."],
+  //     },
+  //   },
+  // },
   Barbarian: {
     classFeatures: {
       1: ["Rage", "Unarmored Defense", "Weapon Mastery"],
@@ -58,14 +58,14 @@ export const dndData = {
       },
     },
     // Griffon Saddlebag
-    Infernal: {
-      subclassFeatures: {
-        3: [""],
-        6: [""],
-        10: [""],
-        14: [""],
-      },
-    },
+    // Infernal: {
+    //   subclassFeatures: {
+    //     3: [""],
+    //     6: [""],
+    //     10: [""],
+    //     14: [""],
+    //   },
+    // },
 
     "Wild Heart": {
       subclassFeatures: {
@@ -177,16 +177,16 @@ export const dndData = {
       },
     },
   },
-  Beastheart: {
-    classFeatures: {
-      1: ["..."],
-    },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-      },
-    },
-  },
+  // Beastheart: {
+  //   classFeatures: {
+  //     1: ["..."],
+  //   },
+  //   "...": {
+  //     subclassFeatures: {
+  //       3: ["..."],
+  //     },
+  //   },
+  // },
   Cleric: {
     classFeatures: {
       1: ["Spellcasting(Cleric)", "Divine Order", "Disciple of Life"],
@@ -230,27 +230,27 @@ export const dndData = {
         17: ["Avatar of Battle"],
       },
     },
-    Domain: {
-      subclassFeatures: {
-        3: ["", "Domain Spells"],
-        6: [""],
-        17: ["Supreme Healing"],
-      },
-    },
-    Domain: {
-      subclassFeatures: {
-        3: ["", "Domain Spells"],
-        6: [""],
-        17: [""],
-      },
-    },
-    Domain: {
-      subclassFeatures: {
-        3: ["", "Domain Spells"],
-        6: [""],
-        17: [""],
-      },
-    },
+    // Domain: {
+    //   subclassFeatures: {
+    //     3: ["", "Domain Spells"],
+    //     6: [""],
+    //     17: ["Supreme Healing"],
+    //   },
+    // },
+    // Domain: {
+    //   subclassFeatures: {
+    //     3: ["", "Domain Spells"],
+    //     6: [""],
+    //     17: [""],
+    //   },
+    // },
+    // Domain: {
+    //   subclassFeatures: {
+    //     3: ["", "Domain Spells"],
+    //     6: [""],
+    //     17: [""],
+    //   },
+    // },
   },
   Druid: {
     classFeatures: {
@@ -307,15 +307,15 @@ export const dndData = {
       19: ["Epic Boon"],
       20: ["Three Extra Attacks"],
     },
-    "Arcane Archer": {
-      subclassFeatures: {
-        3: ["fill"],
-        7: ["fill"],
-        10: ["fill"],
-        15: ["fill"],
-        18: ["fill"],
-      },
-    },
+    // "Arcane Archer": {
+    //   subclassFeatures: {
+    //     3: ["fill"],
+    //     7: ["fill"],
+    //     10: ["fill"],
+    //     15: ["fill"],
+    //     18: ["fill"],
+    //   },
+    // },
     Battlemaster: {
       subclassFeatures: {
         3: ["Combat Superiority", "Student of War"],
@@ -473,16 +473,16 @@ export const dndData = {
       },
     },
   },
-  Illrigger: {
-    classFeatures: {
-      1: ["..."],
-    },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-      },
-    },
-  },
+  // Illrigger: {
+  //   classFeatures: {
+  //     1: ["..."],
+  //   },
+  //   "...": {
+  //     subclassFeatures: {
+  //       3: ["..."],
+  //     },
+  //   },
+  // },
   Monk: {
     classFeatures: {
       1: ["Martial Arts", "Unarmored Defense(m)"],
@@ -561,14 +561,14 @@ export const dndData = {
         20: [""],
       },
     },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-        7: [".."],
-        15: [""],
-        20: [""],
-      },
-    },
+    // "...": {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     7: [".."],
+    //     15: [""],
+    //     20: [""],
+    //   },
+    // },
   },
   Ranger: {
     classFeatures: {
@@ -617,11 +617,11 @@ export const dndData = {
         15: ["Superior Hunter's Defense"],
       },
     },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-      },
-    },
+    // "...": {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //   },
+    // },
   },
   Rogue: {
     classFeatures: {
@@ -722,16 +722,16 @@ export const dndData = {
     // },
   },
 
-  Shaman: {
-    classFeatures: {
-      1: ["..."],
-    },
-    "...": {
-      subclassFeatures: {
-        3: ["..."],
-      },
-    },
-  },
+  // Shaman: {
+  //   classFeatures: {
+  //     1: ["..."],
+  //   },
+  //   "...": {
+  //     subclassFeatures: {
+  //       3: ["..."],
+  //     },
+  //   },
+  // },
   Sorcerer: {
     classFeatures: {
       1: ["Spellcasting(sorc)", "Innate Sorcerery"],
