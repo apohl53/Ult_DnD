@@ -8,7 +8,7 @@ const data = {
   Weapons: weapons,
   Feats: feats,
   Options: options,
-  Properties: weaponProperties, // ✅ Added properly
+  Properties: weaponProperties,
 };
 
 function General() {
@@ -109,7 +109,7 @@ function General() {
                       </h3>
 
                       {openOptionCategory === category && (
-                        <ul>
+                        <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
                           {list.map((item) => (
                             <li key={item.name}>
                               <span
@@ -122,7 +122,15 @@ function General() {
                                 {item.name}
                               </span>
                               {openDetail === item && (
-                                <p style={{ marginLeft: "20px" }}>
+                                <p
+                                  style={{
+                                    maxWidth: "600px",
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
+                                    paddingLeft: "20px",
+                                    paddingRight: "20px",
+                                  }}
+                                >
                                   {item.type && <strong>Type:</strong>}{" "}
                                   {item.type} <br />
                                   {item.description || "Details coming soon..."}
@@ -136,7 +144,7 @@ function General() {
                   ))}
                 </div>
               ) : isPropertiesSection(header) ? (
-                <ul>
+                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
                   {Object.values(items).map((property) => (
                     <li key={property.name}>
                       <span
@@ -146,8 +154,15 @@ function General() {
                         {property.name}
                       </span>
                       {openDetail === property && (
-                        <p style={{ marginLeft: "20px" }}>
-                          <strong>Description:</strong>{" "}
+                        <p
+                          style={{
+                            maxWidth: "600px",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            paddingLeft: "20px",
+                            paddingRight: "20px",
+                          }}
+                        >
                           {property.description || "No description available."}
                         </p>
                       )}
@@ -155,7 +170,7 @@ function General() {
                   ))}
                 </ul>
               ) : (
-                <ul>
+                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
                   {items.map((item) => (
                     <li key={item.name}>
                       <span
@@ -165,7 +180,15 @@ function General() {
                         {item.name}
                       </span>
                       {openDetail === item && (
-                        <p style={{ marginLeft: "20px" }}>
+                        <p
+                          style={{
+                            maxWidth: "600px",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            paddingLeft: "20px",
+                            paddingRight: "20px",
+                          }}
+                        >
                           {item.description || "Details coming soon..."}
                         </p>
                       )}
