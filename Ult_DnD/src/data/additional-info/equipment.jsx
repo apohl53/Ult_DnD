@@ -1,4 +1,4 @@
-const weapons = [
+export const weapons = [
   // Simple Melee Weapons
   {
     name: "Club",
@@ -428,18 +428,159 @@ const weapons = [
   },
 ];
 
-export default weapons;
-
-const armor = [
+export const armor = [
   {
-    name: "Plate Armor",
-    "armor class": 18,
-    weight: "",
-    cost: "",
+    name: "Padded",
+    ac: "11 + Dex",
+    category: "light",
+    stealth: "disadvantage",
+    weight: "8lb",
+    cost: "5gp",
+  },
+  {
+    name: "Leather",
+    ac: "11 + Dex",
+    category: "light",
+    stealth: "N/A",
+    weight: "10lb",
+    cost: "10gp",
+  },
+  {
+    name: "Studded Leather",
+    ac: "12 + Dex",
+    category: "light",
+    stealth: "N/A",
+    weight: "13lb",
+    cost: "45gp",
+  },
+  // Medium Armor
+  {
+    name: "Hide",
+    ac: "12 + Dex(max 2)",
+    category: "medium",
+    stealth: "N/A",
+    weight: "12lb",
+    cost: "10gp",
+  },
+  {
+    name: "Chain Shirt",
+    ac: "13 + Dex(max 2)",
+    category: "medium",
+    stealth: "N/A",
+    weight: "20lb",
+    cost: "50gp",
+  },
+  {
+    name: "Scale Mail",
+    ac: "11 + Dex(max 2)",
+    category: "medium",
+    stealth: "disadvantage",
+    weight: "45lb",
+    cost: "50gp",
+  },
+  {
+    name: "Breastplate",
+    ac: "14 + Dex(max 2)",
+    category: "medium",
+    stealth: "N/A",
+    weight: "20lb",
+    cost: "400gp",
+  },
+  {
+    name: "Half Plate",
+    ac: "15 + Dex(max 2)",
+    category: "medium",
+    stealth: "disadvantage",
+    weight: "40lb",
+    cost: "750gp",
+  },
+
+  // Heavy
+  {
+    name: "Ring Mail",
+    ac: "14",
+    category: "heavy",
+    stealth: "disadvantage",
+    weight: "40lb",
+    cost: "30gp",
+  },
+  {
+    name: "Chain Mail",
+    ac: "16",
+    category: "heavy",
+    stealth: "disadvantage, Str 13 required",
+    weight: "55lb",
+    cost: "75gp",
+  },
+  {
+    name: "Splint",
+    ac: "17",
+    category: "heavy",
+    stealth: "disadvantage",
+    weight: "60lb",
+    cost: "200gp",
+  },
+
+  {
+    name: "Plate",
+    ac: 18,
+    category: "heavy",
+    stealth: "disadvantage, Str 15 required",
+    weight: "65lb",
+    cost: "1500gp",
   },
 ];
 
-// Weapons
-// Weapon Mastery
-// Armor
-// Equipment Properties (Cold Iron, Silver, Adamantine, Mithril)
+// Shield
+
+export const shield = [
+  {
+    name: "Buckler",
+    ac: "+1",
+    properties: "Buckler",
+    weight: "4lb",
+    cost: "15gp",
+  },
+  {
+    name: "Shield",
+    ac: "+2",
+    properties: "N/A",
+    weight: "6lb",
+    cost: "10gp",
+  },
+  {
+    name: "Bladed Shield",
+    ac: "+2",
+    properties: "Bladed",
+    weight: "6lb",
+    cost: "15gp",
+  },
+  {
+    name: "Heraldic Shield",
+    ac: "+2",
+    properties: "Heraldic",
+    weight: "6lb",
+    cost: "50gp",
+  },
+  {
+    name: "Lantern Shield",
+    ac: "+2",
+    properties: "Lantern, Cumbersome",
+    weight: "8lb",
+    cost: "40gp",
+  },
+  {
+    name: "Spiked Shield",
+    ac: "+2",
+    properties: "Spiked, Cumbersome, 13 Str Required",
+    weight: "10lb",
+    cost: "50lb",
+  },
+  {
+    name: "Tower Shield",
+    ac: "+2",
+    properties: "Tower, Cumbersome, 15 Str Required",
+    weight: "20lb",
+    cost: "150gp",
+  },
+];

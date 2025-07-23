@@ -1,19 +1,20 @@
 import React, { useState } from "react";
-import weapons from "../../data/additional-info/equipment";
+import "./css/GeneralInfo.css";
+import { weapons, armor, shield } from "../../data/additional-info/equipment";
 import feats from "../../data/additional-info/feats";
 import options from "../../data/additional-info/additional-options";
-import weaponProperties from "../../data/additional-info/equipmentProperties";
+import equipmentProperties from "../../data/additional-info/equipmentProperties";
 
 const data = {
   Weapons: weapons,
+  Armor: armor,
+  Shields: shield,
   Feats: feats,
+  Properties: equipmentProperties,
   Options: options,
-  Properties: weaponProperties,
 };
 
 function General() {
-  console.log("weaponProperties:", weaponProperties);
-
   const [openSection, setOpenSection] = useState(null);
   const [openDetail, setOpenDetail] = useState(null);
   const [weaponType, setWeaponType] = useState(null);
@@ -36,6 +37,8 @@ function General() {
   };
 
   const isWeaponsSection = (header) => header === "Weapons";
+  const isArmorSection = (header) => header === "Armor";
+  const isShieldsSection = (header) => header === "Shields";
   const isOptionsSection = (header) => header === "Options";
   const isPropertiesSection = (header) => header === "Properties";
 
@@ -44,162 +47,100 @@ function General() {
       ? []
       : data.Weapons.filter((w) => w.type === weaponType);
 
+  const groupedProperties = {
+    "Weapon Properties": equipmentProperties.filter(
+      (p) => p.category === "weapon"
+    ),
+    "Armor Properties": equipmentProperties.filter(
+      (p) => p.category === "armor"
+    ),
+    "Weapon Masteries": equipmentProperties.filter(
+      (p) => p.category === "mastery"
+    ),
+  };
+
   return (
-    <div>
-      {Object.entries(data).map(([header, items]) => (
-        <div key={header}>
+    <div className="general-container">
+      {/* Sidebar on the left */}
+      <div className="sidebar">
+        {Object.keys(data).map((header) => (
           <h2
+            key={header}
             onClick={() => toggleSection(header)}
-            style={{ cursor: "pointer", color: "blue" }}
+            style={{ cursor: "pointer", color: "blue", marginBottom: "1rem" }}
           >
             {header}
           </h2>
+        ))}
+      </div>
 
-          {openSection === header && (
-            <div style={{ marginLeft: "20px" }}>
-              {isWeaponsSection(header) ? (
-                <div>
-                  <button onClick={() => setWeaponType("melee")}>
-                    Melee Weapons
-                  </button>
-                  <button onClick={() => setWeaponType("ranged")}>
-                    Ranged Weapons
-                  </button>
+      {/* Main content on the right */}
+      <div className="main-content">
+        {openSection && (
+          <>
+            {isWeaponsSection(openSection) && (
+              <div className="content-inner">
+                <h3 onClick={() => setWeaponType("melee")}>Melee Weapons</h3>
+                <h3 onClick={() => setWeaponType("ranged")}>Ranged Weapons</h3>
 
-                  {weaponType && (
-                    <table
-                      border="1"
-                      cellPadding="8"
-                      style={{ borderCollapse: "collapse", marginTop: "10px" }}
-                    >
-                      <thead>
-                        <tr>
-                          <th>Name</th>
-                          <th>Damage</th>
-                          <th>Properties</th>
-                          <th>Weight</th>
-                          <th>Cost</th>
-                          <th>Mastery</th>
+                {weaponType && (
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Damage</th>
+                        <th>Properties</th>
+                        <th>Weight</th>
+                        <th>Cost</th>
+                        <th>Mastery</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {filteredWeapons.map((weapon) => (
+                        <tr key={weapon.name}>
+                          <td>{weapon.name}</td>
+                          <td>{weapon.damage}</td>
+                          <td>{weapon.properties}</td>
+                          <td>{weapon.weight}</td>
+                          <td>{weapon.cost}</td>
+                          <td>{weapon.mastery || "—"}</td>
                         </tr>
-                      </thead>
-                      <tbody>
-                        {filteredWeapons.map((weapon) => (
-                          <tr key={weapon.name}>
-                            <td>{weapon.name}</td>
-                            <td>{weapon.damage}</td>
-                            <td>{weapon.properties}</td>
-                            <td>{weapon.weight}</td>
-                            <td>{weapon.cost}</td>
-                            <td>{weapon.mastery || "—"}</td>
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  )}
-                </div>
-              ) : isOptionsSection(header) ? (
-                <div>
-                  {Object.entries(items).map(([category, list]) => (
-                    <div key={category} style={{ marginBottom: "1em" }}>
-                      <h3
-                        onClick={() => toggleOptionCategory(category)}
-                        style={{ cursor: "pointer", color: "purple" }}
-                      >
-                        {category}
-                      </h3>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            )}
 
-                      {openOptionCategory === category && (
-                        <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                          {list.map((item) => (
-                            <li key={item.name}>
-                              <span
-                                onClick={() => toggleDetail(item)}
-                                style={{
-                                  cursor: "pointer",
-                                  color: "darkgreen",
-                                }}
-                              >
-                                {item.name}
-                              </span>
-                              {openDetail === item && (
-                                <p
-                                  style={{
-                                    maxWidth: "600px",
-                                    marginLeft: "auto",
-                                    marginRight: "auto",
-                                    paddingLeft: "20px",
-                                    paddingRight: "20px",
-                                  }}
-                                >
-                                  {item.type && <strong>Type:</strong>}{" "}
-                                  {item.type} <br />
-                                  {item.description || "Details coming soon..."}
-                                </p>
-                              )}
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </div>
+            {isArmorSection(openSection) && (
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>AC</th>
+                    <th>Type</th>
+                    <th>Weight</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.Armor.map((item) => (
+                    <tr key={item.name}>
+                      <td>{item.name}</td>
+                      <td>{item.ac}</td>
+                      <td>{item.type}</td>
+                      <td>{item.weight}</td>
+                      <td>{item.cost}</td>
+                    </tr>
                   ))}
-                </div>
-              ) : isPropertiesSection(header) ? (
-                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                  {Object.values(items).map((property) => (
-                    <li key={property.name}>
-                      <span
-                        onClick={() => toggleDetail(property)}
-                        style={{ cursor: "pointer", color: "darkred" }}
-                      >
-                        {property.name}
-                      </span>
-                      {openDetail === property && (
-                        <p
-                          style={{
-                            maxWidth: "600px",
-                            marginLeft: "auto",
-                            marginRight: "auto",
-                            paddingLeft: "20px",
-                            paddingRight: "20px",
-                          }}
-                        >
-                          {property.description || "No description available."}
-                        </p>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                  {items.map((item) => (
-                    <li key={item.name}>
-                      <span
-                        onClick={() => toggleDetail(item)}
-                        style={{ cursor: "pointer", color: "darkgreen" }}
-                      >
-                        {item.name}
-                      </span>
-                      {openDetail === item && (
-                        <p
-                          style={{
-                            maxWidth: "600px",
-                            marginLeft: "auto",
-                            marginRight: "auto",
-                            paddingLeft: "20px",
-                            paddingRight: "20px",
-                          }}
-                        >
-                          {item.description || "Details coming soon..."}
-                        </p>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
-        </div>
-      ))}
+                </tbody>
+              </table>
+            )}
+
+            {/* Add similar blocks for Shields, Options, Properties, etc. here */}
+          </>
+        )}
+      </div>
     </div>
   );
 }
