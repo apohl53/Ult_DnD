@@ -66,6 +66,14 @@ export const dndData = {
     //     14: [""],
     //   },
     // },
+    "Spell Scorned": {
+      subclassFeatures: {
+        3: ["Instinctual Divination", "Spell Hammer", "Spell Shield"],
+        6: ["Sunder the Weave"],
+        10: ["Bolstering Howl"],
+        14: ["Dimensional Duel"],
+      },
+    },
 
     "Wild Heart": {
       subclassFeatures: {
@@ -125,6 +133,13 @@ export const dndData = {
         3: ["Dazzling Footwork"],
         6: ["Inspiring Movement", "Tandem Footwork"],
         14: ["Leading Evasion"],
+      },
+    },
+    Drama: {
+      subclassFeatures: {
+        3: ["Tragic Hero", "One Life, Many Roles"],
+        6: ["Stage Direction"],
+        14: ["Assemble the Troupe", "Grand Finale"],
       },
     },
     Eloquence: {
@@ -197,6 +212,17 @@ export const dndData = {
       14: ["Improved Blessed Strikes"],
       19: ["Epic Boon"],
       20: ["Greater Divine Intervention"],
+    },
+    "Annihilation Domain": {
+      subclassFeatures: {
+        3: [
+          "Annihilation Domain Spells",
+          "Visions of Annihilation",
+          "Doom Song",
+        ],
+        6: ["All Will Be Dust"],
+        17: ["Life Beyond Death"],
+      },
     },
     "Life Domain": {
       subclassFeatures: {
@@ -287,12 +313,21 @@ export const dndData = {
         14: ["Oceanic Gift"],
       },
     },
+
     "Circle of the Stars": {
       subclassFeatures: {
         3: ["Star Map", "Starry Form"],
         6: ["Cosmic Omen"],
         10: ["Twinkling Constellations"],
         14: ["Full of Stars"],
+      },
+    },
+    "Circle of the Symbiote": {
+      subclassFeatures: {
+        3: ["Primal Symbiote", "Circle of the Symbiote Spells"],
+        6: ["Symbiotic Reflexes"],
+        10: ["Survival Instinct"],
+        14: ["Surge of Sustenance"],
       },
     },
   },
@@ -363,6 +398,15 @@ export const dndData = {
         10: ["Eldritch Strike"],
         15: ["Arcane Charge"],
         18: ["Improved War Magic"],
+      },
+    },
+    Hero: {
+      subclassFeatures: {
+        3: ["Bolstering Presence", "Heroic Effort"],
+        7: ["Lead by Example"],
+        10: ["Inspiring Presence"],
+        15: ["Durable Presence"],
+        18: ["Mighty Effort"],
       },
     },
     "Psi Warrior": {
@@ -617,11 +661,17 @@ export const dndData = {
         15: ["Superior Hunter's Defense"],
       },
     },
-    // "...": {
-    //   subclassFeatures: {
-    //     3: ["..."],
-    //   },
-    // },
+
+    // Trail Warden
+
+    "Trail Warden": {
+      subclassFeatures: {
+        3: ["Trail Warden Spells", "Coordinated Tactics", "Lead the Way"],
+        7: ["Tactical Assault"],
+        11: ["Coordinated Effort"],
+        15: ["Group Assault"],
+      },
+    },
   },
   Rogue: {
     classFeatures: {

@@ -269,6 +269,36 @@ export const fighterFeatures = {
     description: `When you take the Attack action on your turn, you can replace two of the attacks with a casting of one of your level 1 or level 2 Wizard spells that has a casting time of an action.`,
   },
 
+  // Hero
+  "Bolstering Presence": {
+    name: "Bolstering Presence",
+    description: `At the start of your turn, you can bolster your allies (no action required) . Creatures of your choice within 30 feet of you that can see or hear you regain a number of Hit Points equal to 2d6 plus half your Fighter level (rounded down). You can't use this feature if you have the Incapacitated condition.
+
+    You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.`,
+  },
+  "Heroic Effort": {
+    name: "Heroic Effort",
+    description: `You can seize the moment and turn the tide. You can take a Reaction at the end of a creature's turn to move up to your Speed and make one attack with a weapon or Unarmed Strike. Then one ally of your choice within 30 feet of you that can see or hear you can also move up to its Speed and make one attack with a weapon or Unarmed strike using its Reaction.
+
+    You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.`,
+  },
+  "Lead By Example": {
+    name: "Lead By Example",
+    description: `If you are Charmed, Frightened, or Poisoned when you use your Heroic Effort feature, the condition ends on you. In addition, if the ally you target with Heroic Effort is Charmed, Frightened, or Poisoned, the condition ends on it.`,
+  },
+  "Inspiring Presence": {
+    name: "Inspiring Presence",
+    description: `When you use your Bolstering Presence feature, each of the chosen creatures gains a bonus to d20 Tests and damage rolls equal to your Charisma modifier (minimum of +1) until the end of your next turn.`,
+  },
+  "Durable Presence": {
+    name: "Durable Presence",
+    description: `You now regain all expended uses of your Bolstering Presence feature when you finish a Short or long rest.`,
+  },
+  "Mighty Effort": {
+    name: "Mighty Effort",
+    description: `When you use your Heroic Effort feature, you can now target up to two additional creatures, instead of only one.`,
+  },
+
   // Psi Warrior
   "Psionic Power": {
     name: "Psionic Power",

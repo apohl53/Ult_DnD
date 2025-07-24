@@ -82,6 +82,35 @@ export const clericFeatures = {
     description: `You can call on even more powerful divine intervention. When you use your Divine Intervention feature, you can choose Wish when you select a spell. If you do so, you can't use Divine Intervention again until you finish 2d4 Long Rests.`,
   },
   // Cleric Subclasses
+
+  // Annihilation Domain
+  "Annihilation Domain Spells": {
+    name: "Annihilation Domain Spells",
+    description: `
+    3:	Darkness, Hellish Rebuke, Phantasmal Force, Thunderwave
+    5:	Doom, Fear
+    7:	Blight, Ice Storm
+    9:	Antilife Shell, Insect Plague`,
+  },
+  "Visions of Annihilation": {
+    name: "Visions of Annihilation",
+    description: `You gain the ability to foretell a creature's doom. As a Bonus Action, choose a creature you can see within 120 feet of yourself. Until the start of your next turn, attack rolls against that creature have Advantage.
+
+    You can use this feature a number of times equal to your Wisdom modifier (minimum of once). You regain all expended uses when you finish a long rest.`,
+  },
+  "Doom Song": {
+    name: "Doom Song",
+    description: `You can use your Channel Divinity to hasten a creature's doom. As a Bonus Action, you can expend one use your Channel Divinity to choose a creature you can see within 120 feet of yourself. For 10 minutes, attack rolls against the creature can score a Critical Hit on a roll of 19 or 20 on the d20.`,
+  },
+  "All Will Be Dust": {
+    name: "All Will Be Dust",
+    description: `You can use your Channel Divinity to twist a creature's fate. As a Bonus Action, you can expend one use of your Channel Divinity to choose a creature you can see within 120 feet of yourself. That creature has Disadvantage on the next saving throw it makes against your spells before the end of your next turn.`,
+  },
+  "Life Beyond Death": {
+    name: "Life Beyond Death",
+    description: `When you or an ally within 120 feet of you is about to make a Death Saving Throw, you can expand a spell slot (no action required) to heal the target a number of Hit Points equal to ten times the level of the spell slot expended.`,
+  },
+
   // Life Domain
   "Disciple of Life": {
     name: "Disciple of Life",

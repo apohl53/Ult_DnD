@@ -5,7 +5,7 @@ export const bardFeatures = {
     
     Using Bardic Inspiration. As a Bonus Action, you can inspire another creature within 60 feet of yourself who can see or hear you. That creature gains one of your Bardic Inspiration dice. A creature can have only one Bardic Inspiration die at a time.
 
-    Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it’s rolled.
+    Once within the next hour when the creature fails a D20 Test, the creature can roll the Bardic Inspiration die and add the number rolled to the d20, potentially turning the failure into a success. A Bardic Inspiration die is expended when it's rolled.
 
     Number of Uses. You can confer a Bardic Inspiration die a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.
 
@@ -139,6 +139,35 @@ export const bardFeatures = {
     description: `When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw and only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity saving throw, you can share this benefit with them for that save.
 
     You can't use this feature if you have the Incapacitated condition.`,
+  },
+
+  // Drama
+
+  "Tragic Hero": {
+    name: "Tragic Hero",
+    description: `A great performance sometimes comes at a cost to the artist. If you fail a saving throw, choose other creatures you can see within 60 feet of yourself. Each of the chosen creatures gains a bonus to saving throws equal to your Charisma modifier (minimum of +1) against the same effect that triggered this feature, potentially turning a failure into a success.`,
+  },
+  "One Life, Many Roles": {
+    name: "One Life, Many Roles",
+    description: `You use your magic and dramatic training to step into a role. As a Bonus Action, you can cast Disguise Self with this feature. If you take on the appearance of a specific creature you can see when you cast Disguise Self in this way, you can adopt that creature's mannerisms and voice.
+
+    Once you use this feature, you can't use it again until you finish a Short or long rest.`,
+  },
+  "Stage Direction": {
+    name: "Stage Direction",
+    description: `You gain the ability to direct others as you inspire them, allowing them to make the most of your guidance. When a creature that can see you would normally roll one of your Bardic Inspiration die, don't roll the die; instead use the highest number possible for the die.
+
+    You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain expended uses when you finish a long rest.`,
+  },
+  "Assemble the Troupe": {
+    name: "Assemble the Troupe",
+    description: `When you cast Disguise Self using your One Life, Many Roles feature, you can target up to six willing creatures you can see within 30 feet of you with the Disguise Self spell. You choose the appearance each creature takes. While under the effects of the spell cast with this feature, the chosen creatures gain a bonus to Charisma checks equal to your Charisma modifier (minimum of +1).`,
+  },
+  "Grand Finale": {
+    name: "Grand Finale",
+    description: `You gain the ability to deliver a stirring performance that spurs your companions to mighty deeds. As a Magic action, choose up to two other creatures within 60 feet that can see or hear you. Each of the chosen creatures can immediately take an action this turn.
+
+    Once you use this feature, you can't use it again until you finish a long rest.`,
   },
 
   // Eloquence

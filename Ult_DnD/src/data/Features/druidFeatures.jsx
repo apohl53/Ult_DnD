@@ -303,6 +303,40 @@ export const druidFeatures = {
       "While in your Starry Form, you become partially incorporeal, giving you Resistance to Bludgeoning, Piercing, and Slashing damage.",
   },
 
+  // Symbiote
+  "Circle of the Annihilation Spells": {
+    name: "Circle of the Annihilation Spells",
+    description: `When you reach a Druid level specified in the Circle of the Sea Spells table, you thereafter always have the listed spells prepared.
+    
+    3	Barkskin, Entangle, Guidance
+    5	Plant Growth
+    7	Hallucinatory Terrain
+    9	Tree Stride`,
+  },
+  "Primal Symbiote": {
+    name: "Primal Symbiote",
+    description: `Vines and roots grow across your body, forming a symbiotic network. As it draws physical and magical nourishment from you, the symbiote grants you a number of benefits.
+
+    Fortifying Presence. You have Advantage on Constitution saving throws that you make to maintain Concentration.
+
+    Symbiotic Transformation. As a Bonus Action, you can expend one use of Wild Shape to allow your symbiote to transform you into a plant-like brute as fibrous plates and vines cover your skin. For 1 minute, you gain a +2 bonus to AC, you gain a number of Temporary Hit Points equal to 2 plus half your Druid level (round down) at the start of each of your turns, and you gain Advantage on Dexterity (Stealth) checks.`,
+  },
+  "Symbiotic Reflexes": {
+    name: "Symbiotic Reflexes",
+    description: `Your plant symbiote empowers you. You always have the Haste spell prepared. Once per active Symbiotic Transformation, you can cast Haste on yourself without a spell slot or components.`,
+  },
+  "Survival Instinct": {
+    name: "Survival Instinct",
+    description:
+      "While you are in mortal peril, your symbiote can attempt to move you to safety. While you have the Incapacitated condition, you can take the Dash, Disengage, or Dodge action, and you retain the benefits of the Dodge action while you have the Incapacitated condition.",
+  },
+  "Surge of Sustenance": {
+    name: "Surge of Sustenance",
+    description: `As a Magic action, you can expend one use of Wild Shape to grant the benefits of finishing a Short Rest to yourself or a creature you touch.
+
+    Once you use this feature, you can't use it again until you finish a long rest.`,
+  },
+
   // Extra
 
   fill: {
