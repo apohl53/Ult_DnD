@@ -202,3 +202,31 @@
   margin-left: 1rem;
   color: #333;
 }
+
+.option-category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.option-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.option-item {
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.option-description {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.option-description div {
+  margin-bottom: 0.25rem;
+}

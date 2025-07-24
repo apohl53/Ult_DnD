@@ -20,9 +20,6 @@ function General() {
   const [weaponType, setWeaponType] = useState(null);
   const [openProperty, setOpenProperty] = useState(null);
   const [propertyCategory, setPropertyCategory] = useState(null);
-
-  // const [openProperties, setOpenProperties] = useState([]);
-
   const [openOptionCategory, setOpenOptionCategory] = useState(null);
 
   const toggleSection = (header) => {
@@ -226,9 +223,111 @@ function General() {
               </div>
             )}
 
-            {/* {isOptionsSection(openSection) && (
-              
-            )} */}
+            {isOptionsSection(openSection) && (
+              <div className="content-inner">
+                <div className="option-category-buttons">
+                  {Object.keys(data.Options).map((category) => (
+                    <button
+                      key={category}
+                      className={
+                        openOptionCategory === category ? "active" : ""
+                      }
+                      onClick={() => toggleOptionCategory(category)}
+                    >
+                      {category}
+                    </button>
+                  ))}
+                </div>
+
+                {openOptionCategory === "Beastheart Companions" && (
+                  <ul className="option-list">
+                    {data.Options["Beastheart Companions"].map((companion) => (
+                      <li key={companion.name}>
+                        <strong>{companion.name}</strong> — {companion.type}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {openOptionCategory === "Sorcerer Metamagic" && (
+                  <ul className="option-list">
+                    {data.Options["Sorcerer Metamagic"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
+                            <div>
+                              <strong>Cost:</strong> {meta.cost}
+                            </div>
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {openOptionCategory === "Warlock Invocations" && (
+                  <ul className="option-list">
+                    {data.Options["Warlock Invocations"].map((invocation) => (
+                      <li key={invocation.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === invocation.name
+                                ? null
+                                : invocation.name
+                            )
+                          }
+                        >
+                          <strong>{invocation.name}</strong>
+                        </div>
+                        {openDetail === invocation.name && (
+                          <div className="option-description">
+                            {invocation.prerequisite && (
+                              <div>
+                                <strong>Prerequisite:</strong>{" "}
+                                {invocation.prerequisite}
+                              </div>
+                            )}
+                            <div>{invocation.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {openOptionCategory === "Wild Magic Table" && (
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Roll</th>
+                        <th>Effect</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.Options["Wild Magic Table"].map((entry, index) => (
+                        <tr key={index}>
+                          <td>{entry.roll}</td>
+                          <td>{entry.result}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                )}
+              </div>
+            )}
 
             {/*  feats */}
           </>
