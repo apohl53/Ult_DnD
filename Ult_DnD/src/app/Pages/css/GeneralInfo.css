@@ -117,7 +117,7 @@
 
 /* Sidebar: Left 1/3 */
 .sidebar {
-  width: 33.33%;
+  width: 15%;
   background-color: #f9f9f9;
   padding: 20px;
   border-right: 1px solid #ccc;
@@ -152,4 +152,53 @@
 .data-table td {
   border: 1px solid #ccc;
   padding: 8px;
+}
+
+.weapon-type-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.weapon-type-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #e0e0e0;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.weapon-type-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.weapon-type-buttons button.active {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+}
+
+.property-list {
+  list-style: none;
+  padding: 0;
+}
+
+.property-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.property-name {
+  font-weight: bold;
+  color: #0057b8;
+  cursor: pointer;
+  margin-bottom: 0.3rem;
+}
+
+.property-description {
+  margin-left: 1rem;
+  color: #333;
 }

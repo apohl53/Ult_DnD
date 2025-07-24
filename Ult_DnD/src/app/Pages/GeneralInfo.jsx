@@ -9,8 +9,8 @@ const data = {
   Weapons: weapons,
   Armor: armor,
   Shields: shield,
-  Feats: feats,
   Properties: equipmentProperties,
+  Feats: feats,
   Options: options,
 };
 
@@ -18,6 +18,11 @@ function General() {
   const [openSection, setOpenSection] = useState(null);
   const [openDetail, setOpenDetail] = useState(null);
   const [weaponType, setWeaponType] = useState(null);
+  const [openProperty, setOpenProperty] = useState(null);
+  const [propertyCategory, setPropertyCategory] = useState(null);
+
+  // const [openProperties, setOpenProperties] = useState([]);
+
   const [openOptionCategory, setOpenOptionCategory] = useState(null);
 
   const toggleSection = (header) => {
@@ -25,6 +30,7 @@ function General() {
     setOpenDetail(null);
     setWeaponType(null);
     setOpenOptionCategory(null);
+    setPropertyCategory(null);
   };
 
   const toggleDetail = (item) => {
@@ -48,11 +54,8 @@ function General() {
       : data.Weapons.filter((w) => w.type === weaponType);
 
   const groupedProperties = {
-    "Weapon Properties": equipmentProperties.filter(
-      (p) => p.category === "weapon"
-    ),
-    "Armor Properties": equipmentProperties.filter(
-      (p) => p.category === "armor"
+    "Equipment Properties": equipmentProperties.filter(
+      (p) => p.category === "property"
     ),
     "Weapon Masteries": equipmentProperties.filter(
       (p) => p.category === "mastery"
@@ -80,8 +83,20 @@ function General() {
           <>
             {isWeaponsSection(openSection) && (
               <div className="content-inner">
-                <h3 onClick={() => setWeaponType("melee")}>Melee Weapons</h3>
-                <h3 onClick={() => setWeaponType("ranged")}>Ranged Weapons</h3>
+                <div className="weapon-type-buttons">
+                  <button
+                    className={weaponType === "melee" ? "active" : ""}
+                    onClick={() => setWeaponType("melee")}
+                  >
+                    Melee Weapons
+                  </button>
+                  <button
+                    className={weaponType === "ranged" ? "active" : ""}
+                    onClick={() => setWeaponType("ranged")}
+                  >
+                    Ranged Weapons
+                  </button>
+                </div>
 
                 {weaponType && (
                   <table className="data-table">
@@ -119,6 +134,7 @@ function General() {
                     <th>Name</th>
                     <th>AC</th>
                     <th>Type</th>
+                    <th>Properties</th>
                     <th>Weight</th>
                     <th>Cost</th>
                   </tr>
@@ -128,7 +144,8 @@ function General() {
                     <tr key={item.name}>
                       <td>{item.name}</td>
                       <td>{item.ac}</td>
-                      <td>{item.type}</td>
+                      <td>{item.category}</td>
+                      <td>{item.stealth}</td>
                       <td>{item.weight}</td>
                       <td>{item.cost}</td>
                     </tr>
@@ -137,7 +154,83 @@ function General() {
               </table>
             )}
 
-            {/* Add similar blocks for Shields, Options, Properties, etc. here */}
+            {isShieldsSection(openSection) && (
+              <table className="data-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>AC</th>
+                    <th>Properties</th>
+                    <th>Weight</th>
+                    <th>Cost</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.Shields.map((item) => (
+                    <tr key={item.name}>
+                      <td>{item.name}</td>
+                      <td>{item.ac}</td>
+                      <td>{item.properties}</td>
+                      <td>{item.weight}</td>
+                      <td>{item.cost}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            )}
+
+            {isPropertiesSection(openSection) && (
+              <div className="content-inner">
+                <div className="weapon-type-buttons">
+                  <button
+                    className={propertyCategory === "property" ? "active" : ""}
+                    onClick={() => setPropertyCategory("property")}
+                  >
+                    Equipment Properties
+                  </button>
+                  <button
+                    className={propertyCategory === "mastery" ? "active" : ""}
+                    onClick={() => setPropertyCategory("mastery")}
+                  >
+                    Weapon Masteries
+                  </button>
+                </div>
+
+                {propertyCategory && (
+                  <ul className="property-list">
+                    {groupedProperties[
+                      propertyCategory === "property"
+                        ? "Equipment Properties"
+                        : "Weapon Masteries"
+                    ].map((prop) => (
+                      <li key={prop.name} className="property-item">
+                        <div
+                          className="property-name"
+                          onClick={() =>
+                            setOpenProperty(
+                              openProperty === prop.name ? null : prop.name
+                            )
+                          }
+                        >
+                          {prop.name}
+                        </div>
+                        {openProperty === prop.name && (
+                          <div className="property-description">
+                            {prop.description}
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+
+            {/* {isOptionsSection(openSection) && (
+              
+            )} */}
+
+            {/*  feats */}
           </>
         )}
       </div>
