@@ -192,16 +192,69 @@ export const dndData = {
       },
     },
   },
-  // Beastheart: {
-  //   classFeatures: {
-  //     1: ["..."],
-  //   },
-  //   "...": {
-  //     subclassFeatures: {
-  //       3: ["..."],
-  //     },
-  //   },
-  // },
+  Beastheart: {
+    classFeatures: {
+      1: ["Companion", "Natural Language"],
+      2: ["Primal Exploits", "Superior Ferocity"],
+      3: ["Master Caregiver"],
+      5: ["Beyond Instinct", "Improved Signature Attack"],
+      6: ["Faithful Companion", "Rejuvenating Ferocity"],
+      8: ["Primal Strike"],
+      9: ["Mystic Connection"],
+      13: ["Loyal to the End"],
+      14: ["Keen Senses"],
+      18: ["Summon the Wilds"],
+      20: ["Unbreakable Friendship"],
+    },
+    "Ferocious Bond": {
+      subclassFeatures: {
+        3: ["Frenzied Charge", "Fury of the Wise"],
+        7: ["Energizing Rampage"],
+        11: ["Furious Rampage"],
+        15: ["Invigorated Rampage"],
+      },
+    },
+    "Protector Bond": {
+      subclassFeatures: {
+        3: ["Beast Vitality", "Pack Phalanx"],
+        7: ["Thickened Hide"],
+        11: ["Sentinel Companion"],
+        15: ["Undying Protector"],
+      },
+    },
+    // Bond: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     7: ["..."],
+    //     11: ["..."],
+    //     15: ["..."],
+    //   },
+    // },
+    // Bond: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     7: ["..."],
+    //     11: ["..."],
+    //     15: ["..."],
+    //   },
+    // },
+    // Bond: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     7: ["..."],
+    //     11: ["..."],
+    //     15: ["..."],
+    //   },
+    // },
+    // Bond: {
+    //   subclassFeatures: {
+    //     3: ["..."],
+    //     7: ["..."],
+    //     11: ["..."],
+    //     15: ["..."],
+    //   },
+    // },
+  },
   Cleric: {
     classFeatures: {
       1: ["Spellcasting(Cleric)", "Divine Order", "Disciple of Life"],

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./CharacterDisplay.css";
 import ReactMarkdown from "react-markdown";
 
-function CharacterDisplay({ charClass, level, subclass, features }) {
+function CharacterDisplay({ charClass, level, subclass, species, features }) {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
   const handleClick = (feature) => {

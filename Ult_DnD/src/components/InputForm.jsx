@@ -7,7 +7,7 @@ export default function InputForm({ onSubmit }) {
   const [level, setLevel] = useState("");
   const [subclass, setSubclass] = useState("");
   const [species, setSpecies] = useState("");
-  const [subspecies, setSubspecies] = useState("");
+  // const [subspecies, setSubspecies] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,25 +19,6 @@ export default function InputForm({ onSubmit }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      {/* <label>
-          Species:
-          <select
-            value={species}
-            onChange={(e) => {
-              setSpecies(e.target.value);
-              setSubspecies(""); // reset subspecies when species changes
-            }}
-          >
-            <option value="">Select a species</option>
-            {Object.keys(speciesData).map((sp) => (
-              <option key={sp} value={sp}>
-                {sp}
-              </option>
-            ))}
-          </select>
-        </label>
-      */}
-
       <label>
         Class:
         <select
@@ -83,6 +64,19 @@ export default function InputForm({ onSubmit }) {
         </select>
       </label>
 
+      {/* <label>
+        Species:
+        <select value={species} onChange={(e) => setSpecies(e.target.value)}>
+          <option value="">--Select Species--</option>
+          {speciesData.map((sp) => (
+            <option key={sp} value={sp}>
+              {sp}
+            </option>
+          ))}
+        </select>
+      </label> */}
+
+      {/* add species to these below */}
       <button
         type="submit"
         disabled={!charClass || !subclass || !level}

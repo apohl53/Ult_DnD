@@ -13,7 +13,7 @@ const resolveFeatures = (featureNames) =>
 function CharacterPage() {
   const [characterInfo, setCharacterInfo] = useState(null);
 
-  const handleFormSubmit = ({ charClass, level, subclass }) => {
+  const handleFormSubmit = ({ charClass, level, subclass, species }) => {
     const numericLevel = parseInt(level, 10);
     let classFeatureNames = [];
     let subclassFeatureNames = [];
@@ -34,7 +34,7 @@ function CharacterPage() {
       subclassLevelFeatures: resolveFeatures(subclassFeatureNames),
     };
 
-    setCharacterInfo({ charClass, level, subclass, features });
+    setCharacterInfo({ charClass, level, subclass, species, features });
   };
 
   return (
