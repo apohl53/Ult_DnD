@@ -249,6 +249,55 @@ function General() {
                   </ul>
                 )}
 
+                {openOptionCategory === "Beastheart Exploits" && (
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Name</th>
+                        <th>Ferocity</th>
+                        <th>Prerequisites</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.Options["Beastheart Exploits"].map(
+                        (entry, index) => (
+                          <tr key={index}>
+                            <td>{entry.name}</td>
+                            <td>{entry.ferocity}</td>
+                            <td>{entry.prerequisite}</td>
+                            <td>{entry.description}</td>
+                          </tr>
+                        )
+                      )}
+                    </tbody>
+                  </table>
+                )}
+
+                {openOptionCategory === "Maneuvers" && (
+                  <ul className="option-list">
+                    {data.Options["Maneuvers"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 {openOptionCategory === "Sorcerer Metamagic" && (
                   <ul className="option-list">
                     {data.Options["Sorcerer Metamagic"].map((meta) => (
@@ -268,6 +317,30 @@ function General() {
                             <div>
                               <strong>Cost:</strong> {meta.cost}
                             </div>
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {openOptionCategory === "Psionic Exertion" && (
+                  <ul className="option-list">
+                    {data.Options["Psionic Exertion"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
                             <div>{meta.description}</div>
                           </div>
                         )}
@@ -323,6 +396,27 @@ function General() {
                           <td>{entry.result}</td>
                         </tr>
                       ))}
+                    </tbody>
+                  </table>
+                )}
+
+                {openOptionCategory === "Wild Magic Rage Table" && (
+                  <table className="data-table">
+                    <thead>
+                      <tr>
+                        <th>Roll</th>
+                        <th>Effect</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.Options["Wild Magic Rage Table"].map(
+                        (entry, index) => (
+                          <tr key={index}>
+                            <td>{entry.roll}</td>
+                            <td>{entry.result}</td>
+                          </tr>
+                        )
+                      )}
                     </tbody>
                   </table>
                 )}

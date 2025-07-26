@@ -1,7 +1,7 @@
 const options = {
   // Artificer Infusions
 
-  // Barbarian Wild Magic Table
+  //  Wild Magic Rage Table
 
   // Bard Stories Table
 
@@ -42,9 +42,361 @@ const options = {
 
   // Beastheart Exploits
 
-  // Druid Beast List
+  "Beastheart Exploits": [
+    {
+      name: "Aid Us, Friend",
+      ferocity: "3",
+      prerequisite: "Level 2+",
+      description: `You can activate this exploit whenever you take the Attack action Before or after you attack, your companion can take the Help action as a bonus action`,
+    },
+    {
+      name: "Bring Them Down",
+      ferocity: "4",
+      prerequisite: "2+",
+      description:
+        "When your com- panion hits a creature with their signature attack, you can use your reaction to command the companion to yank the target down The target must succeed on a Strength saving throw or fall prone",
+    },
+    {
+      name: "Drag Them",
+      ferocity: "4",
+      prerequisite: "2+",
+      description: `When your companion hits a Large or smaller creature with their signature attack and both the companion and the target are standing on the ground, you can use your reaction to command your companion to move the target The target must make a Strength saving throw On a failure, the companion moves up to half their walking speed in any direction you choose and pulls the target with it`,
+    },
+    {
+      name: "Feral Reflexes",
+      ferocity: "2",
+      prerequisite: "2+",
+      description:
+        "When you or your companion is hit by an attack, you can use your reac- tion to increase the target's AC by 2 against the trigger- ing attack",
+    },
+    {
+      name: "Hurricane Blow",
+      ferocity: "3",
+      prerequisite: "2+",
+      description:
+        "You can activate this exploit whenever you take the Attack action The frst time you hit a creature with a weapon attack this turn, the attack deals its normal efects, and you can push the target up to 10 feet away from you",
+    },
+    {
+      name: "No Escape",
+      ferocity: "1+",
+      prerequisite: "2+",
+      description:
+        "At the start of your turn when your companion gains ferocity and doesn't enter a rampage, you can spend up to your Wisdom modifer in ferocity (minimum 1; no action required) Until the start of your next turn, your speed or your companion's speed (your choice) increases by 5 feet x the ferocity spent",
+    },
+    {
+      name: "Primal Pounce",
+      ferocity: "3",
+      prerequisite: "2+",
+      description:
+        "When your companion hits a creature with their signature attack, you can use your reaction to command the companion to grapple the target The target must make a Dexterity saving throw On a failure, the companion grabs the target and the target is grappled (escape DC equal to your exploit save DC) The grapple also ends if your companion attacks a creature other than the target",
+    },
+    {
+      name: "Quick Hide",
+      ferocity: "2",
+      prerequisite: "2+",
+      description:
+        "You can activate this exploit whenever you take the Attack action The frst time you hit a creature with a weapon attack this turn, your companion can take the Hide action as a reaction if they are able to hide",
+    },
+    {
+      name: "Thrash",
+      ferocity: "4",
+      prerequisite: "2+",
+      description: `When your companion hits a Large or smaller creature with a melee signature attack, you can use your reaction to command the companion to thrash the target from side to side, forcing them to make a Wisdom saving throw On a failure, the target has disadvantage on attack rolls, and attack rolls against the target have advantage, until the start of your next turn`,
+    },
+    {
+      name: "Crushing Charge",
+      ferocity: "8",
+      prerequisite: "10+",
+      description: `As an action, you move up to your speed in a straight line without provok- ing opportunity attacks You can move through other creatures' spaces, but must end your move in an unoccu- pied space Each creature in a space you move through, except for your companion, must make a Strength saving throw On a failure, a creature takes 4d6 bludgeoning damage and is knocked prone On a success, the creature takes half as much damage and isn't knocked prone
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Expanding Fury",
+      ferocity: "6",
+      prerequisite: "10+",
+      description: `When your compan- ion uses a ferocity action that afects creatures within a specific distance of the companion, you can use your reaction to expand that distance by 10 feet`,
+    },
+    {
+      name: "Furious Vengeance",
+      ferocity: "5",
+      prerequisite: "10+",
+      description: `When a creature hits you or your companion with a melee attack, you can use your reaction to deal 4d6 psychic damage to the attacker.
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Marked Prey",
+      ferocity: "4",
+      prerequisite: "10+",
+      description: `When your companion uses a ferocity action that requires a creature to make a saving throw, you can use your reaction to impose disad- vantage on the save`,
+    },
+    {
+      name: "Primal Shout",
+      ferocity: "6",
+      prerequisite: "10+",
+      description: `As an action, you let loose a menacing bellow Each creature of your choice that can hear you within 15 feet of you must succeed on a Wis- dom saving throw or become frightened of you until the end of your next turn`,
+    },
+    {
+      name: "Wrath of the Pack",
+      ferocity: "4",
+      prerequisite: "10+",
+      description: `When you hit a creature with an attack and that creature is within 5 feet of your companion, you can have your companion make a signature attack against the creature (no action required) On a hit, the attack deals its normal efects, and the target is knocked prone`,
+    },
+    {
+      name: "Blood Sport",
+      ferocity: "16",
+      prerequisite: "17+",
+      description: `When you hit a Large or smaller creature with a melee weapon attack, you can also push the target up to 30 feet away from you and knock them prone If the target ends this move within 5 feet of your companion, the companion can make a sig- nature attack against the target (no action required) On a hit, the attack deals its normal efects, and the target is pushed up to 30 feet away from your companion If the target ends this move within 5 feet of you, you can make a melee weapon attack against them (no action required) that deals an extra 4d6 damage if it hits`,
+    },
+    {
+      name: "Break the Earth",
+      ferocity: "14",
+      prerequisite: "17+",
+      description: `As an action, you open a 10-foot-radius pit in the ground, foor, or other surface within 60 feet of you The pit can be up to 50 feet deep, depending on the depth beneath the surface where it is opened Each creature standing in the area when the pit opens must make a Dexterity saving throw On a failure, a creature falls into the pit, taking 1d6 bludgeon- ing damage per 10 feet fallen and landing prone On a success, the creature moves to an unoccupied space of their choice at the edge of the pit A creature can climb the rough walls of the pit without an ability check`,
+    },
+    {
+      name: "Bury the Dead",
+      ferocity: "16",
+      prerequisite: "17+",
+      description: `When you and your companion are within 5 feet of a creature, you can use an action to cause a vicious whirlwind flled with debris and dirt to rise around the creature, which must make a Dex- terity saving throw On a failure, the creature takes 8d6 bludgeoning damage, is knocked prone, and is restrained On a success, the target takes half as much damage and isn't knocked prone or restrained A creature restrained this way can use an action to make a Strength (Athletics) check against your exploit save DC, freeing themself on a success`,
+    },
+    {
+      name: "Imbue Projectile",
+      ferocity: "14",
+      prerequisite: "17+",
+      description: ` As an action, you make a ranged weapon attack Whether or not the attack hits, a wave of energy explodes from the weapon or ammunition used in the attack, centered on your target Each creature within 20 feet of the target (including the target and excluding your companion) must make a Dex- terity saving throw, taking 10d6 force damage on a failed save, or half as much damage on a successful one`,
+    },
+
+    {
+      name: "Rend",
+      ferocity: "12",
+      prerequisite: "17+",
+      description: `As an action, choose a creature you can see within 5 feet of you and your companion You make a melee weapon attack against the target, and your companion makes a signature attack against the tar- get (no actions required) If you both hit and deal dam- age to the target, the target is knocked prone and takes an additional 6d6 damage of a type dealt by either attack (your choice)`,
+    },
+    {
+      name: "Spirit Form",
+      ferocity: "14",
+      prerequisite: "17+",
+      description: `As a bonus action, you make you and your companion incorporeal until the end of your next turn While incorporeal, you each have resistance to acid, cold, fre, lightning, and thunder dam- age, and to bludgeoning, piercing, and slashing damage from nonmagical attacks While incorporeal, you and your companion each gain a fying speed equal to your individual walking speed, and each of you can move through other creatures and objects as if they were dif- cult terrain Either of you takes 5 (1d10) force damage if you end your turn inside an object`,
+    },
+    // Infernal
+    {
+      name: "Drain Them",
+      ferocity: "4",
+      prerequisite: "3+, Infernal Bond",
+      description: `When your companion hits another creature with their signature attack, you can use your reaction to have your companion regain hit points equal to half the damage dealt`,
+    },
+    {
+      name: "Hellish Wound",
+      ferocity: "4",
+      prerequisite: "3+, Infernal Bond",
+      description: `When your compan- ion hits another creature other than a construct or an undead with their attack, you can have the attack deal a hellish wound to the creature (no action required) At the start of each of their turns, a target with a hellish wound loses 1d10 hit points for each hellish wound they have All of a target's hellish wounds close if they receive mag- ical healing, or if any creature uses an action to staunch the wounds with a successful Wisdom (Medicine) check with a DC equal to your exploit save DC`,
+    },
+    {
+      name: "Infernal Teleport",
+      ferocity: "4",
+      prerequisite: "3+, Infernal Bond",
+      description: `As an action, you or your companion (your choice) are surrounded by swirling shadow and smoke The target teleports to an unoccupied space within 90 feet of their starting position`,
+    },
+    {
+      name: "Wicked Deception",
+      ferocity: "3",
+      prerequisite: "3+, Infernal Bond",
+      description: `As an action, choose a creature hostile to you that you can see within 30 feet of you That creature must succeed on a Wisdom saving throw or suddenly view you and your companion as friends until the end of your next turn While in this state, the creature is unable to attack or otherwise harm you or your companion This efect ends early if you or your companion attacks the afected creature Creatures immune to the charmed condition can't be afected by this exploit`,
+    },
+    {
+      name: "Brimstone Teleport",
+      ferocity: "8",
+      prerequisite: "11+, Infernal Bond",
+      description: `As an action, you teleport to an unoccupied space that you can see within 30 feet of you Each creature within 5 feet of the space you leave and each creature within 5 feet of your desti- nation space must make a Dexterity saving throw, taking 4d6 fre damage on a failed save, or half as much damage on a successful one You and your companion take no damage from this efect
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Chains from Hell",
+      ferocity: "8",
+      prerequisite: "11+, Infernal Bond",
+      description: `As an action, you manifest fery chains that attempt to wrap around up to three creatures of your choice that you can see within 30 feet of you Each target must make a Dexterity saving throw On a failure, a target takes 4d6 fre damage and is restrained until the end of your next turn On a success, a target takes half as much damage and isn't restrained
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Dark of Hell",
+      ferocity: "8",
+      prerequisite: "11+, Infernal Bond",
+      description: `As an action, you cause your companion to radiate an aura of magical darkness in a 10-foot radius until the end of your next turn You and your companion can see within this darkness, which moves with your companion`,
+    },
+    {
+      name: "Infernal Flames",
+      ferocity: "8",
+      prerequisite: "11+, Infernal Bond",
+      description: `As an action, you cause a blast of fre to erupt from your companion Each creature within 20 feet of the companion must make a Dexterity saving throw, taking 4d10 fre damage on a failed save, or half as much damage on a successful one You and your companion take no damage from this efect
+
+      When you reach 17th level, the damage increases to 5d10`,
+    },
+    {
+      name: "Poison Rain",
+      ferocity: "8",
+      prerequisite: "11+, Infernal Bond",
+      description: `As an action, you cause toxic green rain to fall in a 20-foot cube centered on a point you can see within 60 feet of you Each creature in the area except for you and your companion must suc- ceed on a Constitution saving throw or become poisoned until the end of your next turn`,
+    },
+
+    // Primordial Bond
+    {
+      name: "Elemental Shield",
+      ferocity: "3",
+      prerequisite: "3+, Primordial Bond",
+      description: `When a creature you can see within 30 feet of you takes acid, cold, fre, lightning, or thunder damage, you can use a reaction to give the afected creature resistance to that damage type (including against the triggering attack) until the end of their next turn`,
+    },
+    {
+      name: "Freezing Strike",
+      ferocity: "2",
+      prerequisite: "3+, Primordial Bond",
+      description: `You can activate this exploit whenever you take the Attack action The frst time you hit a creature with a weapon attack this turn, the attack deals an extra 1d6 cold damage and the target's speed is reduced by 10 feet until the start of your next turn
+
+      The extra damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6)`,
+    },
+    {
+      name: "Sickening Strike",
+      ferocity: "3",
+      prerequisite: "3+, Primordial Bond",
+      description: `You can activate this exploit whenever you take the Attack action The frst time you hit a creature with a weapon attack this turn, the target must succeed on a Constitution saving throw or be poisoned until the start of your next turn`,
+    },
+    {
+      name: "Wings When I Need Them",
+      ferocity: "5",
+      prerequisite: "3+, Primordial Bond",
+      description: `At the start of your turn when your companion gains ferocity and doesn't enter a rampage, you can manifest a spectral eagle (no action required) that lifts you or your com- panion (your choice) to the sky The target gains a fy- ing speed equal to their walking speed until the start of their next turn`,
+    },
+    {
+      name: "Lava Geyser",
+      ferocity: "8",
+      prerequisite: "11+, Primordial Bond",
+      description: `As an action, you sum- mon a powerful rush of lava centered on a point on the ground you can see within 30 feet of you The lava flls a cylinder that is 10 feet tall with a 5-foot radius, and forces each creature in its area to make a Dexterity sav- ing throw On a failure, a creature takes 4d6 fre damage and is knocked prone On a success, a creature takes half as much damage and isn't knocked prone The lava then dissolves into fery mist and fades away
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Lightning Eruption",
+      ferocity: "8",
+      prerequisite: "11+, Primordial Bond",
+      description: `When you hit a creature with a weapon attack, the attack deals an extra 5d6 lightning damage and you can choose one other creature within 30 feet of the target that you can see That creature must make a Dexterity saving throw, taking 5d6 lightning damage on a failed save, or half as much damage on a successful one
+
+      When you reach 17th level, both instances of damage increase to 6d6`,
+    },
+    {
+      name: "Plant Prison",
+      ferocity: "5",
+      prerequisite: "11+, Primordial Bond",
+      description: `As an action, choose a creature you can see within 30 feet of you Thorny vines erupt from the ground beneath the target, which must make a Dexterity saving throw On a failure, the target takes 4d6 piercing damage and is restrained until the start of your next turn On a success, the target takes half as much damage and isn't restrained
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Stinging Storm",
+      ferocity: "6",
+      prerequisite: "11+, Primordial Bond",
+      description: `As an action, you conjure a swarm of stinging insects in a line that is 5 feet wide and 30 feet long Each creature in the line except your companion must make a Constitution saving throw, taking 4d6 piercing damage on a failed save, or half as much damage on a successful one The insects then dis- solve to shadow and fade away
+
+      When you reach 17th level, the damage increases to 5d6`,
+    },
+    {
+      name: "Thunderous Rebuke",
+      ferocity: "6",
+      prerequisite: "11+, Primordial Bond",
+      description: `When you or your companion is hit with a melee attack by a creature within 5 feet of that target, you can use your reaction to force the attacker to make a Constitution saving throw On a failure, the attacker takes 3d6 thunder damage and is pushed 10 feet away from the target On a success, the attacker takes half as much damage and isn't pushed
+
+      When you reach 17th level, the damage increases to 4d6`,
+    },
+  ],
 
   // Fighter Battlemaster Maneuvers
+
+  Maneuvers: [
+    {
+      name: "Ambush",
+      description: `When you make a Dexterity (Stealth) check or an Initiative roll, you can expend one Superiority Die and add the die to the roll, unless you have the Incapacitated condition.`,
+    },
+    {
+      name: "Bait and Switch",
+      description: `When you're within 5 feet of a creature on your turn, you can expend one Superiority Die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and doesn't have the Incapacitated condition. This movement doesn't provoke Opportunity Attacks.
+
+    Roll the Superiority Die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.`,
+    },
+    {
+      name: "Commander's Strike",
+      description: `When you take the Attack action on your turn, you can replace one of your attacks to direct one of your companions to strike. When you do so, choose a willing creature who can see or hear you and expend one Superiority Die. That creature can immediately use its Reaction to make one attack with a weapon or an Unarmed Strike, adding the Superiority Die to the attack's damage roll on a hit.`,
+    },
+    {
+      name: "Commanding Presence",
+      description: `When you make a Charisma (Intimidation, Performance, or Persuasion) check, you can expend one Superiority Die and add that die to the roll.`,
+    },
+    {
+      name: "Disarming Attack",
+      description: `When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to disarm the target. Add the Superiority Die roll to the attack's damage roll. The target must succeed on a Strength saving throw or drop one object of your choice that it's holding, with the object landing in its space.`,
+    },
+    {
+      name: "Distracting Strike",
+      description: `When you hit a creature with an attack roll, you can expend one Superiority Die to distract the target. Add the Superiority Die roll to the attack's damage roll. The next attack roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.`,
+    },
+    {
+      name: "Evasive Footwork",
+      description: `As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.`,
+    },
+    {
+      name: "Feinting Attack",
+      description: `As a Bonus Action, you can expend one Superiority Die to feint, choosing one creature within 5 feet of yourself as your target. You have Advantage on your next attack roll against that target this turn. If that attack hits, add the Superiority Die to the attack's damage roll.`,
+    },
+    {
+      name: "Goading Attack",
+      description: `When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to goad the target into attacking you. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have Disadvantage on attack rolls against targets other than you until the end of your next turn.`,
+    },
+    {
+      name: "Lunging Attack",
+      description: `As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.`,
+    },
+    {
+      name: "Maneuvering Attack",
+      description: `When you hit a creature with an attack roll, you can expend one Superiority Die to maneuver one of your comrades into another position. Add the Superiority Die roll to the attack's damage roll, and choose a willing creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking an Opportunity Attack from the target of your attack.`,
+    },
+    {
+      name: "Menacing Attack",
+      description: `When you hit a creature with an attack roll, you can expend one Superiority Die to attempt to frighten the target. Add the Superiority Die to the attack's damage roll. The target must succeed on a Wisdom saving throw or have the Frightened condition until the end of your next turn.`,
+    },
+    {
+      name: "Parry",
+      description: `When another creature damages you with a melee attack roll, you can take a Reaction and expend one Superiority Die to reduce the damage by the number you roll on your Superiority Die plus your Strength or Dexterity modifier (your choice).`,
+    },
+    {
+      name: "Precision Attack",
+      description: `When you miss with an attack roll, you can expend one Superiority Die, roll that die, and add it to the attack roll, potentially causing the attack to hit.`,
+    },
+    {
+      name: "Pushing Attack",
+      description: `When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to drive the target back. Add the Superiority Die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or be pushed up to 15 feet directly away from you.`,
+    },
+    {
+      name: "Rally",
+      description: `As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).`,
+    },
+    {
+      name: "Riposte",
+      description: `When a creature misses you with a melee attack roll, you can take a Reaction and expend one Superiority Die to make a melee attack roll with a weapon or an Unarmed Strike against the creature. If you hit, add the Superiority Die to the attack's damage.`,
+    },
+    {
+      name: "Sweeping Attack",
+      description: `When you hit a creature with a melee attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die to attempt to damage another creature. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your Superiority Die. The damage is of the same type dealt by the original attack.`,
+    },
+    {
+      name: "Tactical Assessment",
+      description: `When you make an Intelligence (History or Investigation) check or a Wisdom (Insight) check, you can expend one Superiority Die and add that die to the ability check.`,
+    },
+    {
+      name: "Trip Attack",
+      description: `When you hit a creature with an attack roll using a weapon or an Unarmed Strike, you can expend one Superiority Die and add the die to the attack's damage roll. If the target is Large or smaller, it must succeed on a Strength saving throw or have the Prone condition.`,
+    },
+  ],
 
   // Talent Psionic Exploits
 
@@ -116,8 +468,58 @@ const options = {
     },
   ],
 
-  // Talent Psionic Exploits
+  // Talent Psionic Exertion
+  "Psionic Exertion": [
+    {
+      name: "Destructive Power",
+      description:
+        "When you roll damage for a power, you can gain strain equal to half the power's order (minimum 1 strain) to make half the damage dice you rolled deal the die's maximum value instead of the number rolled .",
+    },
+    {
+      name: "Dynamic Power",
+      description:
+        "When a Medium or smaller creature is hit by an attack roll for a power you manifest or fails a saving throw against a power you manifest, you can gain 2 strain to move the target up to 15 feet in any direction or knock them prone . You can gain 3 strain to affect a Large creature with this Psionic Exertion option, or 4 strain to affect a Huge creature .",
+    },
+    {
+      name: "Expanded Power",
+      description:
+        "After you make a manifestation test to manifest a power that creates an area of effect, you can gain strain equal to the power's order to double all dimensions of the area of effect .",
+    },
+    {
+      name: "Fascinating Power",
+      description: `When a creature fails a saving throw against a power you manifest, you can activate this Psionic Exertion option . If the creature has a challenge rating equal to or lower than your talent level (or if its level is equal to or lower than your talent level, for creatures that don't have a challenge rating), you gain 2 strain and the target is charmed by you for 1 minute or until you or your companions do anything harmful to it . If the creature has a challenge rating or level higher than your talent level, you gain no strain and the target is unaffected .
 
+      A creature charmed in this way is friendly to you . When the condition ends for the target, they know they were charmed by you .`,
+    },
+    {
+      name: "Halting Power",
+      description:
+        "When a Medium or smaller creature fails a saving throw against a power you manifest, you can gain 2 strain to make the target restrained until the start of your next turn . You can gain 4 strain to affect a Large creature with this Psionic Exertion option .",
+    },
+    {
+      name: "Magnified Power",
+      description: `After you make a manifestation test to manifest a power that has a duration of 1 minute or longer, you can gain 1 strain to double its duration, to a maximum of 24 hours .
+
+      Alternatively, after you make a manifestation test to manifest a power that has a range of 5 feet or greater, you can gain 1 strain to double the range of the power . After you make a manifestation test to manifest a power that has a range of touch, you can gain 1 strain to make the range of the power 30 feet .`,
+    },
+    {
+      name: "Overwhelming Power",
+      description:
+        "When a creature succeeds on a saving throw against a power you manifest, you can gain strain equal to the power's order to force the creature to reroll the saving throw with a penalty equal to your proficiency bonus . The creature must use the new roll .",
+    },
+
+    {
+      name: "Shared Power",
+      description:
+        "After you make a manifestation test to manifest a power that can target only one creature and doesn't create an area of effect, you can gain strain equal to the power's order to target a second creature in range with the same power .",
+    },
+    {
+      name: "Terrifying Power",
+      description: `When a creature fails a saving throw against a power you manifest, you can activate this Psionic Exertion option . If the creature has a challenge rating equal to or lower than your talent level (or if its level is equal to or lower than your talent level, for creatures that don't have a challenge rating), you gain 3 strain and the target is frightened of you for 1 minute . If the creature has a challenge rating or level higher than your talent level, you gain no strain and the target is unaffected .
+
+        Whenever a creature frightened in this way takes damage, they make a Wisdom saving throw against your talent power save DC, ending the condition on themself on a success .`,
+    },
+  ],
   // Warlock Invocations
 
   "Warlock Invocations": [
@@ -417,6 +819,41 @@ const options = {
     {
       roll: "97-100",
       result: `Roll 1d6: On a 1, you regain 2d10 Hit Points; on a 2, one ally of your choice within 300 feet of you regains 2d10 Hit Points; on a 3, you regain your lowest-level expended spell slot; on a 4, one ally of your choice within 300 feet of you regains their lowest-level expended spell slot; on a 5, you regain all your expended Sorcery Points; on a 6, all the effects of row 17-20 affect you simultaneously.`,
+    },
+  ],
+
+  "Wild Magic Rage Table": [
+    {
+      roll: "1",
+      result: `Shadowy tendrils lash around you. Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d12 necrotic damage. You also gain 1d12 temporary hit points.`,
+    },
+    {
+      roll: "2",
+      result: `You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a bonus action.`,
+    },
+    {
+      roll: "3",
+      result: `An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity saving throw or take 1d6 force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a bonus action.`,
+    },
+    {
+      roll: "4",
+      result: `Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.`,
+    },
+    {
+      roll: "5",
+      result: `Whenever a creature hits you with an attack roll before your rage ends, that creature takes 1d6 force damage, as magic lashes out in retribution.`,
+    },
+    {
+      roll: "6",
+      result: `Until your rage ends, you are surrounded by multicolored, protective lights; you gain a +1 bonus to AC, and while within 10 feet of you, your allies gain the same bonus.`,
+    },
+    {
+      roll: "7",
+      result: `Flowers and vines temporarily grow around you; until your rage ends, the ground within 15 feet of you is difficult terrain for your enemies.`,
+    },
+    {
+      roll: "8",
+      result: `A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution saving throw or take 1d6 radiant damage and be blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a bonus action.`,
     },
   ],
 

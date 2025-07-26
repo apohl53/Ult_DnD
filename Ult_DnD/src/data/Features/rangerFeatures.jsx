@@ -239,11 +239,11 @@ export const rangerFeatures = {
     name: "Coordinated Tactics",
     description: `You have an innate understanding of coordinating teamwork. It is represented by your Teamwork Die, which is used in the powers you have from this subclass. The Teamwork Die table shows the die size when you reach certain Ranger levels.
 
-At the start of your turn, roll your Teamwork Die and use that result for it until the start of your next turn when you reroll it.
+    At the start of your turn, roll your Teamwork Die and use that result for it until the start of your next turn when you reroll it.
 
-Coordinated Strikes. When another creature you can see hits a target with an attack roll, you can take a Reaction to roll your Teamwork Die and add the number rolled to the attack's damage against the target. The damage is of the same type dealt by the original attack.
+    Coordinated Strikes. When another creature you can see hits a target with an attack roll, you can take a Reaction to roll your Teamwork Die and add the number rolled to the attack's damage against the target. The damage is of the same type dealt by the original attack.
 
-Coordinated Tactics. You grant your allies the ability to harmonize their positions on the battlefield. At the start of your turn, after you roll your Teamwork Die you can choose any number of willing creatures within 60 feet of you that can see you. Each of the chosen creatures can take a Reaction to move up to a number of feet equal to 5 times the number rolled or up to its Speed, whichever is lower. This movement doesn't provoke Opportunity Attack action and ignores Difficult Terrain.
+    Coordinated Tactics. You grant your allies the ability to harmonize their positions on the battlefield. At the start of your turn, after you roll your Teamwork Die you can choose any number of willing creatures within 60 feet of you that can see you. Each of the chosen creatures can take a Reaction to move up to a number of feet equal to 5 times the number rolled or up to its Speed, whichever is lower. This movement doesn't provoke Opportunity Attack action and ignores Difficult Terrain.
 
             Ranger Level	-> Teamwork Die
             3 -> d6
