@@ -159,6 +159,51 @@ export const rogueFeatures = {
     description: `When you hit with your Sneak Attack on the first round of a combat, the target must succeed on a Constitution saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus), or the attack's damage is doubled against the target.`,
   },
 
+  // Blade of Radiance
+
+  "Sanctified Champion": {
+    name: "Sanctified Champion",
+    description: `At 3rd level, your intense training bears fruit, granting you proficiency with martial weapons and medium armor. At the end of a long rest, you can perform a ritual on a melee weapon you are proficient with that deals piercing or slashing damage, sanctifying it. It becomes your sanctified blade, and you can only have one such blade at a time. When in your hands, your sanctified blade has the finesse property and is considered silvered.`,
+  },
+  "Divine Blessings": {
+    name: "Divine Blessings",
+    description: `Also at 3rd level, your devotion to eradicating enemies of the Church is made manifest by the righteous powers you wield. You have a pool of points that you can expend to fuel this divine power called Divine points. The number of points in the pool equals 1 + your Wisdom modifier (minimum 1). You regain all your expended Divine points when you finish a short or long rest. In addition, each time you kill an aberration, beast, fiend, or undead of CR 1/2 or higher with your sanctified blade, you regain one Divine point. Each time you expend a Divine point you gain temporary hit points equal to your Wisdom modifier.
+
+    Saving Throws. Some of your divine attacks require your target to make a saving throw to resist the effects. The saving throw DC is calculated as follows:
+
+    Radiance save DC = 8 + your proficiency bonus + your Wisdom modifier
+
+    You know the following features that each use your Divine points:
+    
+    ● Armor of the Faithful. When a creature targets you with an attack, you can expend one Divine point as a reaction. The target must make a Wisdom saving throw against your Radiance save DC. On a failed save, the creature must choose a new target or lose the attack or spell, and the creature can't target you until the start of your next turn. This feature doesn't protect you from area effects, such as the explosion of a fireball.
+
+    ● Divine Inspiration. When you make a Religion, a History, or an Insight check, you can expend one Divine point to reroll the die and must use the new result. You can choose to do so after you roll the die, but before the outcome is determined. You gain a bonus to the check equal to your Wisdom modifier.
+    
+    ● Rend the Blasphemous. On your turn after taking the Attack action with your sanctified blade, you can expend one Divine point as bonus action to let the divine hand guide you. Make a weapon attack against a creature within your reach. You gain a bonus to your attack roll equal to your Wisdom modifier.`,
+  },
+  "Righteous Armament": {
+    name: "Righteous Armament",
+    description: `At 9th level your faith gives you the power to rebel against fate itself. You learn the following features that each use your Divine points:
+
+    ● Chains of Judgement. When you hit a creature with your sanctified blade, you can expend one Divine point to create radiant chains that restrain the creature. The target must succeed on a Strength saving throw against your Radiance save DC or take radiant damage equal to your Wisdom modifier and become restrained until the end of your next turn.
+
+    ● Divine Retaliation. When a creature damages you with a melee attack, you can use your reaction and expend one Divine point to make a melee weapon attack with your sanctified blade against the creature. If you hit, you gain a bonus to the attack's damage roll equal to your Wisdom modifier.
+
+    ● Erupting Blades. When you hit a creature with an attack that could apply your Sneak Attack damage, you can expend one Divine point to cause a rain of radiant blades to fall on the battlefield. Instead of damaging the creature with your Sneak Attack, all creatures in a 20-foot-cone originating from the target (including the target) must make a Dexterity saving throw against your Radiance save DC, taking radiant damage equal to your Wisdom modifier + half your Sneak Attack damage on a failed saving throw, or half as much damage on a successful one.`,
+  },
+  "Saintly Revelations": {
+    name: "Saintly Revelations",
+    description: `At 13th level, you experience revelations, showing you how to channel divine energy to embolden your blade. You learn two cleric cantrips of your choice. In addition, you can cast protection from evil and good, heroism, and shield of faith at will, requiring no components, and only targeting yourself. Wisdom is your spellcasting modifier for these spells.
+
+    Starting at 17th level, you do not need to concentrate on these spells, though you can only have a single spell from this feature active at a time.`,
+  },
+  "Final Judgement": {
+    name: "Final Judgement",
+    description: `At 17th level, your sanctified blade becomes imbued with holy power. You can speak a command word (no action required) to cause your blade to emit bright light in a 30-foot radius and dim light for an additional 30 feet. The light lasts until you speak the command word again or you stow your weapon. While emitting light in this way, the weapon is considered a magic weapon and attacks made with it deal an extra 2d4 radiant damage on a hit.
+
+    In addition, while wielding the blade, as an action, you can cast spirit guardians, requiring no components. Creatures within the area of the spell are considered within 5 feet of an enemy for the purposes of your Sneak Attack. Once you cast the spell in this way, you can't do so again until you finish a long rest, unless you expend three Divine points to use it again.`,
+  },
+
   // Grim Surgeon
 
   Medic: {
@@ -200,6 +245,42 @@ export const rogueFeatures = {
   // Phantom (UA)
 
   // Scion of the Three (UA)
+
+  // Shadow
+
+  "Umbral Weapon": {
+    name: "Umbral Weapon",
+    description: `At 3rd level, you gain proficiency with firearms, and you learn to make an umbral weapon by wreathing a rifle in shadows with a grim ritual. You perform the ritual over the course of 1 hour, which can be done during a short rest or long rest. The rifle must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and bond with it. Once you have bonded a rifle to yourself, you can't be disarmed of it unless you are incapacitated. If it is on the same plane of existence, you can summon the rifle (no action required) on your turn, causing it to teleport instantly to your hand. Your umbral weapon keeps its original properties with the following alterations when you use it: it doesn't have the Barrel property, it doesn't require ammunition, and it doesn't make sound when fired.
+
+    You can only have one bonded weapon. If you attempt to bond with a second weapon, your bond with the first one ends.`,
+  },
+  "Shadow Movement": {
+    name: "Shadow Movement",
+    description: `Starting at 3rd level, you can become one with the shadows. When you are in darkness, you can use your bonus action to take the Hide action with advantage on the Stealth check and turn into a shadowy, amorphous version of yourself. While in this form, you have advantage on Stealth checks, can move through a space as narrow as 1 inch wide without squeezing, have a climbing speed equal to your walking speed, and are incapacitated. This transformation ends after 1 minute, if you enter dim or bright light, or if you take damage.
+
+    You can choose to end the transformation early (no action required) on your turn. If you do so and are in darkness, you can make one weapon attack with your umbral weapon, weaving shadows into a bullet; if you miss, your location isn't revealed. The damage die of this attack is 1d4, instead of the weapon's regular damage die.`,
+  },
+  "Tenebrous Body": {
+    name: "Tenebrous Body",
+    description: `By 9th level, your eyes are adapted to tenebrosity. You can see normally in darkness and dim light, both magical and nonmagical, to a distance of 120 feet.
+
+    In addition, you can maintain the transformation of your Shadow Movement for up to 1 hour.`,
+  },
+  "Grim Curse": {
+    name: "Grim Curse",
+    description: `Starting at 13th level, you can animate the shadows of your foes, turning them against each other. When you hit a creature with your umbral weapon and deal Sneak Attack damage to it, you can sacrifice up to three of your Sneak Attack damage dice. Each die sacrificed in this way doesn't deal damage. Instead, the target must make a saving throw (DC equals 8 + your Dexterity modifier + your proficiency bonus). On a failure, it suffers a condition until the start of your next turn. If you and the target are in darkness, the target suffers a - 1d6 penalty to its saving throw. The type of saving throw and resulting condition are based on the number of Sneak Attack damage dice you sacrifice.
+    
+     Sneak Attack Dice Sacrificed | Condition | Saving Throw
+
+              1      |  Prone      |  Dexterity
+              2      |  Restrained |  Strength
+              3      |  Blinded    |  Constitution
+`,
+  },
+  "Veil of Shadows": {
+    name: "Veil of Shadows",
+    description: `Beginning at 17th level, the shadows beckon you. When you use your Uncanny Dodge feature, you can choose to teleport to an unoccupied space you can see within 30 feet of you that is in darkness and make one attack with your umbral weapon against the attacker. If there are no such spaces available, you can't teleport, but you can make the attack if you are already in darkness.`,
+  },
 
   // Scout
 

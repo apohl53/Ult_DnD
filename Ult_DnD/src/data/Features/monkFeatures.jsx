@@ -89,6 +89,41 @@ export const monkFeatures = {
     description:
       "You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 25.",
   },
+
+  // Way of the Fire Dancer
+  "Blazing Performer": {
+    name: "Blazing Performer",
+    description: `At 3rd level, you've trained your body to dance through flames. You gain proficiency in the Performance or Acrobatics skill (your choice), and your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.
+
+    In addition, you gain resistance to fire damage. If you already have this resistance, instead, if you take fire damage, you can reduce that damage by 1d6 (after the resistance applies).`,
+  },
+  "Dance of Fire": {
+    name: "Dance of Fire",
+    description: `At 3rd level, you are a master at weaving flames through your use of ki, creating a deadly dance. When you spend a ki point during your turn, your monk weapons and unarmed strikes catch fire until the start of your next turn. While on fire, they deal extra fire damage equal to your Wisdom modifier, and you gain a bonus to your AC equal to half your Wisdom modifier for the duration.
+    
+    In addition, while your flames are active, if a creature misses you with a melee attack, you can use your reaction to make an unarmed strike or spend a ki point to use your Flurry of Blows feature against it.`,
+  },
+  "Scorching Vortex": {
+    name: "Scorching Vortex",
+    description: `Starting at 6th level, you learn to entrap your foes in the flames of your dance. When you use Step of the Wind, if you move through each space adjacent to a creature on your turn, you create a vortex of fire around them. The target must make a Dexterity saving throw against your ki save DC, taking 2d6 fire damage and becoming trapped in a vortex of flames that appears in its space on a failed save. On a successful save, the target takes half as much damage and the vortex fails to appear. The vortex is opaque and obstructs line of sight. If the target attempts to move out of the flames, it must first succeed on a Wisdom saving throw against your ki save DC. On a failure, it takes 1d6 fire damage and is charmed by the flames, reducing its speed to 0 until the start of its next turn, at which point the vortex and its effects end. On a success, it moves through the vortex, ending the effect. These flames do not damage other creatures.
+
+    Once you use this feature a number of times equal to 1 + your Wisdom modifier, you can't do so again until you finish a long rest`,
+  },
+  "Flames of Redemption": {
+    name: "Flames of Redemption",
+    description: `At 11th level, any fire damage that you deal ignores fire resistance. In addition, the clarity of your mind allows you to generate flames that many would call divine; you can replace any fire damage that you deal with radiant damage.`,
+  },
+  "Purifying Flames": {
+    name: "Purifying Flames",
+    description: `At 11th level, your flames burn away all impurities. As an action, you can spend 2 ki points to touch a creature and infuse them with your flames. The target can end one poison, charm, or short-term madness afflicting it.`,
+  },
+  "One With The Fire": {
+    name: "One With The Fire",
+    description: `At 17th level, you are a master of the flames. When you deal fire damage with a monk weapon, if the target is a creature or a flammable object, it ignites. Until the target or a creature within 5 feet of it takes an action to douse the flames, the target takes fire damage equal to your Wisdom modifier at the start of each of its turns.
+
+    In addition, while under the effects of Dance of Fire, your body merges with the flames. For the duration, you become immune to fire damage and have resistance to bludgeoning, piercing, and slashing damage.`,
+  },
+
   // Way of Long Death
   "Touch of Death": {
     name: "Touch of Death",

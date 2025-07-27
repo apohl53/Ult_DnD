@@ -196,6 +196,96 @@ export const barbarianFeatures = {
       "As a Bonus Action, you can strike terror into others with your menacing presence and primal power. When you do so, each creature of your choice in a 30-foot Emanation originating from you must make a Wisdom saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, a creature has the Frightened condition for 1 minute. At the end of each of the Frightened creature's turns, the creature repeats the save, ending the effect on itself on a success. Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a use of your Rage (no action required) to restore your use of it.",
   },
 
+  // Earthbreaker
+
+  "Overwhelming Power": {
+    name: "Overwhelming Power",
+    description: `Starting at 3rd level, you have learned to channel destructive energy through your fists and other body parts. When you hit with an unarmed strike, you can deal bludgeoning damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. This die increases to 1d8 at 6th level, 1d10 at 10th level, and 1d12 at 14th level. When you make an unarmed strike against a creature on your turn, you can use a bonus action to make another unarmed strike against the same creature.
+
+    Your sheer power puts a massive strain on most weapons, shattering them. When you hit with a melee attack with a nonmagical weapon, the weapon breaks in your hand and can't be used to make attacks until it is repaired. In addition, the range of thrown weapons is doubled for you. If you hit with a ranged attack with a thrown weapon, you can use the damage die above in place of the weapon's usual damage dice.`,
+  },
+  "Gravitational Rage": {
+    name: "Gravitational Rage",
+    description: `At 3rd level, once per turn, when you deal damage to a creature with an unarmed strike, you can choose one of the following effects. These effects use your Earthbreaker save DC.
+    
+    Earthbreaker save DC = 8 + your proficiency bonus + your Strength modifier
+
+    • Burying Hands. The target must succeed on a Strength saving throw or have its speed reduced to 0 until the start of your next turn, as you partially bury it in the ground. If the target fails the saving throw by 5 or more, it is also knocked prone. If the target isn't on the ground when it fails this save, it immediately falls instead, even if it can hover.
+
+    • Bulldozing Punch. You push the target 10 feet away from you or upward. If pushed into an obstacle or another creature, the target takes bludgeoning damage equal to your Strength modifier (minimum of 1). Creatures with a Strength score equal to or greater than yours can make a Strength saving throw to resist this effect, avoiding it on a success. If you push the target upward, it can make a DC 10 Dexterity saving throw, avoiding any fall damage on a success.`,
+  },
+  Ruination: {
+    name: "Ruination",
+    description: `Starting at 6th level, the strength you wield is capable of toppling the arcane rules of the world. Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity.
+
+    In addition, when you hit a physical barrier created by a spell with an unarmed strike, such as the effect of a wall of force or forcecage spell, or any other wall spell (such as wall of fire, gravity wall󨖙, or prismatic wall), you can make a Strength check (DC = 10 + the spell's level), rupturing the arcane and dispelling the spell on a success.`,
+  },
+  "Imperious Gravity": {
+    name: "Imperious Gravity",
+    description: `Also at 6th level, you increase your mastery over gravity. On each of your turns while raging, you can use a bonus action to create one of the following effects, using your Earthbreaker save DC. The range of these abilities, and the distance they move creatures, doubles at 14th level.
+
+    • Attractive Field. You unleash a gravitational wave. Each creature in a 15-foot cone originating from you must succeed on a Strength saving throw or be pulled up to 10 feet towards you.
+
+    • Repulsive Field. You condense a bubble of gravity around yourself. The next time a creature would hit you with a melee attack, the bubble bursts in a roaring explosion. Each creature within 10 feet of you must succeed on a Strength saving throw or be pushed up to 10 feet away from you. If this pushes the attacker beyond its reach of you, the attack misses you. If the bubble doesn't burst by the start of your next turn, it harmlessly dissipates.
+
+    • Stomp. You stomp the ground, causing a destructive quake in a 10-foot-long, 5-foot-wide line on the ground originating from you. Each creature in the area must succeed on a Dexterity saving throw or take 1d4 bludgeoning damage and have disadvantage on its next Strength saving throw before the start of your next turn as it is thrown off balance. Additionally, the ground in that area becomes difficult terrain until cleared. Each 5-foot-square portion of the area requires at least 1 minute to clear by hand.`,
+  },
+  Unyielding: {
+    name: "Unyielding",
+    description: `Beginning at 10th level, your unarmed strikes deal double damage to structures and you can ignore difficult terrain.
+
+    In addition, your crushing power seeps into all the aspects of your life. You can add your Constitution modifier to any Strength checks and Intimidation checks you make.`,
+  },
+  "World Breaker": {
+    name: "World Breaker",
+    description: `Once you reach 14th level, your blows can level the world. Once on each of your turns while you are raging, when you make a melee attack, you can fracture the world. On a hit, the target takes an extra 3d12 bludgeoning damage and is pushed up to 30 feet away from you. In addition, hit or miss, the area in a 90-foot cone in front of you breaks, as per the earthquake spell (save DC equals your Earthbreaker save DC), although the spell only lasts until the start of your next turn, doesn't require concentration, and can create only 1d4 fissures in the area.
+
+    You can use this feature a number of times equal to your Strength modifier, and you regain all expended uses when you finish a short or long rest.`,
+  },
+
+  // Lightning Vessel
+
+  "Galvanic Heart": {
+    name: "Galvanic Heart",
+    description: `Lightning is part of you. It flows through your veins and awaits release. At 3rd level, you gain resistance to lightning damage. If you already have this resistance, instead, if you take lightning damage, you can reduce that damage by 1d6 (after the resistance applies).
+
+    In addition, while raging, you can unleash the lightning within. For the duration of your rage, you can use your bonus action to unleash various powers.
+
+    Saving Throws. Some of your abilities require your target to make a saving throw to resist the effects. The saving throw DC is calculated as follows: 
+    
+    Vessel save DC = 8 + your proficiency bonus + your Constitution modifier
+
+    • Electrified Chains. You can use your bonus action to create chains of lightning that wrap around your weapon. The next time you hit a creature this turn, it takes additional lightning damage equal to twice your Constitution modifier and becomes ensnared by the chains, which anchor to the floor, until the start of your next turn. Each time it attempts to move more than 10 feet while ensnared, it must make an Athletics check contested by your Athletics check, freeing itself on a success. On a failure, it takes the lightning damage again and its speed is reduced to 0 until the start of your next turn.
+    
+    • Fulgurant Strike. When you hit a creature with a melee weapon attack, you can leave the weapon embedded in their chest for a brief moment and immediately use a bonus action to call down lightning from the heavens to strike them, using the weapon as a conduit, before retrieving it. The target takes lightning damage equal to twice your Constitution modifier, and all creatures within a 5-foot radius must succeed on a Dexterity saving throw against your Vessel save DC or also take that damage. You have advantage on this saving throw.
+
+    • Lightning Step. As a bonus action, you can move up to half your speed. During this rush, your body becomes supercharged; if you end this movement within 5 feet of a creature, it takes lightning damage equal to twice your Constitution modifier as the lightning leaps to them. If there are multiple creatures, choose one that takes the damage`,
+  },
+
+  "Roaring Crash": {
+    name: "Roaring Crash",
+    description: `At 6th level, you are ready to leap into battle at a moment's notice, crashing down on your foes like thunder from the heavens. As part of entering your rage, you can leap into the air, before crashing down on a point on the ground that you can see within 30 feet of you that isn't occupied by a Huge or larger creature. All creatures in a 10-foot radius centered on that point must succeed on a Dexterity saving throw against your Vessel save DC or take a number of d8s of lightning damage equal to your Constitution modifier (minimum of 1d8), or half as much damage on a success. If a creature is in the space on which you land, they have disadvantage on the saving throw and are pushed 5 feet out of your space into an unoccupied space of their choice. If no unoccupied space is within range, the creature instead falls prone in your space.
+
+    At 10th level, the distance you can leap increases to 60 feet, and you can land in spaces occupied by Huge creatures. At 14th level, the distance increases to 90 feet, and you can land in spaces occupied by Gargantuan creatures.`,
+  },
+
+  "Lightning Reflexes": {
+    name: "Lightning Reflexes",
+    description: `At 10th level, the lightning you wield enhances your reflexes past what your body could normally handle. As a result, whenever you make a Dexterity check, you gain a bonus to the check equal to your Constitution modifier (minimum of +1).
+
+    In addition, while raging, you can use Lightning Step once on each of your turn without using a bonus action.`,
+  },
+
+  "Electric Beast": {
+    name: "Electric Beast",
+    description: `Starting at 14th level, you are one with the lightning that flows through you. The damage from your Galvanic Heart's abilities increases to three times your Constitution modifier, and they improve in the following way:
+
+    • Electrified Chains. The creature cannot move more than 5 feet without attempting the check, and on a failure, they can't take reactions until the start of your next turn.
+
+    • Fulgurant Strike. The lightning strike's radius increases to 10 feet, and you can choose a number of creatures equal to your Constitution modifier that automatically succeed on the saving throw.
+
+    • Lightning Step. You can now move up to your full speed, and you can choose to merge with the lightning, teleporting the distance moved instead.`,
+  },
   // Giant
 
   "Giant's Power": {

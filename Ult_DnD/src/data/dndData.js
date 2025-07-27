@@ -57,6 +57,23 @@ export const dndData = {
         14: ["Demiurgic Colossus"],
       },
     },
+    // Eldritch Hunt
+    Earthbreaker: {
+      subclassFeatures: {
+        3: ["Overwhelming Power", "Gravitational Rage"],
+        6: ["Ruination", "Imperious Gravity"],
+        10: ["Unyielding"],
+        14: ["World Breaker"],
+      },
+    },
+    "Lightning Vessel": {
+      subclassFeatures: {
+        3: ["Galvanic Heart"],
+        6: ["Roaring Crash"],
+        10: ["Lightning Reflexes"],
+        14: ["Electric Beast"],
+      },
+    },
     // Griffon Saddlebag
     // Infernal: {
     //   subclassFeatures: {
@@ -580,6 +597,40 @@ export const dndData = {
   //     },
   //   },
   // },
+
+  // Jaegar
+  Jaegar: {
+    classFeatures: {
+      1: ["Flexible Combatant", "Focus", "Eldritch Hunter"],
+      2: ["Momentum", "Fighting Style (Jaegar)"],
+      3: ["Piercing Gaze"],
+      4: ["Seasoned Survivor"],
+      5: ["Extra Attack"],
+      6: ["Hunter's Pursuit"],
+      9: ["Evasion"],
+      11: ["Lethal Tempo"],
+      13: ["Relentless Pursuit"],
+      15: ["Inured to Madness"],
+      18: ["Eternal Watch"],
+      20: ["Always Ready"],
+    },
+    Marauder: {
+      subclassFeatures: {
+        3: ["Path of Gore", "Marauder Momentum"],
+        7: ["Leap Attack"],
+        14: ["Fell the Leviathan"],
+        17: ["Titanic Strength"],
+      },
+    },
+    Salvation: {
+      subclassFeatures: {
+        3: ["Art of Salvation", "Savior's Focus"],
+        7: ["Sanctifying Light"],
+        14: ["Purifying Salvation"],
+        17: ["Light of Hope"],
+      },
+    },
+  },
   Monk: {
     classFeatures: {
       1: ["Martial Arts", "Unarmored Defense(m)"],
@@ -597,6 +648,14 @@ export const dndData = {
       18: ["Superior Defense"],
       19: ["Epic Boon"],
       20: ["Body and Mind"],
+    },
+    "Fire Dancer": {
+      subclassFeatures: {
+        3: ["Blazing Performer", "Dance of Fire"],
+        6: ["Scorching Vortex"],
+        11: ["Flames of Redemption", "Purifying Flames"],
+        17: ["One With The Fire"],
+      },
     },
     "Long Death": {
       subclassFeatures: {
@@ -756,6 +815,22 @@ export const dndData = {
         9: ["Infiltration Expertise"],
         13: ["Envenom Weapons"],
         17: ["Death Strike"],
+      },
+    },
+    "Blade of Radiance": {
+      subclassFeatures: {
+        3: ["Sanctified Champion", "Divine Blessings"],
+        9: ["Righteous Armament"],
+        13: ["Saintly Revelations"],
+        17: ["Final Judgement"],
+      },
+    },
+    Shadow: {
+      subclassFeatures: {
+        3: ["Umbral Weapon", "Shadow Movement"],
+        9: ["Tenebrous Body"],
+        13: ["Grim Curse"],
+        17: ["Veil of Shadows"],
       },
     },
 
