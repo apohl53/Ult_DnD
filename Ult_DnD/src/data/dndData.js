@@ -630,6 +630,14 @@ export const dndData = {
         17: ["Light of Hope"],
       },
     },
+    Sanguine: {
+      subclassFeatures: {
+        3: ["Vital Consumption", "Crimson Rage"],
+        7: ["Blood Hex"],
+        14: ["Empowered Blood Hex"],
+        17: ["Blood Frenzy"],
+      },
+    },
   },
   Monk: {
     classFeatures: {

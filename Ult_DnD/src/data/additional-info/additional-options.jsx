@@ -398,6 +398,39 @@ const options = {
     },
   ],
 
+  // Jaegar Options
+
+  "Aerial Vault": {
+    name: "Aerial Vault",
+    type: "Focus Art",
+    action: "Special",
+    description: `When you make a jump, you can expend 1 Focus Point to double your jumping distance for that jump, and you can ignore difficult terrain until the end of your turn. When you use this Focus Art, the maximum distance you can jump isn't limited by your walking speed.`,
+  },
+  "Elemental Art": {
+    name: "Elemental Art",
+    type: "Focus Art",
+    action: "Bonus Action",
+    description: `As a bonus action, you expend 1 Focus Point and touch a weapon you're carrying. Choose between acid, cold, fire, or lightning. For 1 minute, the weapon deals that damage type instead of its normal type.`,
+  },
+  "Focus Mind": {
+    name: "Focus Mind",
+    type: "Focus Art",
+    action: "Reaction",
+    description: `As a reaction to making a saving throw against being charmed, frightened, or having your mind read or influenced, you can expend 1 Focus Point to gain advantage on the roll. If you already have advantage on the roll, you can reroll one of the dice once.`,
+  },
+  "fill fill": {
+    name: "fill fill",
+    type: "Focus Art",
+    action: "special",
+    description: ``,
+  },
+  "fill fill": {
+    name: "fill fill",
+    type: "Focus Art",
+    action: "special",
+    description: ``,
+  },
+
   // Talent Psionic Exploits
 
   // Sorcerer Metamagic

@@ -6,6 +6,7 @@ import { clericFeatures } from "./features/clericFeatures";
 import { druidFeatures } from "./features/druidFeatures";
 import { fighterFeatures } from "./features/fighterFeatures";
 import { gunslingerFeatures } from "./features/gunslingerFeatures";
+import { jaegarFeatures } from "./features/jaegarFeatures";
 import { monkFeatures } from "./features/monkFeatures";
 import { rangerFeatures } from "./features/rangerFeatures";
 import { rogueFeatures } from "./features/rogueFeatures";
@@ -25,6 +26,7 @@ export const featureDetails = {
   ...druidFeatures,
   ...fighterFeatures,
   ...gunslingerFeatures,
+  ...jaegarFeatures,
   ...monkFeatures,
   ...paladinFeatures,
   ...rangerFeatures,
