@@ -400,104 +400,106 @@ const options = {
 
   // Jaegar Options
 
-  "Aerial Vault": {
-    name: "Aerial Vault",
-    type: "Focus Art",
-    action: "Special",
-    description: `When you make a jump, you can expend 1 Focus Point to double your jumping distance for that jump, and you can ignore difficult terrain until the end of your turn. When you use this Focus Art, the maximum distance you can jump isn't limited by your walking speed.`,
-  },
-  "Elemental Art": {
-    name: "Elemental Art",
-    type: "Focus Art",
-    action: "Bonus Action",
-    description: `As a bonus action, you expend 1 Focus Point and touch a weapon you're carrying. Choose between acid, cold, fire, or lightning. For 1 minute, the weapon deals that damage type instead of its normal type.`,
-  },
-  "Focus Mind": {
-    name: "Focus Mind",
-    type: "Focus Art",
-    action: "Reaction",
-    description: `As a reaction to making a saving throw against being charmed, frightened, or having your mind read or influenced, you can expend 1 Focus Point to gain advantage on the roll. If you already have advantage on the roll, you can reroll one of the dice once.`,
-  },
-  Flourish: {
-    name: "Flourish",
-    type: "Focus Art",
-    action: "Bonus Action",
-    description: `As a bonus action, you can expend 1 Focus Point and gain 1 additional Momentum die (gaining 2 Momentum dice in total, which includes the die gained through the Momentum feature from expending the Focus Point on Flourish).`,
-  },
-  "Jaegar's Rush": {
-    name: "Jaegar's Rush",
-    type: "Focus Art",
-    action: "Bonus Action",
-    description: `As a bonus action, you can expend 1 Focus Point to take the Dash action.`,
-  },
-  "Jaegar's Assessment": {
-    name: "Jaegar's Assessment",
-    type: "Focus Art",
-    action: "Bonus Action",
-    description: `As a bonus action, you can expend 1 Focus Point to make an Investigation check against a creature you can see within 60 feet of you, contested by its Deception check. On success, you learn its creature type, AC, any resistances or immunities it has to damage or conditions, and any spells it is under the effect of.
+  "Focus Arts": [
+    {
+      name: "Aerial Vault",
+      type: "Focus Art",
+      action: "Special",
+      description: `When you make a jump, you can expend 1 Focus Point to double your jumping distance for that jump, and you can ignore difficult terrain until the end of your turn. When you use this Focus Art, the maximum distance you can jump isn't limited by your walking speed.`,
+    },
+    {
+      name: "Elemental Art",
+      type: "Focus Art",
+      action: "Bonus Action",
+      description: `As a bonus action, you expend 1 Focus Point and touch a weapon you're carrying. Choose between acid, cold, fire, or lightning. For 1 minute, the weapon deals that damage type instead of its normal type.`,
+    },
+    {
+      name: "Focus Mind",
+      type: "Focus Art",
+      action: "Reaction",
+      description: `As a reaction to making a saving throw against being charmed, frightened, or having your mind read or influenced, you can expend 1 Focus Point to gain advantage on the roll. If you already have advantage on the roll, you can reroll one of the dice once.`,
+    },
+    {
+      name: "Flourish",
+      type: "Focus Art",
+      action: "Bonus Action",
+      description: `As a bonus action, you can expend 1 Focus Point and gain 1 additional Momentum die (gaining 2 Momentum dice in total, which includes the die gained through the Momentum feature from expending the Focus Point on Flourish).`,
+    },
+    {
+      name: "Jaegar's Rush",
+      type: "Focus Art",
+      action: "Bonus Action",
+      description: `As a bonus action, you can expend 1 Focus Point to take the Dash action.`,
+    },
+    {
+      name: "Jaegar's Assessment",
+      type: "Focus Art",
+      action: "Bonus Action",
+      description: `As a bonus action, you can expend 1 Focus Point to make an Investigation check against a creature you can see within 60 feet of you, contested by its Deception check. On success, you learn its creature type, AC, any resistances or immunities it has to damage or conditions, and any spells it is under the effect of.
 
-    Alternatively, when you take this bonus action, you can take the Search action.`,
-  },
+Alternatively, when you take this bonus action, you can take the Search action.`,
+    },
+  ],
 
-  // Finishers
-  "Breaking Blow": {
-    name: "Breaking Blow",
-    type: "Finisher",
-    action: "Special",
-    description: `
-    When you hit a creature with an attack, you can expend all of your Momentum dice to force the target to make a saving throw, suffering a condition for 1 minute on a failure. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. The type of saving throw and the condition depend on the number of Momentum dice you have when you use this Finisher. You can choose to inflict a condition that requires fewer Momentum dice than you expend, but all Momentum dice are expended regardless of the condition selected.
-    The target can repeat its saving throw against the condition at the end of each of its turns, ending the effect on a success. If the condition inflicted is Prone, they do not need to pass a subsequent save and can end the condition by standing as normal instead.
-    If the target fails its initial save against the effect, you regain 1 Focus Point.
-    
-       Momentum Dice / Saving Throw / Condition
-                  
-              1 / Strength / Prone
-              2 / Constitution / Blinded
-              3 / Strength / Restrained
-              4 / Constitution / Stunned
-              5+ / Constitution / Paralyzed`,
-  },
-  "Chasing Finisher": {
-    name: "Chasing Finisher",
-    type: "Finisher",
-    action: "Bonus Action",
-    description: `As a bonus action, you expend all of your Momentum dice to move 10 feet per die expended before making a melee weapon attack. On a hit, add the expended Momentum dice to the attack's damage roll.
+  Finishers: [
+    {
+      name: "Breaking Blow",
+      type: "Finisher",
+      action: "Special",
+      description: `
+When you hit a creature with an attack, you can expend all of your Momentum dice to force the target to make a saving throw, suffering a condition for 1 minute on a failure. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus. The type of saving throw and the condition depend on the number of Momentum dice you have when you use this Finisher. You can choose to inflict a condition that requires fewer Momentum dice than you expend, but all Momentum dice are expended regardless of the condition selected.
 
-    If you move at least 30 feet using the Finisher, you regain 1 Focus Point.
-`,
-  },
-  "Hemorrhaging Wound": {
-    name: "Hemorrhaging Wound",
-    type: "Finisher",
-    action: "Special",
-    description: ` When you hit a creature with an attack, you can expend all of your Momentum dice to rend a vicious bleeding wound. At the end of each of the creature's turns, it loses hit points equal to the Momentum dice expended. Each time it takes damage from this effect, the number of dice of damage it takes at the end of its next turn is reduced by 1, and the bleeding stops when the number of dice would be reduced to 0. A bleeding creature can make a Constitution saving throw at the end of each of its turns, after taking the damage, ending the effect on a success. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus + half the number of dice remaining, rounded down.
+The target can repeat its saving throw against the condition at the end of each of its turns, ending the effect on a success. If the condition inflicted is Prone, they do not need to pass a subsequent save and can end the condition by standing as normal instead.
 
-    Applying a new bleed while the target is still bleeding does not stack, but instead refreshes the number of dice of damage taken from the bleed to the higher of the two values.
-    `,
-  },
-  "Opportunistic Shot": {
-    name: "Opportunistic Shot",
-    type: "Finisher",
-    action: "Reaction",
-    description: `As a reaction when a creature within 20 feet of you becomes paralyzed, restrained, or stunned, you can expend all of your Momentum dice and make a single weapon attack with a firearm you are holding. On a hit, the target takes damage equal to the weapon's damage roll plus the expended Momentum dice, it is knocked prone, and you regain 1 Focus Point.`,
-  },
-  "Vicious Finisher": {
-    name: "Vicious Finisher",
-    type: "Finisher",
-    action: "Bonus Action",
-    description: `As a bonus action, you expend all of your Momentum dice to form a spectral beast claw around one hand and make a melee weapon attack with it against a creature within 5 feet of you. You can use your choice of your Strength or Dexterity modifier for the attack and damage rolls of this attack. On a hit, the target takes magical slashing damage equal to 1d12 + your Strength modifier + the Momentum dice expended. This attack has a higher critical hit range based on the number of Momentum dice expended, reducing the roll needed by 2 for each die, up to a maximum of scoring a critical hit on a 10-20 with 5 Momentum dice.
+If the target fails its initial save against the effect, you regain 1 Focus Point.
 
-    If the Finisher is a critical hit, you regain 1 Focus Point. 
-    `,
-  },
-  "Volley Finisher": {
-    name: "Volley Finisher",
-    type: "Finisher",
-    action: "Bonus Action",
-    description: `As a bonus action while you are holding a firearm, you can expend all of your Momentum dice to reload and fire a spray of shots at blinding speed. Each creature in a 30- foot cone must make a Dexterity saving throw (DC = 8 + your Dexterity modifier + your proficiency bonus). On a failure, a creature takes piercing damage equal to the Momentum dice expended.
+   Momentum Dice / Saving Throw / Condition
+              
+          1 / Strength / Prone
+          2 / Constitution / Blinded
+          3 / Strength / Restrained
+          4 / Constitution / Stunned
+          5+ / Constitution / Paralyzed`,
+    },
+    {
+      name: "Chasing Finisher",
+      type: "Finisher",
+      action: "Bonus Action",
+      description: `As a bonus action, you expend all of your Momentum dice to move 10 feet per die expended before making a melee weapon attack. On a hit, add the expended Momentum dice to the attack's damage roll.
 
-    If the Finisher damages 2 or more creatures, you regain 1 Focus Point.`,
-  },
+If you move at least 30 feet using the Finisher, you regain 1 Focus Point.`,
+    },
+    {
+      name: "Hemorrhaging Wound",
+      type: "Finisher",
+      action: "Special",
+      description: `When you hit a creature with an attack, you can expend all of your Momentum dice to rend a vicious bleeding wound. At the end of each of the creature's turns, it loses hit points equal to the Momentum dice expended. Each time it takes damage from this effect, the number of dice of damage it takes at the end of its next turn is reduced by 1, and the bleeding stops when the number of dice would be reduced to 0. A bleeding creature can make a Constitution saving throw at the end of each of its turns, after taking the damage, ending the effect on a success. The DC of the save is 8 + your Strength or Dexterity modifier (your choice) + your proficiency bonus + half the number of dice remaining, rounded down.
+
+Applying a new bleed while the target is still bleeding does not stack, but instead refreshes the number of dice of damage taken from the bleed to the higher of the two values.`,
+    },
+    {
+      name: "Opportunistic Shot",
+      type: "Finisher",
+      action: "Reaction",
+      description: `As a reaction when a creature within 20 feet of you becomes paralyzed, restrained, or stunned, you can expend all of your Momentum dice and make a single weapon attack with a firearm you are holding. On a hit, the target takes damage equal to the weapon's damage roll plus the expended Momentum dice, it is knocked prone, and you regain 1 Focus Point.`,
+    },
+    {
+      name: "Vicious Finisher",
+      type: "Finisher",
+      action: "Bonus Action",
+      description: `As a bonus action, you expend all of your Momentum dice to form a spectral beast claw around one hand and make a melee weapon attack with it against a creature within 5 feet of you. You can use your choice of your Strength or Dexterity modifier for the attack and damage rolls of this attack. On a hit, the target takes magical slashing damage equal to 1d12 + your Strength modifier + the Momentum dice expended. This attack has a higher critical hit range based on the number of Momentum dice expended, reducing the roll needed by 2 for each die, up to a maximum of scoring a critical hit on a 10-20 with 5 Momentum dice.
+
+If the Finisher is a critical hit, you regain 1 Focus Point.`,
+    },
+    {
+      name: "Volley Finisher",
+      type: "Finisher",
+      action: "Bonus Action",
+      description: `As a bonus action while you are holding a firearm, you can expend all of your Momentum dice to reload and fire a spray of shots at blinding speed. Each creature in a 30-foot cone must make a Dexterity saving throw (DC = 8 + your Dexterity modifier + your proficiency bonus). On a failure, a creature takes piercing damage equal to the Momentum dice expended.
+
+If the Finisher damages 2 or more creatures, you regain 1 Focus Point.`,
+    },
+  ],
 
   // Talent Psionic Exploits
 

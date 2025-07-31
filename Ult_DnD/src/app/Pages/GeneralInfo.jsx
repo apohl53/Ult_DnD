@@ -274,6 +274,54 @@ function General() {
                   </table>
                 )}
 
+                {openOptionCategory === "Finishers" && (
+                  <ul className="option-list">
+                    {data.Options["Finishers"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
+                {openOptionCategory === "Focus Arts" && (
+                  <ul className="option-list">
+                    {data.Options["Focus Arts"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+
                 {openOptionCategory === "Maneuvers" && (
                   <ul className="option-list">
                     {data.Options["Maneuvers"].map((meta) => (
