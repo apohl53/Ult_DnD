@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./css/GeneralInfo.css";
 import { weapons, armor, shield } from "../../data/additional-info/equipment";
-import feats from "../../data/additional-info/feats";
+import { feats } from "../../data/additional-info/feats";
 import options from "../../data/additional-info/additional-options";
 import equipmentProperties from "../../data/additional-info/equipmentProperties";
 
@@ -30,9 +30,9 @@ function General() {
     setPropertyCategory(null);
   };
 
-  const toggleDetail = (item) => {
-    setOpenDetail(openDetail === item ? null : item);
-  };
+  // const toggleDetail = (item) => {
+  //   setOpenDetail(openDetail === item ? null : item);
+  // };
 
   const toggleOptionCategory = (category) => {
     setOpenOptionCategory(openOptionCategory === category ? null : category);
@@ -272,6 +272,30 @@ function General() {
                       )}
                     </tbody>
                   </table>
+                )}
+
+                {openOptionCategory === "Fighting Styles" && (
+                  <ul className="option-list">
+                    {data.Options["Fighting Styles"].map((meta) => (
+                      <li key={meta.name} className="option-item">
+                        <div
+                          className="option-name"
+                          onClick={() =>
+                            setOpenDetail(
+                              openDetail === meta.name ? null : meta.name
+                            )
+                          }
+                        >
+                          <strong>{meta.name}</strong>
+                        </div>
+                        {openDetail === meta.name && (
+                          <div className="option-description">
+                            <div>{meta.description}</div>
+                          </div>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
                 )}
 
                 {openOptionCategory === "Finishers" && (
