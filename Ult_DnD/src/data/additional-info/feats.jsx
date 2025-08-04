@@ -68,11 +68,11 @@ export const feats = [
   {
     name: "Bountiful Luck",
     prerequisite: "Level 4+, Halfling",
-    description: `Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You’re not sure how you do it; you just wish it, and it happens. Surely a sign of fortune’s favor!
+    description: `Your people have extraordinary luck, which you have learned to mystically lend to your companions when you see them falter. You're not sure how you do it; you just wish it, and it happens. Surely a sign of fortune's favor!
 
     When an ally you can see within 30 feet of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die. The ally must use the new roll.
 
-    When you use this ability, you can’t use your Lucky racial trait before the end of your next turn.`,
+    When you use this ability, you can't use your Lucky racial trait before the end of your next turn.`,
   },
   {
     name: "Cartomancer",
@@ -81,7 +81,7 @@ export const feats = [
 
     Card Tricks. You learn the Prestidigitation cantrip and can use it to create illusions that duplicate the effects of stage magic. When you use Prestidigitation in this way, you can conceal the verbal and somatic components of the spell as ordinary conversation and card handling.
 
-    Hidden Ace. When you finish a long rest, you can choose one spell from your class’s spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.`,
+    Hidden Ace. When you finish a long rest, you can choose one spell from your class's spell list and imbue that spell into a card. The chosen spell must have a casting time of 1 action, and it must be a level for which you have spell slots. The card remains imbued with this spell for 8 hours. While the card is imbued with the spell, you can use a bonus action to flourish the card and cast the spell within. The card then immediately loses its magic.`,
   },
   {
     name: "Charger",
@@ -92,7 +92,7 @@ export const feats = [
 
     Improved Dash. When you take the Dash action, your Speed increases by 10 feet for that action.
 
-    Charge Attack. If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack’s damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.`,
+    Charge Attack. If you move at least 10 feet in a straight line toward a target immediately before hitting it with a melee attack roll as part of the Attack action, choose one of the following effects: gain a 1d8 bonus to the attack's damage roll, or push the target up to 10 feet away if it is no more than one size larger than you. You can use this benefit only once on each of your turns.`,
   },
   {
     name: "Chef",
@@ -101,11 +101,11 @@ export const feats = [
 
     Ability Score Increase. Increase your Constitution or Wisdom score by 1, to a maximum of 20.
 
-    Cook’s Utensils. You gain proficiency with Cook’s Utensils if you don’t already have it.
+    Cook's Utensils. You gain proficiency with Cook's Utensils if you don't already have it.
 
-    Replenishing Meal. As part of a Short Rest, you can cook special food if you have ingredients and Cook’s Utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your Proficiency Bonus. At the end of the Short Rest, any creature who eats the food and spends one or more Hit Dice to regain Hit Points regains an extra 1d8 Hit Points.
+    Replenishing Meal. As part of a Short Rest, you can cook special food if you have ingredients and Cook's Utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 plus your Proficiency Bonus. At the end of the Short Rest, any creature who eats the food and spends one or more Hit Dice to regain Hit Points regains an extra 1d8 Hit Points.
 
-    Bolstering Treats. With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook’s Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.`,
+    Bolstering Treats. With 1 hour of work or when you finish a Long Rest, you can cook a number of treats equal to your Proficiency Bonus if you have ingredients and Cook's Utensils on hand. These special treats last 8 hours after being made. A creature can use a Bonus Action to eat one of those treats to gain a number of Temporary Hit Points equal to your Proficiency Bonus.`,
   },
   {
     name: "Cohort of Chaos",
@@ -115,23 +115,23 @@ export const feats = [
 
 Ability Score Increase. Increase an ability score of your choice by 1, to a maximum of 20.
 
-Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can’t occur until after the first flare ends.
+Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, the magic of chaos flows through you. Roll a d4 and consult the Chaotic Flares table to determine what happens. A flare lasts until the end of your next turn, and a new flare can't occur until after the first flare ends.
 
             Chaotic Flares
 
 1: Battle Fury. A creature of your choice that you can see is filled with reckless fury. It has advantage on attack rolls and disadvantage on ability checks.
 2: Disruption Field. Waves of energy ripple around you. Every creature that starts its turn within 5 feet of you, or that moves into that area for the first time on a turn, takes 1d8 force damage.
-3: Unbound. When you move, you can use some or all of your walking speed to teleport yourself once, along with any equipment you’re wearing or carrying, up to the distance used to an unoccupied space that you can see.
+3: Unbound. When you move, you can use some or all of your walking speed to teleport yourself once, along with any equipment you're wearing or carrying, up to the distance used to an unoccupied space that you can see.
 4: Wailing Winds. Winds swirl in a 15-foot-radius sphere centered on you. You and any other creatures in that area have disadvantage on Wisdom saving throws.`,
   },
   {
     name: "Crafter",
     prerequisite: "Origin Feat",
-    description: `Tool Proficiency. You gain proficiency with three different Artisan’s Tools of your choice from the Fast Crafting table.
+    description: `Tool Proficiency. You gain proficiency with three different Artisan's Tools of your choice from the Fast Crafting table.
 
     Discount. Whenever you buy a nonmagical item, you receive a 20 percent discount on it.
 
-    Fast Crafting. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan’s Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.
+    Fast Crafting. When you finish a Long Rest, you can craft one piece of gear from the Fast Crafting table, provided you have the Artisan's Tools associated with that item and have proficiency with those tools. The item lasts until you finish another Long Rest, at which point the item falls apart.
 
           Fast Crafting Table:
           Artisan's Tools	/ Crafted Gear
@@ -152,11 +152,11 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Ability Score Increase. Increase your Dexterity score by 1, to a maximum of 20.
 
-    Ignore Loading. You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Light Crossbow (all called crossbows elsewhere in this feat). If you’re holding one of them, you can load a piece of ammunition into it even if you lack a free hand.
+    Ignore Loading. You ignore the Loading property of the Hand Crossbow, Heavy Crossbow, and Light Crossbow (all called crossbows elsewhere in this feat). If you're holding one of them, you can load a piece of ammunition into it even if you lack a free hand.
 
-    Firing in Melee. Being within 5 feet of an enemy doesn’t impose Disadvantage on your attack rolls with crossbows.
+    Firing in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with crossbows.
 
-    Dual Wielding. When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren’t already adding that modifier to the damage.`,
+    Dual Wielding. When you make the extra attack of the Light property, you can add your ability modifier to the damage of the extra attack if that attack is with a crossbow that has the Light property and you aren't already adding that modifier to the damage.`,
   },
   {
     name: "Crusher",
@@ -176,7 +176,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Ability Score Increase. Increase your Dexterity score by 1, to a maximum of 20.
 
-    Parry. If you’re holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.`,
+    Parry. If you're holding a Finesse weapon and another creature hits you with a melee attack, you can take a Reaction to add your Proficiency Bonus to your Armor Class, potentially causing the attack to miss you. You gain this bonus to your AC against melee attacks until the start of your next turn.`,
   },
   {
     name: "Dragon Fear",
@@ -185,7 +185,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     - Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.
 
-    - Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can’t hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.`,
+    - Instead of exhaling destructive energy, you can expend a use of your Breath Weapon trait to roar, forcing each creature of your choice within 30 feet of you to make a Wisdom saving throw (DC 8 + your proficiency bonus + your Charisma modifier). A target automatically succeeds on the save if it can't hear or see you. On a failed save, a target becomes frightened of you for 1 minute. If the frightened target takes any damage, it can repeat the saving throw, ending the effect on itself on a success.`,
   },
   {
     name: "Dragon Hide",
@@ -194,7 +194,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     - Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.
 
-    - Your scales harden. While you aren’t wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.
+    - Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.
 
     - You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d4 + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike.`,
   },
@@ -210,7 +210,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
 
-    Enhanced Dual Wielding. When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don’t add your ability modifier to the extra attack’s damage unless that modifier is negative.
+    Enhanced Dual Wielding. When you take the Attack action on your turn and attack with a weapon that has the Light property, you can make one extra attack as a Bonus Action later on the same turn with a different weapon, which must be a Melee weapon that lacks the Two-Handed property. You don't add your ability modifier to the extra attack's damage unless that modifier is negative.
 
     Quick Draw. You can draw or stow two weapons that lack the Two-Handed property when you would normally be able to draw or stow only one.`,
   },
@@ -237,7 +237,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
   {
     name: "Eldritch Adept",
     prerequisite: "Origin Feat, Spellcasting or Pact Magic feature",
-    description: `Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you’re a warlock who meets the prerequisite.
+    description: `Studying occult lore, you learn one Eldritch Invocation option of your choice from the warlock class. Your spellcasting ability for the invocation is Intelligence, Wisdom, or Charisma (choose when you select this feat). If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.
 
     Whenever you gain a level, you can replace the invocation with another one from the warlock class.`,
   },
@@ -279,7 +279,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Increase your Dexterity or Intelligence score by 1, to a maximum of 20.
 
-    Immediately after you take damage, you can use a reaction to magically become invisible until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. Once you use this ability, you can’t do so again until you finish a short or long rest.`,
+    Immediately after you take damage, you can use a reaction to magically become invisible until the end of your next turn or until you attack, deal damage, or force someone to make a saving throw. Once you use this ability, you can't do so again until you finish a short or long rest.`,
   },
   {
     name: "Fey Teleportation",
@@ -295,11 +295,11 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
   {
     name: "Fey Touched",
     prerequisite: "Level 4+, ",
-    description: `Your exposure to the Feywild’s magic grants you the following benefits.
+    description: `Your exposure to the Feywild's magic grants you the following benefits.
 
     Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
 
-    Fey Magic. Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can’t cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells’ spellcasting ability is the ability increased by this feat.`,
+    Fey Magic. Choose one level 1 spell from the Divination or Enchantment school of magic. You always have that spell and the Misty Step spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.`,
   },
   {
     name: "Flames of Phlegethos",
@@ -310,12 +310,12 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.
 
-    Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don’t harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes 1d4 fire damage.`,
+    Whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn. The flames don't harm you or your possessions, and they shed bright light out to 30 feet and dim light for an additional 30 feet. While the flames are present, any creature within 5 feet of you that hits you with a melee attack takes 1d4 fire damage.`,
   },
   {
     name: "Fury of the Frost Giant",
     prerequisite: "Level 4+, Strike of the Giants (Frost Strike) Feat",
-    description: `You’ve manifested the icy might emblematic of frost giants, granting you the following benefits:
+    description: `You've manifested the icy might emblematic of frost giants, granting you the following benefits:
 
     Ability Score Increase. Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20.
 
@@ -326,7 +326,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
   {
     name: "Gift of the Chromatic Dragon",
     prerequisite: "Level 4+",
-    description: `You’ve manifested some of the power of chromatic dragons, granting you the following benefits:
+    description: `You've manifested some of the power of chromatic dragons, granting you the following benefits:
 
     Chromatic Infusion. As a bonus action, you can touch a simple or martial weapon and infuse it with one of the following damage types: acid, cold, fire, lightning, or poison. For the next minute, the weapon deals an extra 1d4 damage of the chosen type when it hits. After you use this bonus action, you can't do so again until you finish a long rest.
 
@@ -335,20 +335,20 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
   {
     name: "Gift of the Gem Dragon",
     prerequisite: "Level 4+",
-    description: `You’ve manifested some of the power of gem dragons, granting you the following benefits:
+    description: `You've manifested some of the power of gem dragons, granting you the following benefits:
 
     Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
 
-    Telekinetic Reprisal. When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes 2d8 force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn’t pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+    Telekinetic Reprisal. When you take damage from a creature that is within 10 feet of you, you can use your reaction to emanate telekinetic energy. The creature that dealt damage to you must make a Strength saving throw (DC equals 8 + your proficiency bonus + the ability modifier of the score increased by this feat). On a failed save, the creature takes 2d8 force damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
   },
   {
     name: "Gift of the Metallic Dragon",
     prerequisite: "Level 4+, ",
-    description: `You’ve manifested some of the power of metallic dragons, granting you the following benefits:
+    description: `You've manifested some of the power of metallic dragons, granting you the following benefits:
 
-    Draconic Healing. You learn the cure wounds spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can’t do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell’s spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat).
+    Draconic Healing. You learn the cure wounds spell. You can cast this spell without expending a spell slot. Once you cast this spell in this way, you can't do so again until you finish a long rest. You can also cast this spell using spell slots you have. The spell's spellcasting ability is Intelligence, Wisdom, or Charisma when you cast it with this feat (choose when you gain the feat).
 
-    Protective Wings. You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target’s AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+    Protective Wings. You can manifest protective wings that can shield you or others. When you or another creature you can see within 5 feet of you is hit by an attack roll, you can use your reaction to manifest spectral wings from your back for a moment. You grant a bonus to the target's AC equal to your proficiency bonus against that attack roll, potentially causing it to miss. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
   },
   {
     name: "Grappler",
@@ -377,11 +377,11 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
   {
     name: "Guile of the Cloud Giant",
     prerequisite: "Level 4+, Strike of the Giants (Cloud Strike) Feat",
-    description: `You’ve manifested the confounding magic emblematic of cloud giants, granting you the following benefits:
+    description: `You've manifested the confounding magic emblematic of cloud giants, granting you the following benefits:
 
     Ability Score Increase. Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.
 
-    Cloudy Escape. When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack’s damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
+    Cloudy Escape. When a creature you can see hits you with an attack roll, you can use your reaction to give yourself resistance to that attack's damage. You then teleport to an unoccupied space that you can see within 30 feet of yourself. You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.
 `,
   },
   {
@@ -395,7 +395,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Cantrip. You learn the Finger Guns cantrip.
 
-    Expanded Spell List. The following spells are added to your spell list: Antiballistics Field, Ballistic Smite, Conjure Cannonball, Conjure Cover, Jam Weapon, Jethro’s Instant Reload, and Perforating Shot.
+    Expanded Spell List. The following spells are added to your spell list: Antiballistics Field, Ballistic Smite, Conjure Cannonball, Conjure Cover, Jam Weapon, Jethro's Instant Reload, and Perforating Shot.
 
     Spells Prepared. Choose a number of spells equal to your Proficiency Bonus from among those in the Expanded Spell List benefit. You always have these spells prepared. Whenever you gain a new level, you can replace one of these spells with a different spell from the Expanded Spell List.`,
   },
@@ -406,20 +406,20 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Increase your Dexterity score by 1, to a maximum of 20.
 
-    You gain proficiency with firearms (see “Firearms” in the Dungeon Master’s Guide).
+    You gain proficiency with firearms (see “Firearms” in the Dungeon Master's Guide).
 
     You ignore the loading property of firearms.
 
-    Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.`,
+    Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.`,
   },
   {
     name: "Healer",
     prerequisite: "Origin Feat",
     description: `You gain the following benefits.
 
-    Battle Medic. If you have a Healer’s Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.
+    Battle Medic. If you have a Healer's Kit, you can expend one use of it and tend to a creature within 5 feet of yourself as a Utilize action. That creature can expend one of its Hit Point Dice, and you then roll that die. The creature regains a number of Hit Points equal to the roll plus your Proficiency Bonus.
 
-    Healing Rerolls. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat’s Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.`,
+    Healing Rerolls. Whenever you roll a die to determine the number of Hit Points you restore with a spell or with this feat's Battle Medic benefit, you can reroll the die if it rolls a 1, and you must use the new roll.`,
   },
   {
     name: "Heavily Armored",
@@ -437,7 +437,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Ability Score Increase. Increase your Constitution or Strength score by 1, to a maximum of 20.
 
-    Damage Reduction. When you’re hit by an attack while you’re wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.`,
+    Damage Reduction. When you're hit by an attack while you're wearing Heavy armor, any Bludgeoning, Piercing, and Slashing damage dealt to you by that attack is reduced by an amount equal to your Proficiency Bonus.`,
   },
   {
     name: "Infernal Constitution",
@@ -466,7 +466,7 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
 
-    Underdog’s Resolve. When you are attacked by a creature that has a CR higher than your level, you gain a +2 bonus to your Armor Class for that attack.
+    Underdog's Resolve. When you are attacked by a creature that has a CR higher than your level, you gain a +2 bonus to your Armor Class for that attack.
 
     Vengeful Strike. You have Advantage on attack rolls against any creature that has reduced one of your allies to 0 Hit Points since the end of your last turn.
 
@@ -523,7 +523,220 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
 
     Concentration Breaker. When you damage a creature that is concentrating, it has Disadvantage on the saving throw it makes to maintain Concentration.
 
-    Guarded Mind. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can’t use it again until you finish a Short or Long Rest.`,
+    Guarded Mind. If you fail an Intelligence, a Wisdom, or a Charisma saving throw, you can cause yourself to succeed instead. Once you use this benefit, you can't use it again until you finish a Short or Long Rest.`,
   },
+  {
+    name: "Magic Initiate",
+    prerequisite: "Origin",
+    description: `Two Cantrips. You learn two cantrips of your choice from the Cleric, Druid, or Wizard spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for this feat's spells (choose when you select this feat).
+
+    Level 1 Spell. Choose a level 1 spell from the same list you selected for this feat's cantrips. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
+
+    Spell Change. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
+
+    Repeatable. You can take this feat more than once, but you must choose a different spell list each time.`,
+  },
+  {
+    name: "Marksman's Luck",
+    prerequisite: "Level 4+, Dexterity 13+",
+    description: `Ability Score Increase. Increase your Dexterity score by 1, to a maximum of 20.
+
+    Flip Die. Once per turn, when you roll for damage with a Ranged weapon, you can flip one of the damage dice over and use the number on the bottom. You can't use this ability on d4s. Note that for a balanced die, the top and bottom numbers add up to one more than the die's largest number.
+
+    Enhanced Critical. When you score a Critical Hit with a Ranged weapon, the target's Speed is 0 until the end of its next turn.`,
+  },
+  {
+    name: "Martial Weapon Training",
+    prerequisite: "Level 4+, ",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Weapon Proficiency. You gain proficiency with Martial Weapons.`,
+  },
+  {
+    name: "Medium Armor Master",
+    prerequisite: "Level 4+, Medium armor Training",
+    description: `Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Dexterous Wearer. While you're wearing Medium armor, you can add 3, rather than 2 to your AC if you have a Dexterity score of 16 or higher.`,
+  },
+  {
+    name: "Metamagic Adept",
+    prerequisite: "Level 4+, Spellcasting or Pact Magic feature",
+    description: `You've learned how to exert your will on your spells to alter how they function:
+
+    You learn two Metamagic options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.
+
+    You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.`,
+  },
+
+  {
+    name: "Moderately Armored",
+    prerequisite: "Level 4+, Light Armor Training",
+    description: `Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Armor Training. You gain training with Medium armor.`,
+  },
+  {
+    name: "Mounted Combatant",
+    prerequisite: "Level 4+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Strength, Dexterity, or Wisdom score by 1, to a maximum of 20.
+
+    Mounted Strike. While mounted, you have Advantage on attack rolls against any unmounted creature within 5 feet of your mount that is at least one size smaller than the mount.
+
+    Leap Aside. If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw and only half damage if it fails. For your mount to gain this benefit, you must be riding it, and neither of you can have the Incapacitated condition.
+
+    Veer. While mounted, you can force an attack that hits your mount to hit you instead if you don't have the Incapacitated condition.`,
+  },
+  {
+    name: "Musician",
+    prerequisite: "Origin Feat",
+    description: `Instrument Training. You gain proficiency with three Musical Instruments of your choice.
+
+    Encouraging Song. As you finish a Short or Long Rest, you can play a song on a Musical Instrument with which you have proficiency and give Heroic Inspiration to allies who hear the song. The number of allies you can affect in this way equals your Proficiency Bonus.`,
+  },
+  {
+    name: "Observant",
+    prerequisite: "Level 4+, Intelligence or Wisdom 13+",
+    description: `Ability Score Increase. Increase your Intelligence or Wisdom score by 1, to a maximum of 20.
+
+    Keen Observer. Choose one of the following skills: Insight, Investigation, or Perception. If you lack proficiency with the chosen skill, you gain proficiency in it, and if you already have proficiency in it, you gain Expertise in it.
+
+    Quick Search. You can take the Search action as a Bonus Action.`,
+  },
+  {
+    name: "Orcish Fury",
+    prerequisite: "Level 4+, Orc",
+    description: `Your inner fury burns tirelessly. You gain the following benefits:
+
+  Increase your Strength or Constitution score by 1, to a maximum of 20.
+
+  When you hit with an attack using a simple or martial weapon, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type. Once you use this ability, you can't use it again until you finish a short or long rest.
+
+  Immediately after you use your Relentless Endurance trait, you can use your reaction to make one weapon attack.`,
+  },
+  {
+    name: "Outlands Envoy",
+    prerequisite: "Level 4+, Scion of the Outer Planes (The Outlands) Feat",
+    description: `You have spent significant time in Sigil or the Outlands, the crossroads of the multiverse. Being steeped in converging planar energies grants you these benefits:
+
+    Ability Score Increase. Increase an ability score of your choice by 1, to a maximum of 20.
+
+    Crossroads Emissary. You learn the misty step and tongues spells. You can cast each spell once using this feat without a spell slot, and you must finish a long rest before you can cast that spell in this way again. When you cast tongues using this feat, you require no material components. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the one chosen when you gained the Scion of the Outer Planes feat.`,
+  },
+  {
+    name: "Piercer",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Strength or Dexterity by 1, to a maximum of 20.
+
+    Puncture. Once per turn, when you hit a creature with an attack that deals Piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.
+
+    Enhanced Critical. When you score a Critical Hit that deals Piercing damage to a creature, you can roll one additional damage die when determining the extra Piercing damage the target takes.`,
+  },
+  {
+    name: "Planar Wanderer",
+    prerequisite: "Level 4+, Scion of the Outer Planes Feat",
+    description: `You can draw on the forces of the multiverse to survive cosmic extremes and to traverse its infinite realms, granting you these benefits:
+
+    Planar Adaptation. When you finish a long rest, you gain resistance to either acid, cold, or fire damage (your choice) until you finish your next long rest.
+
+    Portal Cracker. Your experience with portals allows you to open them without a portal key. As an action, you can concentrate on a portal you're aware of that is within 5 feet of yourself and make a DC 20 Intelligence (Arcana) check. On a failed check, you take 3d8 psychic damage and can't use this benefit on that portal again until you finish a long rest. On a successful check, you can force the portal open or closed for 1 hour. For that duration, the portal doesn't respond to its portal key unless a creature employing the key succeeds on a DC 20 Intelligence (Arcana) check as an action.
+
+    Portal Sense. You know the direction to the last planar portal you used while you and the portal are on the same plane of existence. Moreover, as an action, you can detect the location of any portals within 30 feet of you that aren't behind total cover. Once you detect a portal with this action, you can't use the action again until you finish a long rest.`,
+  },
+  {
+    name: "Poisoner",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Dexterity or Intelligence score by 1, to a maximum of 20.
+
+    Potent Poison. When you make a damage roll that deals Poison damage, it ignores Resistance to Poison damage.
+
+    Brew Poison. You gain proficiency with the Poisoner's Kit. With 1 hour of work using such a kit and expending 50 GP worth of materials, you can create a number of poison doses equal to your Proficiency Bonus. As a Bonus Action, you can apply a poison dose to a weapon or piece of ammunition. Once applied, the poison retains its potency for 1 minute or until you deal damage with the poisoned item, whichever is shorter. When a creature takes damage from the poisoned item, that creature must succeed on a Constitution saving throw (DC 8 plus the modifier of the ability increased by this feat and your Proficiency Bonus) or take 2d8 Poison damage and have the Poisoned condition until the end of your next turn.`,
+  },
+  {
+    name: "Polearm Master",
+    prerequisite: "Level 4+, Strength or Dexterity 13+",
+    description: `Ability Score Increase. Increase your Dexterity or Strength score by 1, to a maximum of 20.
+
+    Pole Strike. Immediately after you take the Attack action and attack with a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can use a Bonus Action to make a melee attack with the opposite end of the weapon. The weapon deals Bludgeoning damage, and the weapon's damage die for this attack is a d4.
+
+    Reactive Strike. While you're holding a Quarterstaff, a Spear, or a weapon that has the Heavy and Reach properties, you can take a Reaction to make one melee attack against a creature that enters the reach you have with that weapon.`,
+  },
+  {
+    name: "Prodigy",
+    prerequisite: "Level 4+, Human",
+    description: `You have a knack for learning new things. You gain the following benefits:
+
+    You gain one skill proficiency of your choice, one tool proficiency of your choice, and fluency in one language of your choice.
+
+    Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.`,
+  },
+  {
+    name: "Resilient",
+    prerequisite: "Level 4+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Choose one ability in which you lack saving throw proficiency. Increase the chosen ability score by 1, to a maximum of 20.
+
+    Saving Throw Proficiency. You gain saving throw proficiency with the chosen ability.`,
+  },
+  {
+    name: "Righteous Heritor",
+    prerequisite: "Level 4+, Scion of the Outer Planes (Good Outer Plane) Feat",
+    description: `You can channel cosmic forces of good to gain these benefits:
+
+    Ability Score Increase. Increase an ability score of your choice by 1, to a maximum of 20.
+
+    Soothe Pain. When you or a creature within 30 feet of you takes damage, you can use your reaction to reduce that damage by 1d10 + your proficiency bonus. You can use this benefit a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  {
+    name: "Ritual Caster",
+    prerequisite: "Level 4+, Intelligence, Wisdom, or Charisma 13+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Ritual Spells. Choose a number of level 1 spells equal to your Proficiency Bonus that have the Ritual tag. You always have those spells prepared, and you can cast them with any spell slots you have. The spells' spellcasting ability is the ability increased by this feat. Whenever your Proficiency Bonus increases thereafter, you can add an additional level 1 spell with the Ritual tag to the spells always prepared with this feature.
+
+    Quick Ritual. With this benefit, you can cast a Ritual spell that you have prepared using its regular casting time rather than the extended time for a Ritual. Doing so doesn't require a spell slot. Once you cast the spell in this way, you can't use this benefit again until you finish a Long Rest.`,
+  },
+  {
+    name: "Rune Shaper",
+    prerequisite: "Level 4+, Spellcasting Feature or Rune Carver Background",
+    description: `You've studied the magic of Giant runes, granting you the following benefits:
+
+    Comprehend Languages. You learn the comprehend languages spell. You can cast this spell without expending a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast this spell using any spell slots you have.
+
+    Rune Magic. You know a number of runes equal to half your proficiency bonus (rounded down), chosen from the Rune Spells table. Whenever you finish a long rest, you can inscribe each rune you know onto one nonmagical weapon, armor, piece of clothing, or other object you touch. You temporarily learn the 1st-level spells that correspond to the runes you inscribed, as specified on the Rune Spells table, and you know those spells until you finish a long rest, when the runes fade. While you are wearing or carrying any rune-marked object, you can cast the spells associated with those runes using any spell slots you have.
+
+    You can also invoke a rune inscribed on an object you are wearing or carrying and cast its associated spell without expending a spell slot or using material components. Once you cast the spell in this way, you can't do so again until you finish a long rest. Your spellcasting ability for this feat is Intelligence, Wisdom, or Charisma (choose when you select this feat).
+
+    Each time you gain a level, you can replace one of the runes you know with another one from the Rune Spells table.
+
+                Rune / Spell
+
+                Cloud -	Fog cloud
+                Death -	Inflict wounds
+                Dragon - Chromatic orb
+                Enemy - Disguise self
+                Fire - Burning hands
+                Friend - Speak with animals
+                Frost - Armor of Agathys
+                Hill - Goodberry
+                Journey - Longstrider
+                King - Command
+                Mountain - Entangle
+                Stone - Sanctuary
+                Storm - Thunderwave`,
+  },
+  {
+    name: "Savage Attaacker",
+    prerequisite: "Origin Feat",
+    description: `You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.`,
+  },
+  { name: "Tough", prerequisite: "Level 4+, ", description: `` },
   { name: "Tough", prerequisite: "Level 4+, ", description: `` },
 ];
