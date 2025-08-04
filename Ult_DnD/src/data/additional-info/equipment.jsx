@@ -1,6 +1,15 @@
 export const weapons = [
   // Simple Melee Weapons
   {
+    name: "Claw",
+    damage: "1d6 Slashing",
+    properties: "Attached, Light",
+    mastery: "Nick",
+    weight: "2 lb.",
+    type: "melee",
+    cost: "5 GP",
+  },
+  {
     name: "Club",
     damage: "1d4 Bludgeoning",
     properties: "Light",
@@ -183,6 +192,15 @@ export const weapons = [
     cost: "15 GP",
   },
   {
+    name: "Nunchaku",
+    damage: "1d6 Bludgeoning",
+    properties: "Finesse, Versatile (1d8)",
+    mastery: "Sap",
+    type: "melee",
+    weight: "2 lb.",
+    cost: "30 GP",
+  },
+  {
     name: "Pike",
     damage: "1d10 Piercing",
     properties: "Finesse",
@@ -219,6 +237,15 @@ export const weapons = [
     cost: "10 GP",
   },
   {
+    name: "Tetherhook",
+    damage: "1d8 Piercing",
+    properties: "Reach, Two-Handed, Hookpull",
+    mastery: "Topple",
+    type: "melee",
+    weight: "4 lb.",
+    cost: "50 GP",
+  },
+  {
     name: "Trident",
     damage: "1d8 Piercing",
     properties: "Thrown (20/60), Versatile (1d10)",
@@ -226,6 +253,15 @@ export const weapons = [
     type: "melee",
     weight: "4 lb.",
     cost: "5 GP",
+  },
+  {
+    name: "Twinblade",
+    damage: "2d4 Piercing",
+    properties: "Finesse, Two-Handed, Whirl",
+    mastery: "Nick",
+    type: "melee",
+    weight: "15 lb.",
+    cost: "50 GP",
   },
   {
     name: "Warhammer",
@@ -321,6 +357,16 @@ export const weapons = [
     type: "ranged",
     weight: "18 lb.",
     cost: "50 GP",
+  },
+  {
+    name: "Tommybow",
+    damage: "1d6/1d8/1d10 Piercing",
+    properties:
+      "Ammunition (Range 30/60(Hand), 80/160(Light), 100/200 (Heavy)), Heavy(Heavy), Reload, Two-Handed(Light/Heavy)",
+    mastery: "Vex(Hand) or Push(Light/Heavy)",
+    type: "ranged",
+    weight: "5-28 lb.",
+    cost: "50-450 GP",
   },
   {
     name: "Longbow",

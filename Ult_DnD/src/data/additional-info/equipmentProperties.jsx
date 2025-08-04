@@ -10,8 +10,20 @@ const equipmentProperties = [
     category: "property",
   },
   {
+    name: "Flourish",
+    description: `When you are wielding the nunchaku in two hands and take the Attack action on your turn, you can attempt to flourish with the weapon immediately before you make your first attack. To flourish, make a DC 13 Dexterity check, adding your proficiency bonus if you are proficient with nunchaku. On a success, you gain a +2 bonus to the first attack roll you make this turn. On a failure, you deal bludgeoning damage to yourself equal to your proficiency bonus and gain no bonus from your flourishes this turn.`,
+    category: "property",
+  },
+  {
     name: "Heavy",
     description: `You have Disadvantage on attack rolls with a Heavy weapon if it's a Melee weapon and your Strength score isn't at least 13 or if it's a Ranged weapon and your Dexterity score isn't at least 13.`,
+    category: "property",
+  },
+  {
+    name: "Hookpull",
+    description: `As a bonus action immediately after you hit a target no more than one size larger than you with an attack using the tetherhook, you can attempt to hook the target using the tetherhook's reach. Make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use). If you succeed, the target is hooked and can't move further away from you. A hooked creature is no longer hooked if you release the tether with both hands, but only one hand is required to keep a creature hooked. A hooked creature can use its action to escape. To do so, it must succeed on a Strength (Athletics) or Dexterity (Acrobatics) check contested by your Strength (Athletics) check.
+
+    As part of the bonus action to hook the target, and as a bonus action on any of your subsequent turns while it remains hooked, you can pull the creature 5 feet closer to you. If the target is an object that isn't fixed in place and that weighs less than your push, drag, or lift capacity, you can pull it 5 feet closer to you as a bonus action after you hit it with an attack.`,
     category: "property",
   },
   {
@@ -49,7 +61,11 @@ const equipmentProperties = [
     description: `A Versatile weapon can be used with one or two hands. A damage value in parentheses appears with the property. The weapon deals that damage when used with two hands to make a melee attack.`,
     category: "property",
   },
-
+  {
+    name: "Whirl",
+    description: `When you are wielding the twinblade in two hands, you can use a bonus action to attempt to whirl the weapon. To whirl, make a DC 10 Dexterity check, adding your proficiency bonus if you are proficient with twinblades. On a success, you gain a +1 bonus to your AC until the start of your next turn, the whirling blades acting as a barrier against attacks. On a result of 15 or higher, you gain a +2 bonus, instead. On a failure, you deal slashing damage to yourself equal to your proficiency bonus and gain no bonus to your AC from the whirl this turn.`,
+    category: "property",
+  },
   {
     name: "Firearm",
     description: `You don't add your ability modifier to the weapon's damage, unless otherwise stated. Firearm ammunition is destroyed upon use.`,
