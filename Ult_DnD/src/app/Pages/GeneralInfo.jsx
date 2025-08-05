@@ -44,6 +44,7 @@ function General() {
   const isShieldsSection = (header) => header === "Shields";
   const isOptionsSection = (header) => header === "Options";
   const isPropertiesSection = (header) => header === "Properties";
+  const isFeatsSection = (header) => header === "Feats";
 
   const filteredWeapons =
     weaponType === null
@@ -495,7 +496,34 @@ function General() {
               </div>
             )}
 
-            {/*  feats */}
+            {isFeatsSection(openSection) && (
+              <ul className="option-list">
+                {data.Feats.map((feat) => (
+                  <li key={feat.name} className="option-item">
+                    <div
+                      className="option-name"
+                      onClick={() =>
+                        setOpenDetail(
+                          openDetail === feat.name ? null : feat.name
+                        )
+                      }
+                    >
+                      <strong>{feat.name}</strong>
+                    </div>
+                    {openDetail === feat.name && (
+                      <div className="option-description">
+                        {feat.prerequisite && (
+                          <div>
+                            <strong>Prerequisite:</strong> {feat.prerequisite}
+                          </div>
+                        )}
+                        <div>{feat.description}</div>
+                      </div>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
           </>
         )}
       </div>

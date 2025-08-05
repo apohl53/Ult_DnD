@@ -733,10 +733,257 @@ Chaotic Flare. When you roll a 1 or a 20 on an attack roll or a saving throw, th
                 Storm - Thunderwave`,
   },
   {
-    name: "Savage Attaacker",
+    name: "Savage Attacker",
     prerequisite: "Origin Feat",
     description: `You've trained to deal particularly damaging strikes. Once per turn when you hit a target with a weapon, you can roll the weapon's damage dice twice and use either roll against the target.`,
   },
-  { name: "Tough", prerequisite: "Level 4+, ", description: `` },
-  { name: "Tough", prerequisite: "Level 4+, ", description: `` },
+  {
+    name: "Scion of the Outer Planes",
+    prerequisite: "Planar Campaign, Origin Feat",
+    description: `Your connection to an Outer Plane infuses you with the energy there. Choose a type of plane listed in the Planar Infusion table. Your choice gives you resistance to a damage type and the ability to cast a cantrip, as specified in the table. You can cast this cantrip without material components, and your spellcasting ability for it is Intelligence, Wisdom, or Charisma (choose when you select this feat).
+
+                                        Plane	/ Damage + Resistance	/ Cantrip
+
+                                    Chaotic Outer Plane	/ Poison / Minor illusion
+                                    Evil Outer Plane / Necrotic	/ Chill touch
+                                    Good Outer Plane / Radiant / Sacred flame
+                                    Lawful Outer Plane / Force / Guidance
+                                    The Outlands / Psychic / Mage hand`,
+  },
+  {
+    name: "Second Chance",
+    prerequisite: "Level 4+, Halfling",
+    description: `Fortune favors you when someone tries to strike you. You gain the following benefits:
+
+    Increase your Dexterity, Constitution, or Charisma score by 1, to a maximum of 20.
+
+    When a creature you can see hits you with an attack roll, you can use your reaction to force that creature to reroll. Once you use this ability, you can't use it again until you roll initiative at the start of combat or until you finish a short or long rest.`,
+  },
+  {
+    name: "Sentinel",
+    prerequisite: "Level 4+, Strength or Dexterity 13+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Guardian. Immediately after a creature within 5 feet of you takes the Disengage action or hits a target other than you with an attack, you can make an Opportunity Attack against that creature.
+
+    Halt. When you hit a creature with an Opportunity Attack, the creature's Speed becomes 0 for the rest of the current turn.`,
+  },
+  {
+    name: "Shadow Touched",
+    prerequisite: "Level 4+",
+    description: `Your exposure to the Shadowfell's magic grants you the following benefits.
+
+    Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Shadow Magic. Choose one level 1 spell from the Illusion or Necromancy school of magic. You always have that spell and the Invisibility spell prepared. You can cast each of these spells without expending a spell slot. Once you cast either spell in this way, you can't cast that spell in this way again until you finish a Long Rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.`,
+  },
+  {
+    name: "Sharpshooter",
+    prerequisite: "Level 4+, Dexterity 13+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Dexterity score by 1, to a maximum of 20.
+
+    Bypass Cover. Your ranged attacks with weapons ignore Half Cover and Three-Quarters Cover.
+
+    Firing in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with Ranged weapons.
+
+    Long Shots. Attacking at long range doesn't impose Disadvantage on your attack rolls with Ranged weapons.`,
+  },
+  {
+    name: "Shield Master",
+    prerequisite: "Level 4+, Shield Training",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase your Strength score by 1, to a maximum of 20.
+
+    Shield Bash. If you attack a creature within 5 feet of you as part of the Attack action and hit with a Melee weapon, you can immediately bash the target with your Shield if it's equipped, forcing the target to make a Strength saving throw (DC 8 plus your Strength modifier and Proficiency Bonus). On a failed save, you either push the target 5 feet from you or cause it to have the Prone condition (your choice). You can use this benefit only once on each of your turns.
+
+    Interpose Shield. If you're subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can take a Reaction to take no damage if you succeed on the saving throw and are holding a Shield.`,
+  },
+  {
+    name: "Skill Expert",
+    prerequisite: "Level 4+",
+    description: `You gain the following benefits.
+
+    Ability Score Increase. Increase one ability score of your choice by 1, to a maximum of 20.
+
+    Skill Proficiency. You gain proficiency in one skill of your choice.
+
+    Expertise. Choose one skill in which you have proficiency but lack Expertise. You gain Expertise with that skill.`,
+  },
+  {
+    name: "Skilled",
+    prerequisite: "Origin Feat",
+    description: `You gain proficiency in any combination of three skills or tools of your choice.`,
+  },
+  {
+    name: "Skulker",
+    prerequisite: "Level 4+, Dexterity 13+",
+    description: `Ability Score Increase. Increase your Dexterity score by 1, to a maximum of 20.
+
+    Blindsight. You have Blindsight with a range of 10 feet.
+
+    Fog of War. You exploit the distractions of battle, gaining Advantage on any Dexterity (Stealth) check you make as part of the Hide action during combat.
+
+    Sniper. If you make an attack roll while hidden and the roll misses, making the attack roll doesn't reveal your location.
+
+`,
+  },
+  {
+    name: "Slasher",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Hamstring. Once per turn when you hit a creature with an attack that deals Slashing damage, you can reduce the Speed of that creature by 10 feet until the start of your next turn.
+
+    Enhanced Critical. When you score a Critical Hit that deals Slashing damage to a creature, it has Disadvantage on attack rolls until the start of your next turn.`,
+  },
+  {
+    name: "Soul of the Storm Giant",
+    prerequisite: "Level 4+, Strike of the Giants (Storm Strike) Feat",
+    description: `You've manifested the tempest magic emblematic of storm giants, granting you the following benefits:
+
+    Ability Score Increase. Increase your Strength, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Maelstrom Aura. As a bonus action, you surround yourself with an aura of magical wind and lightning that extends 10 feet from you in every direction but not through total cover. The aura lasts until the start of your next turn or until you are incapacitated. While the aura is active, you have resistance to lightning and thunder damage. In addition, attack rolls against you have disadvantage, and whenever another creature starts its turn within the aura, you can force the creature to make a Strength saving throw (DC equals 8 + your proficiency bonus + the modifier of the ability increased by this feat). On a failed save, the creature's speed is halved until the start of its next turn. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  {
+    name: "Speedy",
+    prerequisite: "Level 4+, Dexterity or Constitution 13+",
+    description: `Ability Score Increase. Increase your Dexterity or Constitution score by 1, to a maximum of 20.
+
+    Speed Increase. Your Speed increases by 10 feet.
+
+    Dash over Difficult Terrain. When you take the Dash action on your turn, Difficult Terrain doesn't cost you extra movement for the rest of that turn.
+
+    Agile Movement. Opportunity Attacks have Disadvantage against you.`,
+  },
+  {
+    name: "Spell Sniper",
+    prerequisite: "Level 4+, Spellcasting or Pact Magic Feature",
+    description: `Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Bypass Cover. Your attack rolls for spells ignore Half Cover and Three-Quarters Cover.
+
+    Casting in Melee. Being within 5 feet of an enemy doesn't impose Disadvantage on your attack rolls with spells.
+
+    Increased Range. When you cast a spell that has a range of at least 10 feet and requires you to make an attack roll, you can increase the spell's range by 60 feet.`,
+  },
+  {
+    name: "Squat Nimbleness",
+    prerequisite: "Level 4+, Small Species",
+    description: `Increase your Strength or Dexterity score by 1, to a maximum of 20.
+
+    Increase your walking speed by 5 feet.
+
+    You gain proficiency in the Acrobatics or Athletics skill (your choice).
+
+    You have advantage on any Strength (Athletics) or Dexterity (Acrobatics) check you make to escape from being grappled.`,
+  },
+  {
+    name: "Strike of the Giants",
+    prerequisite:
+      "Level 4+, Martial Weapon Proficiency or Giant Foundling Background",
+    description: `You have absorbed primeval magic that gives you an echo of the might of giants. When you take this feat, choose one of the benefits listed below. Once per turn, when you hit a target with a melee weapon attack or a ranged weapon attack using a thrown weapon, you can imbue the attack with an additional effect depending on the benefit you chose:
+
+    Cloud Strike. The target takes an extra 1d4 thunder damage. If the target is a creature, it must succeed on a Wisdom saving throw, or you become invisible to it until the start of your next turn or until immediately after you make an attack roll or cast a spell.
+
+    Fire Strike. The target takes an extra 1d10 fire damage.
+
+    Frost Strike. The target takes an extra 1d6 cold damage. If the target is a creature, it must succeed on a Constitution saving throw, or its speed is reduced to 0 until the start of your next turn.
+
+    Hill Strike. The target takes an extra 1d6 damage of the weapon's type. If the target is a creature, it must succeed on a Strength saving throw or have the prone condition.
+
+    Stone Strike. The target takes an extra 1d6 force damage. If the target is a creature, it must succeed on a Strength saving throw or be pushed 10 feet from you in a straight line.
+
+    Storm Strike. The target takes an extra 1d6 lightning damage. If the target is a creature, it must succeed on a Constitution saving throw, or it has disadvantage on attack rolls until the start of your next turn.
+
+    The saving throw DC for these effects equals 8 + your proficiency bonus + your Strength or Constitution modifier.
+
+    You can use this feat a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.`,
+  },
+  {
+    name: "Svirfneblin Magic",
+    prerequisite: "Level 4+, Deep Gnome",
+    description: `
+    Increase your Intelligence score by 1, to a maximum of 20.
+    
+    You gain You have inherited the innate spellcasting ability of your ancestors. This ability allows you to cast nondetection on yourself at will, without needing a material component. You can also cast each of the following spells once with this ability: blindness/deafness, blur, and disguise self. You regain the ability to cast these spells when you finish a long rest.
+
+    Intelligence is your spellcasting ability for these spells, and you cast them at their lowest possible levels.`,
+  },
+  {
+    name: "Tavern Brawler",
+    prerequisite: "Origin Feat",
+    description: `Enhanced Unarmed Strike. When you hit with your Unarmed Strike and deal damage, you can deal Bludgeoning damage equal to 1d4 plus your Strength modifier instead of the normal damage of an Unarmed Strike.
+
+    Damage Rerolls. Whenever you roll a damage die for your Unarmed Strike, you can reroll the die if it rolls a 1, and you must use the new roll.
+
+    Improvised Weaponry. You have proficiency with improvised weapons.
+
+    Push. When you hit a creature with an Unarmed Strike as part of the Attack action on your turn, you can deal damage to the target and also push it 5 feet away from you. You can use this benefit only once per turn.`,
+  },
+  {
+    name: "Telekinetic",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Minor Telekinesis. You learn the Mage Hand spell. You can cast it without Verbal or Somatic components, you can make the spectral hand Invisible, and its range and the distance it can be away from you both increase by 30 feet when you cast it. The spell's spellcasting ability is the ability increased by this feat.
+
+    Telekinetic Shove. As a Bonus Action, you can telekinetically shove one creature you can see within 30 feet of yourself. When you do so, the target must succeed on a Strength saving throw (DC 8 plus the ability modifier of the score increased by this feat and your Proficiency Bonus) or be moved 5 feet toward or away from you.`,
+  },
+  {
+    name: "Telepathic",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Telepathic Utterance. You can speak telepathically to any creature you can see within 60 feet of yourself. Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language. Your communication doesn't give the creature the ability to respond to you telepathically.
+
+    Detect Thoughts. You always have the Detect Thoughts spell prepared. You can cast it without a spell slot or spell components, and you must finish a Long Rest before you can cast it in this way again. You can also cast it using spell slots you have of the appropriate level. Your spellcasting ability for the spell is the ability increased by this feat.`,
+  },
+  {
+    name: "Tough",
+    prerequisite: "Origin Feat",
+    description: `Your Hit Point maximum increases by an amount equal to twice your character level when you gain this feat. Whenever you gain a character level thereafter, your Hit Point maximum increases by an additional 2 Hit Points.`,
+  },
+  {
+    name: "Vigor of the Hill Giant",
+    prerequisite: "Level 4+, Strike of the Giants (Hill Strike) Feat",
+    description: `You've manifested the resilience emblematic of hill giants, granting you the following benefits:
+
+    Ability Score Increase. Increase your Strength, Constitution, or Wisdom score by 1, to a maximum of 20.
+
+    Bulwark. When you are subjected to an effect that would move you at least 5 feet or give you the prone condition, you can use your reaction to steady yourself. You aren't moved and don't have the prone condition.
+
+    Iron Stomach. Whenever yo`,
+  },
+  {
+    name: "War Caster",
+    prerequisite: "Level 4+, Spellcasting or Pact Magic Feature",
+    description: `Ability Score Increase. Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.
+
+    Concentration. You have Advantage on Constitution saving throws that you make to maintain Concentration.
+
+    Reactive Spell. When a creature provokes an Opportunity Attack from you by leaving your reach, you can take a Reaction to cast a spell at the creature rather than making an Opportunity Attack. The spell must have a casting time of one action and must target only that creature.
+
+    Somatic Components. You can perform the Somatic components of spells even when you have weapons or a Shield in one or both hands.`,
+  },
+  {
+    name: "Weapon Master",
+    prerequisite: "Level 4+",
+    description: `Ability Score Increase. Increase your Strength or Dexterity Score by 1, to a maximum of 20.
+
+    Mastery Property. Your training with weapons allows you to use the mastery property of one kind of Simple or Martial weapon of your choice, provided you have proficiency with it. Whenever you finish a Long Rest, you can change the kind of weapon to another eligible kind.`,
+  },
+  {
+    name: "Wood Elf Magic",
+    prerequisite: "Level 4+, Wood Elf",
+    description: `Ability Score Increase. Increase your Wisdom Score by 1, to a maximum of 20.
+    
+    You learn the magic of the primeval woods, which are revered and protected by your people. You learn one druid cantrip of your choice. You also learn the longstrider and pass without trace spells, each of which you can cast once without expending a spell slot. You regain the ability to cast these two spells in this way when you finish a long rest. Wisdom is your spellcasting ability for all three spells.`,
+  },
+  // { name: "Tough", prerequisite: "Level 4+, ", description: `` },
 ];
