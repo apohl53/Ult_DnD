@@ -945,6 +945,38 @@ export const dndData = {
       18: ["Shielded Mind"],
       20: ["Ignore Strain"],
     },
+    Chronopath: {
+      subclassFeatures: {
+        2: ["Chronopathy Adept", "Rapid Manifestation"],
+        6: ["Decay"],
+        10: ["Fickle Readiness"],
+        14: ["Time Pocket"],
+      },
+    },
+    Maverick: {
+      subclassFeatures: {
+        2: ["Raw Power", "Reduce Stress"],
+        6: ["Energy Unleashed"],
+        10: ["Shock Absorbtion"],
+        14: ["Full Force"],
+      },
+    },
+    Metamorph: {
+      subclassFeatures: {
+        2: ["Metamorphosis Adept", "Psionic Toughness"],
+        6: ["Mind Surgeon", "Super Senses"],
+        10: ["Death Foiled"],
+        14: ["Psionic Evolution"],
+      },
+    },
+    Pyrokinetic: {
+      subclassFeatures: {
+        2: ["Pyrokinetic Adept", "Flame On"],
+        6: ["Bend Flame"],
+        10: ["Heat Seeking"],
+        14: ["Immolate"],
+      },
+    },
     Resopath: {
       subclassFeatures: {
         2: ["Manipulate Terrain", "Resopathy Adept"],
@@ -953,9 +985,20 @@ export const dndData = {
         14: ["Nightmare Terrain"],
       },
     },
-    "...": {
+    Telekinetic: {
       subclassFeatures: {
-        3: ["..."],
+        2: ["Telekinesis Adept", "Invisible Armor"],
+        6: ["Strong Mind"],
+        10: ["Reflective Armor"],
+        14: ["Mind Wings"],
+      },
+    },
+    Telepath: {
+      subclassFeatures: {
+        2: ["Telepathy Adept", "Greater Telepathy"],
+        6: ["Emotional Intelligence", "Not in the Face"],
+        10: ["Shared Connection"],
+        14: [""],
       },
     },
   },
