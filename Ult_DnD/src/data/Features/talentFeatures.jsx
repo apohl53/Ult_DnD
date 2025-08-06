@@ -6,12 +6,14 @@ export const talentFeatures = {
   "Psionic Exertion": {
     name: "Psionic Exertion",
     description: `You can expend your energy to give your powers an extra effect. You gain one of the following Psionic Exertion options of your choice. You gain additional options at 7th, 11th, and 15th level.
-You can use only one Psionic Exertion option on a power when you manifest it.`,
+
+    You can use only one Psionic Exertion option on a power when you manifest it.`,
   },
   "Psychic Boost": {
     name: "Psychic Boost",
     description: `You learn to focus your mind and draw forth reserved mental strength to replenish your body and brain. You can use a bonus action to remove strain equal to your proficiency bonus. Once you use this feature, you can't use it again until you finish a long rest.
-You can use this feature twice between long rests starting at 12th level, and three times between long rests starting at 17th level.`,
+
+    You can use this feature twice between long rests starting at 12th level, and three times between long rests starting at 17th level.`,
   },
   "Psionic Bastion": {
     name: "Psionic Bastion",
@@ -24,7 +26,8 @@ You can use this feature twice between long rests starting at 12th level, and th
   "Ignore Strain": {
     name: "Ignore Strain",
     description: `You use powers so frequently that your body has adapted to the strain put on them. Whenever you finish a long rest, choose body strain, mind strain, or soul strain.
-You ignore the effects of the chosen type of strain until you finish a long rest`,
+
+    You ignore the effects of the chosen type of strain until you finish a long rest`,
   },
 
   // Chronopath
@@ -38,7 +41,7 @@ You ignore the effects of the chosen type of strain until you finish a long rest
     name: "Rapid Manifestation",
     description: `You cause time around you to shift, speeding up the amount of time it takes to manifest a power. When you manifest a power, you can use this feature to shorten its manifestation time in any of the following ways:
 
-    • You manifest a power that normally requires a bonus action or a reaction (no action required). You can’t cast a spell or manifest another power during the same turn, except for a cantrip with a casting time of 1 action or a 1st-order power with a manifestation time of 1 action.
+    • You manifest a power that normally requires a bonus action or a reaction (no action required). You can't cast a spell or manifest another power during the same turn, except for a cantrip with a casting time of 1 action or a 1st-order power with a manifestation time of 1 action.
     • You use a bonus action to manifest a power that normally requires an action.
     • You use an action to manifest a power that normally requires 1 minute.
     • If a power has a manifestation time greater than 1 minute, you can manifest it in half its normal time.

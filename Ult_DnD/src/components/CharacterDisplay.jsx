@@ -2,6 +2,14 @@ import React, { useState } from "react";
 import "./CharacterDisplay.css";
 import ReactMarkdown from "react-markdown";
 
+// Add class/subclass image
+// function ClassImage({ selection }) {
+//   const fileName = selection.toLowerCase().replace(/\s+/g, "-") + ".png";
+//   const src = `${process.env.PUBLIC_URL}/images/classes/${fileName}`;
+
+//   return <img src={src} alt={selection} />;
+// }
+
 function CharacterDisplay({ charClass, level, subclass, species, features }) {
   const [selectedFeature, setSelectedFeature] = useState(null);
 

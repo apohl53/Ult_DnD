@@ -657,6 +657,38 @@ export const dndData = {
       19: ["Epic Boon"],
       20: ["Body and Mind"],
     },
+    "Ascendant Dragon": {
+      subclassFeatures: {
+        3: ["Draconic Disciple", "Breath of the Dragon"],
+        6: ["Wings Unfurled"],
+        11: ["Aspect of the Wyrm"],
+        17: ["Ascendant Aspect"],
+      },
+    },
+    "Astral Self": {
+      subclassFeatures: {
+        3: ["Arms of the Astral Self"],
+        6: ["Visage of the Astral Self"],
+        11: ["Body of the Astral Self"],
+        17: ["Awakened Astral Self"],
+      },
+    },
+    "Drunken Master": {
+      subclassFeatures: {
+        3: ["Drunken Technique", "Bonus Proficiencies (Drunken Master"],
+        6: ["Tipsy Sway"],
+        11: ["Drunkard's Luck"],
+        17: [""],
+      },
+    },
+    Elements: {
+      subclassFeatures: {
+        3: ["Elemental Attunement", "Manipulate Elements"],
+        6: ["Elemental Burst"],
+        11: ["Stride of the Elements"],
+        17: ["Elemental Epitome"],
+      },
+    },
     "Fire Dancer": {
       subclassFeatures: {
         3: ["Blazing Performer", "Dance of Fire"],
@@ -665,12 +697,36 @@ export const dndData = {
         17: ["One With The Fire"],
       },
     },
+    Mercy: {
+      subclassFeatures: {
+        3: ["Hand of Harm", "Hand of Healing", "Implements of Mercy"],
+        6: ["Physician's Touch"],
+        11: ["Flurry of Healing and Harm"],
+        17: ["Hand of Ultimate Mercy"],
+      },
+    },
     "Long Death": {
       subclassFeatures: {
         3: ["Touch of Death"],
         6: ["Hour of Reaping"],
         11: ["Mastery of Death"],
         17: ["Touch of Long Death"],
+      },
+    },
+    "Open Hand": {
+      subclassFeatures: {
+        3: ["Open Hand Technique"],
+        6: ["Wholeness of Body"],
+        11: ["Fleet Step"],
+        17: ["Quivering Palm"],
+      },
+    },
+    Shadow: {
+      subclassFeatures: {
+        3: ["Shadow Arts"],
+        6: ["Shadow Step"],
+        11: ["Improved Shadow Step"],
+        17: ["Cloak of Shadows"],
       },
     },
   },
@@ -998,7 +1054,7 @@ export const dndData = {
         2: ["Telepathy Adept", "Greater Telepathy"],
         6: ["Emotional Intelligence", "Not in the Face"],
         10: ["Shared Connection"],
-        14: [""],
+        14: ["Truth Hurts"],
       },
     },
   },
