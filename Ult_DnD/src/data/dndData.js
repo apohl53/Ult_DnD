@@ -678,7 +678,7 @@ export const dndData = {
         3: ["Drunken Technique", "Bonus Proficiencies (Drunken Master"],
         6: ["Tipsy Sway"],
         11: ["Drunkard's Luck"],
-        17: [""],
+        17: ["Intoxicated Frenzy"],
       },
     },
     Elements: {

@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import "./CharacterDisplay.css";
 import ReactMarkdown from "react-markdown";
 
-// Add class/subclass image
-// function ClassImage({ selection }) {
-//   const fileName = selection.toLowerCase().replace(/\s+/g, "-") + ".png";
-//   const src = `${process.env.PUBLIC_URL}/images/classes/${fileName}`;
-
-//   return <img src={src} alt={selection} />;
-// }
-
-function CharacterDisplay({ charClass, level, subclass, species, features }) {
+function CharacterDisplay({
+  charClass,
+  level,
+  subclass,
+  species,
+  features,
+  subclassImage,
+}) {
   const [selectedFeature, setSelectedFeature] = useState(null);
 
   const handleClick = (feature) => {
@@ -34,6 +33,7 @@ function CharacterDisplay({ charClass, level, subclass, species, features }) {
 
   return (
     <div className="character-display">
+      {/* LEFT: Feature list */}
       <div className="feature-list">
         <h2>
           {charClass} - Level {level} ({subclass})
@@ -41,6 +41,8 @@ function CharacterDisplay({ charClass, level, subclass, species, features }) {
         {renderFeatureList(features.classLevelFeatures, "Class Features")}
         {renderFeatureList(features.subclassLevelFeatures, "Subclass Features")}
       </div>
+
+      {/* MIDDLE: Feature detail */}
       <div className="feature-detail">
         {selectedFeature ? (
           <>
@@ -50,6 +52,15 @@ function CharacterDisplay({ charClass, level, subclass, species, features }) {
         ) : (
           <p>Select a feature to see details</p>
         )}
+      </div>
+
+      {/* RIGHT: Subclass image */}
+      <div className="subclass-image-container">
+        <img
+          src={subclassImage}
+          alt={`${subclass} artwork`}
+          className="subclass-image"
+        />
       </div>
     </div>
   );

@@ -3,6 +3,7 @@ import InputForm from "../../components/InputForm";
 import CharacterDisplay from "../../components/CharacterDisplay";
 import { dndData } from "../../data/dndData";
 import { featureDetails } from "../../data/featureDetails";
+import { subclassImages } from "./subclass-images/images";
 
 const resolveFeatures = (featureNames) =>
   featureNames.map(
@@ -33,8 +34,16 @@ function CharacterPage() {
       classLevelFeatures: resolveFeatures(classFeatureNames),
       subclassLevelFeatures: resolveFeatures(subclassFeatureNames),
     };
+    const subclassImage = subclassImages[subclass] || "/images/default.png";
 
-    setCharacterInfo({ charClass, level, subclass, species, features });
+    setCharacterInfo({
+      charClass,
+      level,
+      subclass,
+      species,
+      features,
+      subclassImage,
+    });
   };
 
   return (

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { dndData } from "../data/dndData";
-import { speciesData } from "../data/speciesData";
+// import { speciesData } from "../data/speciesData";
 
 export default function InputForm({ onSubmit }) {
   const [charClass, setCharClass] = useState("");
   const [level, setLevel] = useState("");
   const [subclass, setSubclass] = useState("");
-  const [species, setSpecies] = useState("");
+  // const [species, setSpecies] = useState("");
   // const [subspecies, setSubspecies] = useState("");
 
   const handleSubmit = (e) => {
