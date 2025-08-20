@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ult_DnD/static/css/main.eb427680.css",
-    "main.js": "/Ult_DnD/static/js/main.95c4f680.js",
+    "main.js": "/Ult_DnD/static/js/main.65b53cc2.js",
     "static/js/453.96453769.chunk.js": "/Ult_DnD/static/js/453.96453769.chunk.js",
     "static/media/thief.png": "/Ult_DnD/static/media/thief.4d5e474d104f65762f75.png",
     "static/media/assassin.png": "/Ult_DnD/static/media/assassin.737a390ad7aa1a767e30.png",
@@ -9,11 +9,11 @@
     "static/media/arcanetrickster.png": "/Ult_DnD/static/media/arcanetrickster.b627dba7c9df535fc12e.png",
     "index.html": "/Ult_DnD/index.html",
     "main.eb427680.css.map": "/Ult_DnD/static/css/main.eb427680.css.map",
-    "main.95c4f680.js.map": "/Ult_DnD/static/js/main.95c4f680.js.map",
+    "main.65b53cc2.js.map": "/Ult_DnD/static/js/main.65b53cc2.js.map",
     "453.96453769.chunk.js.map": "/Ult_DnD/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb427680.css",
-    "static/js/main.95c4f680.js"
+    "static/js/main.65b53cc2.js"
   ]
 }
