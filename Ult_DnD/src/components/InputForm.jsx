@@ -20,7 +20,7 @@ export default function InputForm({ onSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Class:
+        Class:&nbsp;
         <select
           value={charClass}
           onChange={(e) => {
@@ -38,7 +38,7 @@ export default function InputForm({ onSubmit }) {
       </label>
 
       <label>
-        Level:
+        &nbsp; Level:&nbsp;
         <input
           type="number"
           value={level}
@@ -49,7 +49,7 @@ export default function InputForm({ onSubmit }) {
       </label>
 
       <label>
-        Subclass:
+        &nbsp; Subclass:&nbsp;
         <select
           value={subclass}
           onChange={(e) => setSubclass(e.target.value)}
@@ -77,6 +77,7 @@ export default function InputForm({ onSubmit }) {
       </label> */}
 
       {/* add species to these below */}
+      <span> &nbsp; </span>
       <button
         type="submit"
         disabled={!charClass || !subclass || !level}
