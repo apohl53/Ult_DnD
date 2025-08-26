@@ -1,19 +1,24 @@
 {
   "files": {
     "main.css": "/Ult_DnD/static/css/main.eb427680.css",
-    "main.js": "/Ult_DnD/static/js/main.65b53cc2.js",
+    "main.js": "/Ult_DnD/static/js/main.37ebafd8.js",
     "static/js/453.96453769.chunk.js": "/Ult_DnD/static/js/453.96453769.chunk.js",
+    "static/media/cleric.png": "/Ult_DnD/static/media/cleric.17384e054492b78a3d15.png",
+    "static/media/Zealot.png": "/Ult_DnD/static/media/Zealot.eadde928811f4c94a99e.png",
+    "static/media/Berserker.png": "/Ult_DnD/static/media/Berserker.8b864fd1bcbba4765986.png",
+    "static/media/WorldTree.png": "/Ult_DnD/static/media/WorldTree.c3f4f6e2f13e48ec64d0.png",
+    "static/media/WildHeart.png": "/Ult_DnD/static/media/WildHeart.455fa0b3f31a9a952bfd.png",
     "static/media/thief.png": "/Ult_DnD/static/media/thief.4d5e474d104f65762f75.png",
     "static/media/assassin.png": "/Ult_DnD/static/media/assassin.737a390ad7aa1a767e30.png",
     "static/media/soulknife.png": "/Ult_DnD/static/media/soulknife.189eff7a9c42b11a3529.png",
     "static/media/arcanetrickster.png": "/Ult_DnD/static/media/arcanetrickster.b627dba7c9df535fc12e.png",
     "index.html": "/Ult_DnD/index.html",
     "main.eb427680.css.map": "/Ult_DnD/static/css/main.eb427680.css.map",
-    "main.65b53cc2.js.map": "/Ult_DnD/static/js/main.65b53cc2.js.map",
+    "main.37ebafd8.js.map": "/Ult_DnD/static/js/main.37ebafd8.js.map",
     "453.96453769.chunk.js.map": "/Ult_DnD/static/js/453.96453769.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb427680.css",
-    "static/js/main.65b53cc2.js"
+    "static/js/main.37ebafd8.js"
   ]
 }
