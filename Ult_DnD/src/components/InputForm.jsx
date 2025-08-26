@@ -6,6 +6,7 @@ export default function InputForm({ onSubmit }) {
   const [charClass, setCharClass] = useState("");
   const [level, setLevel] = useState("");
   const [subclass, setSubclass] = useState("");
+
   // const [species, setSpecies] = useState("");
   // const [subspecies, setSubspecies] = useState("");
 

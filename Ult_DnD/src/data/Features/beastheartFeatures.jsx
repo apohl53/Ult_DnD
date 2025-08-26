@@ -129,16 +129,8 @@ export const beastheartFeatures = {
     name: "",
     description: ``,
   },
-  "": {
-    name: "",
-    description: ``,
-  },
-  // Infernal Bond
-  "": {
-    name: "",
-    description: ``,
-  },
 
+  // Infernal Bond
   // Primal Bond
 
   // Protector Bond

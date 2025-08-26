@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./CharacterDisplay.css";
-import ReactMarkdown from "react-markdown";
+import { getImageForClass } from "../util/imageLoader";
 
 function CharacterDisplay({
   charClass,
@@ -31,9 +31,18 @@ function CharacterDisplay({
     </div>
   );
 
+  const imageToUse =
+    (subclassImage &&
+      !subclassImage.includes("default.png") &&
+      subclassImage) ||
+    getImageForClass(charClass);
+
+  console.log("charClass raw:", charClass);
+  console.log("Image to use:", imageToUse);
+
   return (
     <div className="character-display">
-      {/* LEFT: Feature list */}
+      {/* Feature List */}
       <div className="feature-list">
         <h2>
           {charClass} - Level {level} ({subclass})
@@ -42,7 +51,7 @@ function CharacterDisplay({
         {renderFeatureList(features.subclassLevelFeatures, "Subclass Features")}
       </div>
 
-      {/* MIDDLE: Feature detail */}
+      {/* Feature Detail */}
       <div className="feature-detail">
         {selectedFeature ? (
           <>
@@ -54,11 +63,11 @@ function CharacterDisplay({
         )}
       </div>
 
-      {/* RIGHT: Subclass image */}
+      {/* Image */}
       <div className="subclass-image-container">
         <img
-          src={subclassImage}
-          alt={`${subclass} artwork`}
+          src={imageToUse}
+          alt={`${subclass || charClass} artwork`}
           className="subclass-image"
         />
       </div>
