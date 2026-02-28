@@ -5,6 +5,6 @@ export const getImageForClass = (charClass) => {
   try {
     return images(`./${normalized}.png`);
   } catch {
-    return images("./placeholder.png");
+    return images("placeholder.png");
   }
 };
