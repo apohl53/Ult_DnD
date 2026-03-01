@@ -1,4 +1,4 @@
-const images = require.context("../assets", false, /\.png$/);
+const images = require.context("../assets/subclass-images", false, /\.png$/);
 
 export const getImageForClass = (charClass) => {
   const normalized = charClass?.trim().toLowerCase();
